@@ -26,10 +26,6 @@
 	top:300px;
 }
 
-.nav-links{
-
-}
-
 #nav-links li{
 	font-size:40px;
 	position:relative;
@@ -38,14 +34,22 @@
 
 /* ===============Start Body ================*/
 
-#profile-img{
-	border-radius:50%;
-	height:300px;
-	width:300px;
+.section{
+	padding:50px;
 }
 
-h2{
-	text-align:center;
+#profile-img{
+	border-radius:50%;
+	height:320px;
+	width:320px;
+}
+
+section h3{
+	font-size:50px;
+}
+
+section p{
+	font-size:20px;
 }
 
 .card{
@@ -58,27 +62,50 @@ h2{
 	border-radius:50%;
 }
 
-.parallax-quote { 
-    /* The image used */
-    background-image: url("../images/profile.jpg");
+/*=============CONTACT SECTION PARALLAX=============*/
 
-    /* Set a specific height */
-    height: 350px; 
- /*   width:100%;*/
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.parallax-contact{ 
+  background-image: url("../images/profile.jpg");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.quote{
+.contact-section{
+	padding:100px;
+}
+
+.contact-section h3{
 	font-size:60px;
-	padding:100px 0;
 }
+
+.contact-btns{
+	font size:20px;
+	list-style-type: none;
+	display:inline;
+}
+
+/*================FOOTER================*/
 
 footer{
-	padding:40px 0;
+	padding:30px 0;
 	border-top:1px solid;
+}
+
+.github-btn{
+	background-image: url("../images/github.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	  background-size: cover;
+}
+
+.linkedin-btn{
+		background-image: url("../images/linkedin.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	  background-size: cover;
 }

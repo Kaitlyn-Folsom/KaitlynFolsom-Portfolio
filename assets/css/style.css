@@ -1,5 +1,7 @@
 .container{
 	padding:40px 0;
+	    overflow: hidden;
+	        margin: 0;
 }
 
 /* ==============HEADER================*/
@@ -26,8 +28,35 @@
 	top:300px;
 }
 
-.nav-links{
+.moving-zone {
+    margin: -60px 0 0 -150px;
+    perspective: 800px;
+}
+.popup {
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.popup:before {
+    content: '';
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 40px 20px rgba(0,0,0,.1);
+    transform: translateZ(-100px);
+}
 
+.popup-text {
+    font-family: 'Roboto', sans-serif;
+    transform: translateZ(15px);
+}
+.popup-text{
+  color: coral;
+  font-size:40px;
+	position:relative;
+}
+
+#nav-title span {   
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.5);
+   padding:30px;
 }
 
 #nav-links li{
@@ -38,14 +67,23 @@
 
 /* ===============Start Body ================*/
 
-#profile-img{
-	border-radius:50%;
-	height:300px;
-	width:300px;
+.section{
+	padding:50px;
 }
 
-h2{
-	text-align:center;
+#profile-img{
+	border-radius:50%;
+	height:320px;
+	width:320px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+section h3{
+	font-size:50px;
+}
+
+section p{
+	font-size:20px;
 }
 
 .card{
@@ -58,27 +96,72 @@ h2{
 	border-radius:50%;
 }
 
-.parallax-quote { 
-    /* The image used */
-    background-image: url("../images/profile.jpg");
+/*=============CONTACT SECTION PARALLAX=============*/
 
-    /* Set a specific height */
-    height: 350px; 
- /*   width:100%;*/
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.parallax-contact{ 
+  background-image: url("../images/profile.jpg");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.quote{
+.contact-section{
+	padding:100px;
+}
+
+.contact-section h3{
 	font-size:60px;
-	padding:100px 0;
+	padding-bottom:40px;
 }
+
+.contact-btns{
+	font size:20px;
+	list-style-type: none;
+	display:inline;
+	padding:50px;
+}
+
+/*================FOOTER================*/
 
 footer{
-	padding:40px 0;
+	padding:15px 40px;
 	border-top:1px solid;
+}
+
+.github-btn{
+	background-image: url("../images/github.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.linkedin-btn{
+	background-image: url("../images/linkedin.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.email-btn{
+	background-image: url("../images/email.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.instagram-btn{
+	background-image: url("../images/instagram.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
 }

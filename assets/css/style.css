@@ -1,5 +1,7 @@
 .container{
 	padding:40px 0;
+	    overflow: hidden;
+	        margin: 0;
 }
 
 /* ==============HEADER================*/
@@ -26,6 +28,37 @@
 	top:300px;
 }
 
+.moving-zone {
+    margin: -60px 0 0 -150px;
+    perspective: 800px;
+}
+.popup {
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.popup:before {
+    content: '';
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 40px 20px rgba(0,0,0,.1);
+    transform: translateZ(-100px);
+}
+
+.popup-text {
+    font-family: 'Roboto', sans-serif;
+    transform: translateZ(15px);
+}
+.popup-text{
+  color: coral;
+  font-size:40px;
+	position:relative;
+}
+
+#nav-title span {   
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.5);
+   padding:30px;
+}
+
 #nav-links li{
 	font-size:40px;
 	position:relative;
@@ -42,6 +75,7 @@
 	border-radius:50%;
 	height:320px;
 	width:320px;
+	box-shadow: 5px 5px 5px #888888;
 }
 
 section h3{
@@ -79,18 +113,20 @@ section p{
 
 .contact-section h3{
 	font-size:60px;
+	padding-bottom:40px;
 }
 
 .contact-btns{
 	font size:20px;
 	list-style-type: none;
 	display:inline;
+	padding:50px;
 }
 
 /*================FOOTER================*/
 
 footer{
-	padding:30px 0;
+	padding:15px 40px;
 	border-top:1px solid;
 }
 
@@ -99,13 +135,33 @@ footer{
 	border-radius:50%;
 	height:60px;
 	width:60px;
-	  background-size: cover;
+	background-size: cover;
+	cursor:pointer;
 }
 
 .linkedin-btn{
-		background-image: url("../images/linkedin.png");
+	background-image: url("../images/linkedin.png");
 	border-radius:50%;
 	height:60px;
 	width:60px;
-	  background-size: cover;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.email-btn{
+	background-image: url("../images/email.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+.instagram-btn{
+	background-image: url("../images/instagram.png");
+	border-radius:50%;
+	height:60px;
+	width:60px;
+	background-size: cover;
+	cursor:pointer;
 }

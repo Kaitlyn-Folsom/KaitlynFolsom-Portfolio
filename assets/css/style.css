@@ -1,0 +1,84 @@
+.container{
+	padding:40px 0;
+}
+
+/* ==============HEADER================*/
+
+.jumbotron{
+	color:#fff;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+.parallax-header { 
+	background-image: url("../images/amalfi.jpg") !important; 
+  height: 800px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nav-title{
+	font-size:140px;
+	position:relative;
+	top:300px;
+}
+
+.nav-links{
+
+}
+
+#nav-links li{
+	font-size:40px;
+	position:relative;
+	top:500px;
+}
+
+/* ===============Start Body ================*/
+
+#profile-img{
+	border-radius:50%;
+	height:300px;
+	width:300px;
+}
+
+h2{
+	text-align:center;
+}
+
+.card{
+	display:inline-block;
+	border:none;
+	margin: 0 30px;
+}
+
+.card-img-top{
+	border-radius:50%;
+}
+
+.parallax-quote { 
+    /* The image used */
+    background-image: url("../images/profile.jpg");
+
+    /* Set a specific height */
+    height: 350px; 
+ /*   width:100%;*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote{
+	font-size:60px;
+	padding:100px 0;
+}
+
+footer{
+	padding:40px 0;
+	border-top:1px solid;
+}

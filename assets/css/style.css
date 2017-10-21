@@ -1,7 +1,9 @@
+
 .container{
-	padding:40px 0;
-	    overflow: hidden;
-	        margin: 0;
+	padding:50px 0 50px 60px;
+	overflow: hidden;
+	margin: 0;
+	min-width:100%;
 }
 
 /* ==============HEADER================*/
@@ -15,7 +17,7 @@
 
 .parallax-header { 
 	background-image: url("../images/amalfi.jpg") !important; 
-  height: 800px; 
+  height: 950px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,13 +27,16 @@
 #nav-title{
 	font-size:140px;
 	position:relative;
-	top:300px;
+	top:340px;
+	color: coral;
+	left:50px;
 }
 
 .moving-zone {
-    margin: -60px 0 0 -150px;
+    margin: -100px 0 0 -100px;
     perspective: 800px;
 }
+
 .popup {
     cursor: pointer;
     transform-style: preserve-3d;
@@ -47,53 +52,97 @@
     font-family: 'Roboto', sans-serif;
     transform: translateZ(15px);
 }
-.popup-text{
-  color: coral;
-  font-size:40px;
-	position:relative;
-}
 
 #nav-title span {   
-   background: rgb(0, 0, 0); /* fallback color */
+   background: rgb(0, 0, 0);
    background: rgba(0, 0, 0, 0.5);
    padding:30px;
 }
 
-#nav-links li{
-	font-size:40px;
-	position:relative;
-	top:500px;
+.btn-head{
+  font-size:40px;
+  	position:relative;
+	top:550px;
+}
+
+.btn-head:hover{
+	color:coral !important;
+}
+
+.btn-head:after,
+.btn-head:before {
+  backface-visibility: hidden;
+  border: 1px solid #fff;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-head:hover:after,
+.btn-head:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 90%;
+}
+
+.btn-head:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 90%;
 }
 
 /* ===============Start Body ================*/
-
-.section{
-	padding:50px;
-}
 
 #profile-img{
 	border-radius:50%;
 	height:320px;
 	width:320px;
-	box-shadow: 5px 5px 5px #888888;
+	box-shadow: 10px 10px 10px #888888;
+	margin: 20px 0 40px 130px;
 }
 
-section h3{
+#blurb{
+	padding: 30px 150px 0 0;
+}
+
+#blurb-title{
 	font-size:50px;
 }
 
-section p{
+#blurb-text{
 	font-size:20px;
 }
 
-.card{
-	display:inline-block;
-	border:none;
-	margin: 0 30px;
+#featured{
+	text-align:center;
+	font-size:60px;
+	padding:20px 0;
 }
 
-.card-img-top{
-	border-radius:50%;
+.app-description{
+	padding: 0 50px 0 150px;
+}
+
+.app-title{
+	font-size:50px;
+
+}
+
+.app-text{
+
+}
+
+.app-image{
+	height:350px;
+	width:500px;
+	border-radius: 8px;
+	border: 10px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*=============CONTACT SECTION PARALLAX=============*/
@@ -127,7 +176,10 @@ section p{
 
 footer{
 	padding:15px 40px;
-	border-top:1px solid;
+	background-color:#5272a5;
+	color:white;
+  border: 0px solid;
+	box-shadow: 8px 0 0 0 rgba(0, 0, 0, 0.2), 8px 0 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .github-btn{
@@ -164,4 +216,8 @@ footer{
 	width:60px;
 	background-size: cover;
 	cursor:pointer;
+}
+
+.btn-foot:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

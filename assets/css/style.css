@@ -4,6 +4,7 @@
 	overflow: hidden;
 	margin: 0;
 	min-width:100%;
+	text-align:center;
 }
 
 /* ==============HEADER================*/
@@ -17,7 +18,7 @@
 
 .parallax-header { 
 	background-image: url("../images/amalfi.jpg") !important; 
-  height: 950px; 
+  height: 800px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,30 +28,8 @@
 #nav-title{
 	font-size:140px;
 	position:relative;
-	top:340px;
+	top:250px;
 	color: coral;
-	left:50px;
-}
-
-.moving-zone {
-    margin: -100px 0 0 -100px;
-    perspective: 800px;
-}
-
-.popup {
-    cursor: pointer;
-    transform-style: preserve-3d;
-}
-.popup:before {
-    content: '';
-    background: rgba(0,0,0,.1);
-    box-shadow: 0 0 40px 20px rgba(0,0,0,.1);
-    transform: translateZ(-100px);
-}
-
-.popup-text {
-    font-family: 'Roboto', sans-serif;
-    transform: translateZ(15px);
 }
 
 #nav-title span {   
@@ -61,8 +40,10 @@
 
 .btn-head{
   font-size:40px;
-  	position:relative;
-	top:550px;
+  position:relative;
+	top:500px;
+	text-align:center;
+	padding:0;
 }
 
 .btn-head:hover{
@@ -96,60 +77,79 @@
   width: 90%;
 }
 
-/* ===============Start Body ================*/
+#mid-btn{
+	padding: 0 50px;
+}
+
+/* ===============About Me ================*/
+
+.about-me{
+
+}
 
 #profile-img{
 	border-radius:50%;
 	height:320px;
 	width:320px;
 	box-shadow: 10px 10px 10px #888888;
-	margin: 20px 0 40px 130px;
 }
 
 #blurb{
-	padding: 30px 150px 0 0;
+	text-align:left;
+	padding-right:20px;
+	font-size:20px;
 }
 
 #blurb-title{
 	font-size:50px;
 }
 
-#blurb-text{
-	font-size:20px;
+#bio{
+	padding: 50px 100px 0px 50px;
+	text-align:left;
+	font-size: 20px;
 }
 
+/* ===============Featured Work ================*/
+
 #featured{
-	text-align:center;
 	font-size:60px;
-	padding:20px 0;
+}
+
+.apps{
+	padding:30px;
 }
 
 .app-description{
-	padding: 0 50px 0 150px;
+text-align:left;
 }
 
 .app-title{
 	font-size:50px;
-
+	color:coral;
 }
 
 .app-text{
-
+	font-size:20px;
 }
 
 .app-image{
 	height:350px;
-	width:500px;
+	width:520px;
 	border-radius: 8px;
-	border: 10px solid #eee;
+	border: 10px solid #5272a5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*=============CONTACT SECTION PARALLAX=============*/
+.app-btn{
+	background-color:#29569e;
+}
 
-.parallax-contact{ 
-  background-image: url("../images/profile.jpg");
-  height: 350px; 
+/*=============CONTACT SECTION=============*/
+
+.parallax-break{ 
+  background-image: url("../images/vesuvius.jpg");
+  height: 450px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,19 +157,37 @@
 }
 
 .contact-section{
-	padding:100px;
+text-align:left;
 }
 
 .contact-section h3{
 	font-size:60px;
-	padding-bottom:40px;
+	color:coral;
+	text-align:center;
 }
 
-.contact-btns{
-	font size:20px;
-	list-style-type: none;
-	display:inline;
-	padding:50px;
+#contact-form{
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 8px;
+	border: 10px solid #5272a5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact-form input{
+	width:100%;
+}
+
+#contact-form textarea{
+	width:100%;
+	height: 100px;
+}
+
+#contact-submit{
+	width:100%;
+	cursor:pointer;
+	background-color:#5272a5;
+	color:white;
 }
 
 /*================FOOTER================*/
@@ -182,42 +200,30 @@ footer{
 	box-shadow: 8px 0 0 0 rgba(0, 0, 0, 0.2), 8px 0 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.github-btn{
-	background-image: url("../images/github.png");
-	border-radius:50%;
+.btn-foot{
 	height:60px;
 	width:60px;
-	background-size: cover;
-	cursor:pointer;
-}
-
-.linkedin-btn{
-	background-image: url("../images/linkedin.png");
 	border-radius:50%;
-	height:60px;
-	width:60px;
-	background-size: cover;
 	cursor:pointer;
-}
-
-.email-btn{
-	background-image: url("../images/email.png");
-	border-radius:50%;
-	height:60px;
-	width:60px;
 	background-size: cover;
-	cursor:pointer;
-}
-
-.instagram-btn{
-	background-image: url("../images/instagram.png");
-	border-radius:50%;
-	height:60px;
-	width:60px;
-	background-size: cover;
-	cursor:pointer;
 }
 
 .btn-foot:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.github-btn{
+	background-image: url("../images/github.png");
+}
+
+.linkedin-btn{
+	background-image: url("../images/linkedin.png");
+}
+
+.email-btn{
+	background-image: url("../images/email.png");
+}
+
+.instagram-btn{
+	background-image: url("../images/instagram.png");
 }

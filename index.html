@@ -19,41 +19,42 @@
 
 	<div class="jumbotron">
 		<div class="parallax-header">
-			<div class="moving-zone">
-    		<div class="popup">
-          <div class="popup-text">
-	  				<h1 id="nav-title"><span>Kaitlyn Folsom</span></h1>
-	        </div>
-    		</div>
-			</div>
+	  	<h1 id="nav-title"><span>Kaitlyn Folsom</span></h1>
 
-			<ul class="nav justify-content-center" id="nav-links">
-			  <li class="nav-item">
-			    <a class="btn btn-head" href="index.html">Home</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="btn btn-head" href="portfolio.html">My Work</a>
-			  </li>
-			  <li class="nav-item">
-			  	<a class="btn btn-head" href="about.html">About Me</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="btn btn-head" href="contact.html">Contact</a>
-			  </li>
-			</ul>
+				<ul class="nav justify-content-center" id="nav-links">
+					<li class="nav-item">
+				  	<a class="btn btn-head" href="about.html">About Me</a>
+				  </li>	
+				  <li class="nav-item">
+				    <a class="btn btn-head" href="#featured" id="mid-btn">My Work</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="btn btn-head" href="#contact">Contact</a>
+				  </li>
+				</ul>
 		</div>
 	</div> <!-- End Jumbotron -->
 
 	<div class="container">
+		<section class="about-me">
 			<div class="row">
 				<div class="col-lg-6">
 					<img src="assets/images/profile.jpg" alt="pic" id="profile-img">
 				</div>
-				<div class="col-lg-6" id="blurb">
+				<div class="col-lg-5" id="blurb">
 					<h3 id="blurb-title">Full Stack Web Developer</h3>
-					<p id="blurb-text">HTML • CSS • JAVASCRIPT • JQUERY • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB • MYSQL • FIREBASE • HEROKU • APIs • JSON • AJAX • PASSPORT • SOCKET.IO • WEB SCRAPING</p>
+					<p>HTML • CSS • JAVASCRIPT • JQUERY • REACT • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB • MYSQL • FIREBASE • HEROKU • APIs • JSON • AJAX • PASSPORT • SOCKET.IO • WEB SCRAPING</p>
+				</div>
+				<div class="col-lg-1">
 				</div>
 			</div> <!-- End row -->
+			<div class="row">
+				<div class="col-lg-12" id="bio">
+					<p> Talking about my passion for tech and design. My background in tv/film and how those skill can carry over. I'm a visual person. Mention my hobby with photography. All photos presented on this site we taken by myself. I love traveling. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae neque, distinctio deserunt? Fugiat, laborum. Quaerat perferendis necessitatibus, dolor incidunt neque, nobis hic porro non a numquam tenetur quibusdam, quo libero!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae neque, distinctio deserunt? Fugiat, laborum. Quaerat perferendis necessitatibus, dolor incidunt neque, nobis hic porro non a numquam tenetur quibusdam, quo libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita blanditiis, ducimus nobis itaque doloremque, harum labore? Ea labore, nisi aut odit sint, voluptatum voluptatem quae ut minus non, fuga voluptates.</p>
+				</div>
+			</div>
+		</section>
 
 		<hr />
 
@@ -62,63 +63,97 @@
 				<h2 id="featured">Featured Work</h2>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-6 app-description">
-		    <h4 class="app-title">App title</h4>
-		    <p class="app-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magni, assumenda porro architecto dolor vitae dicta aperiam consectetur eaque asperiores eligendi cumque, facere commodi. Quae magnam, sequi voluptatem aperiam vitae.</p>
-		    <button class="btn btn-default">View Portfolio</button>
+
+		<section class="row apps">
+			<div class="col-lg-1">
+			</div>
+			<div class="col-lg-5 app-description">
+		    <h4 class="app-title">Hot Restaurant</h4>
+		    <p class="app-text">Basic app demonstrating Node and Express with jQuery. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.</p>
+		    <a class="btn btn-primary app-btn" href="#" role="button">Find your Match!</a>
 			</div>
 			<div class="col-lg-6">
 				<img src="assets/images/friend-finder.png" alt="App image" class="app-image">
 			</div>
-		</div> <!-- End row -->
+		</section> <!-- End row -->
+
+		<hr />
+
+		<section class="row apps" >
+			<div class="col-lg-6">
+				<img src="assets/images/friend-finder.png" alt="App image" class="app-image">
+			</div>
+			<div class="col-lg-5 app-description">
+		    <h4 class="app-title">Fur Friend Finder</h4>
+		    <p class="app-text">A full-stack, compatibility-based web app that takes in results from the user's surverys and then compares their answers with those from other users to find the best playdate match for their fur friend.The app will then display the name and picture of the user with the best overall match. You will use Express to handle routing.</p>
+		    <a class="btn btn-primary app-btn" href="#" role="button">Find a Fur Friend</a>
+			</div>
+			<div class="col-lg-1">
+			</div>
+		</section> <!-- End row -->
+
+		<hr />
+
+		<section class="row apps">
+			<div class="col-lg-1">
+			</div>
+			<div class="col-lg-5 app-description">
+		    <h4 class="app-title">Wine Trivia Game</h4>
+		    	<p class="app-text">This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. Good Luck!</p>
+		    <a class="btn btn-primary app-btn" href="https://jewel0106.github.io/TriviaGame/" role="button">Take Quiz!</a>
+			</div>
+			<div class="col-lg-6">
+				<img src="assets/images/trivia.png" alt="App image" class="app-image">
+			</div>
+		</section> <!-- End row -->
 
 	</div> <!-- End container -->
 
-	<div class="jumbotron">
-		<div class="parallax-contact">
-			<section class="contact-section">
-		  	<h3>CONTACT ME</h3>
-		  	<ul>
-		  		<li class="contact-btns">
-		  			<button type="button" class="btn btn-outline-secondary github-btn"><a href="#" target="_blank"></a></button>
-		  		</li>
-		  		<li class="contact-btns">
-		  			<button type="button" class="btn btn-outline-secondary linkedin-btn"><a href="#" target="_blank"></a></button></li>
-		  		<li class="contact-btns">
-		  			<button type="button" class="btn btn-outline-secondary email-btn"><a href="#" target="_blank"></a></button>
-		  		</li>
-		  		<li class="contact-btns">
-		  			<button type="button" class="btn btn-outline-secondary instagram-btn"><a href="#" target="_blank"></a></button>
-		  		</li>
-		  	</ul>
-		  </section>
+		<div class="jumbotron">
+			<div class="parallax-break"></div>
 		</div>
-	</div>
 
-	<div class="container">
-
-		<section class="section">
-			<div class="row">
-				<div class="col-lg-12">
-					<h3>new section.....what the heck should go here. skills???</h3>
-				</div>
+	<div class="container contact-section">
+		<div class="row">
+			<div class="col-lg-12">
+					<h3>Contact me</h3>
 			</div>
-		</section>
-
+		</div>
+		<div class="row">
+			<div class="col-lg-1">
+			</div>
+			<div class="col-lg-5">
+					<h4>If you would like to see more of my projects you can do so by finding me on <a href="https://github.com/Jewel0106"><strong>Github</strong></a>.</h4> 
+					<h4>Or please feel free to reach out via email anytime!</h4>
+			</div>
+			<div class="col-lg-4 contact-section">
+				<form class="form-group" action="mailto:kaitlynmfolsom@gmail.com" method="post" enctype="text/plain" id="contact-form">
+						<h4>Name:</h4>
+      			<input placeholder="Name" type="text" tabindex="1" required autofocus>
+      			<br>
+						<h4>Your Email:</h4>
+      			<input placeholder="Your Email Address" type="email" tabindex="2" required>
+      			<br>
+						<h4>Message:</h4>
+      			<textarea tabindex="5" required></textarea>
+      			<br>
+      			<button class="btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+				</form>
+			</div>
+			<div class="col-lg-2">
+			</div>
+		</div>
 	</div> <!-- End Container -->
 
-		<footer>
-			<div class="d-flex">
-			  <div class="mr-auto p-2 align-self-center"><a href="#">Kaitlyn Folsom © 2017</a></div>
-			  <div class="p-2"><button type="button" class="btn btn-outline-secondary github-btn btn-foot"><a href="#" target="_blank"></a></button></div>
-				<div class="p-2"><button type="button" class="btn btn-outline-secondary linkedin-btn btn-foot"><a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"></a></button></div>
-				<div class="p-2"><button type="button" class="btn btn-outline-secondary email-btn btn-foot"><a href="#" target="_blank"></a></button></div>
-				<div class="p-2"><button type="button" class="btn btn-outline-secondary instagram-btn btn-foot"><a href="#" target="_blank"></a></button></div>
-			</div>
-		</footer>
-
-
+	<footer>
+		<div class="d-flex">
+		  <div class="mr-auto p-2 align-self-center"><a href="#">Kaitlyn Folsom © 2017</a></div>
+		  <div class="p-2"><button type="button" class="btn btn-outline-secondary github-btn btn-foot"><a href="https://github.com/Jewel0106" target="_blank"></a></button></div>
+			<div class="p-2"><button type="button" class="btn btn-outline-secondary linkedin-btn btn-foot"><a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"></a></button></div>
+			<div class="p-2"><button type="button" class="btn btn-outline-secondary email-btn btn-foot"><a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"></a></button></div>
+			<div class="p-2"><button type="button" class="btn btn-outline-secondary instagram-btn btn-foot"><a href="https://www.instagram.com/kaitlynnn_mae/?hl=en" target="_blank"></a></button></div>
+		</div>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

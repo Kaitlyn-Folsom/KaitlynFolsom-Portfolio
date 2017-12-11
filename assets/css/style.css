@@ -1,10 +1,16 @@
-/**{
-     
-     background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
 
-}*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html {
+	color:; #555;
+	font-family: "Arial", sans-serif;
+	font-size:20px;
+	text-rendering: optimizeLegibility;
+}
 
 .container{
 	overflow: hidden;
@@ -12,7 +18,13 @@
 	text-align:center;
 }
 
-/* ==============HEADER================*/
+section{
+	padding: 80px;
+}
+
+/*----------------------------*/
+/* HEADER -- parallax */
+/*----------------------------*/
 
 .jumbotron{
 	color:#fff;
@@ -22,44 +34,48 @@
 }
 
 .parallax-header { 
-	background-image: url("../images/amalfi.jpg") !important; 
-  height: 800px; 
+	background-image:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../images/amalfi.jpg");
+  height: 100vh; 
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 #nav-title{
-	font-size:140px;
+	font-size:850%;
 	position:relative;
-	top:250px;
-	color: coral;
+	top: 25%;
+	color: #F2784B;
 	margin:0px;
+	transition: font-size 0.4s;
 }
 
-#nav-title span {   
+#nav-title:hover{
+	font-size:950%;
+}
+
+/*#nav-title span {   
    background: rgb(0, 0, 0);
    background: rgba(0, 0, 0, 0.5);
    padding:30px;
-}
+}*/
 
 .btn-head{
-  font-size:40px;
+  font-size: 250%;
   position:relative;
-	top:500px;
+	top:750%;
 	text-align:center;
 	padding:0;
 }
 
 .btn-head:hover{
-	color:coral !important;
+	color:#F2784B !important;
 }
 
 .btn-head:after,
 .btn-head:before {
   backface-visibility: hidden;
-  border: 1px solid #fff;
+  border: 1px solid #f7f7f7;
   bottom: 0px;
   content: " ";
   display: block;
@@ -72,10 +88,14 @@
 .btn-head:hover:after,
 .btn-head:hover:before {
   backface-visibility: hidden;
-  border-color: #fff;
+  border-color: #f7f7f7;
   transition: width 350ms ease-in-out;
   width: 90%;
 }
+
+/*a:focus {
+	outline:0 !important;
+}*/
 
 .btn-head:hover:before {
   bottom: auto;
@@ -84,7 +104,39 @@
 }
 
 #mid-btn{
-	padding: 0 50px;
+	margin: 0 50px;
+}
+
+/*----------------------------*/
+/* STICKY NAV */
+/*----------------------------*/
+
+.sticky{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:rgba(255, 255, 255, 0.98);
+	box-shadow:0 2px 2px #efefef;
+	z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+	padding:16px 0;
+	color:#555;
+}
+
+.sticky .main-nav{
+	margin-top:18px;
+}
+
+.sticky .logo{
+	display:none;
+}
+
+.sticky .logo-black{
+	display:block;
 }
 
 /* ===============About Me ================*/
@@ -93,11 +145,20 @@
 	margin-top:40px;
 }
 
-#profile-img{
+.profile-img{
 	border-radius:50%;
-	height:320px;
-	width:320px;
-	box-shadow: 10px 10px 10px #888888;
+	height:auto;
+	width:60%;
+	box-shadow: 8px 8px 8px #888888;
+}
+
+.js-wp-1{
+opacity:0;
+-webkit-animation-duration: 1s;
+}
+
+.js-wp-1.animated{
+	opacity:1;
 }
 
 #blurb{

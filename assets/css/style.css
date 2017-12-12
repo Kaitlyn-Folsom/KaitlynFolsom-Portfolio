@@ -144,11 +144,16 @@ a:active{
 
 /* ===============About Me ================*/
 
+.about-me{
+	margin-top:50px;
+}
+
 .profile-img{
 	border-radius:50%;
 	height:auto;
 	width:60%;
 	box-shadow: 8px 8px 8px #888888;
+	margin-left:150px;
 }
 
 .js-wp1{
@@ -164,6 +169,7 @@ opacity:0;
 	text-align:left;
 	line-height:200%;
 	font-size:120%;
+	padding-top:70px;
 }
 
 #blurb h3{
@@ -179,8 +185,9 @@ opacity:0;
 
 /* ===============Featured Work ================*/
 
-.featured h2{
+section h2{
 	font-size:400%;
+	text-align:center;
 }
 
 .featured{
@@ -192,7 +199,7 @@ opacity:0;
 }
 
 .odd .app-description{
-text-align:right;
+	text-align:right;
 }
 
 .even .app-description{
@@ -241,14 +248,11 @@ text-align:right;
   height: 450px; 
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contact-header h3{
-	font-size:60px;
+.contact-text span{
 	color:#e67e22;
-	margin:20px;
 }
 
 .contact-text{

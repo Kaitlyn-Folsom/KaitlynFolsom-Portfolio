@@ -8,11 +8,9 @@
   <link rel="shortcut icon" href="#" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/queries.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
 
 <!--=========================================================== -->
@@ -20,7 +18,8 @@
 
 	<div class="jumbotron">
 		<div class="parallax-header">
-			<ul class="nav justify-content-center" id="nav-links">
+			<nav>
+				<ul class="nav justify-content-center" id="nav-links">
 					<li class="nav-item">
 				  	<a class="btn btn-head scroll-to-about" href="#">About Me</a>
 				  </li>	
@@ -31,6 +30,7 @@
 				    <a class="btn btn-head scroll-to-contact" href="#">Contact</a>
 				  </li>
 				</ul>
+			</nav>
 	  	<h1 id="nav-title"><span>Kaitlyn Folsom</span></h1>
 		</div>
 	</div> <!-- End Jumbotron -->
@@ -39,10 +39,10 @@
 		<section class="about-me">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img js-wp-1">
+					<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img js-wp1">
 				</div>
 				<div class="col-md-5 col-sm-12" id="blurb">
-					<h3 id="blurb-title">Full Stack Web Developer</h3>
+					<h3>Full Stack Web Developer</h3>
 					<p>JAVASCRIPT • JQUERY • HTML • CSS • MYSQL • AJAX • REACT • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB •  HEROKU • APIs • JSON •  PASSPORT • SOCKET</p>
 				</div>
 			</div> <!-- End row -->
@@ -54,59 +54,49 @@
 				</div>
 			</div>
 		</section>
-
-		<hr />
 		
 		<section class="featured">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 id="featured">Featured Work</h2>
+					<h2>Featured Work</h2>
 				</div>
+				<div class="line"></div>
 			</div>
 
-			<div class="row apps">
-				<div class="col-lg-1">
-				</div>
-				<div class="col-lg-5 app-description">
+			<div class="row odd">
+				<div class="col-lg-5 app-description apps">
 			    <h4 class="app-title">RxMinder</h4>
-			    	<p class="app-text">A React-based web application that keeps track of a person's medication by sending them text reminders. Utilizes Passport, MongoDB, Node, Express, Twilio, and moment, etc.</p>
+			    	<p class="app-text">A React-based web application that keeps track of a person's medication by sending them text reminders.</p> 
+			    	<p class="app-text">Utilizes Passport, MongoDB, Node, Express, Twilio, and moment, etc.</p>
 			    <a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/RxMinder" role="button">Check out the Code</a>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 apps">
 					<img src="assets/images/rxMinder.png" alt="App image" class="app-image">
 				</div>
-			</section> <!-- End row -->
-		<section>
+			</div> <!-- End row -->
 
-		<hr />
-
-		<section class="row apps" >
-			<div class="col-lg-6">
+		<div class="row even" >
+			<div class="col-lg-6 apps">
 				<img src="assets/images/dinner&show.png" alt="App image" class="app-image">
 			</div>
-			<div class="col-lg-5 app-description">
+			<div class="col-lg-5 app-description even apps">
 		    <h4 class="app-title">Dinner and a Show</h4>
 		    <p class="app-text">A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City.</p>
 		    <a class="btn btn-primary app-btn" href="https://jewel0106.github.io/DinnerAndAShow/index.html" role="button">Find a restaurant!</a>
 			</div>
-			<div class="col-lg-1">
-			</div>
-		</section> <!-- End row -->
+		</div> <!-- End row -->
 
-		<hr />
-
-		<section class="row apps">
-			<div class="col-lg-1">
-			</div>
-			<div class="col-lg-5 app-description">
+		<div class="row odd">
+			<div class="col-lg-5 app-description apps">
 		    <h4 class="app-title">Friend Forum</h4>
 		    	<p class="app-text">A social media web application where users create a profile based on their own interests whether it be music, sports, entertainment, technology, etc. They can then receive news related to that interest and live comment about it with other with that same interest. Utilizes Socket, express, node, MySQL, passport, etc.</p>
 		    <a class="btn btn-primary app-btn" href="https://friend-forum.herokuapp.com/" role="button">Check it out!</a>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 apps">
 				<img src="assets/images/forum.png" alt="App image" class="app-image">
 			</div>
-		</section> <!-- End row -->
+		</div> <!-- End row -->
+	</section>
 
 	</div> <!-- End container -->
 
@@ -118,6 +108,7 @@
 		<div class="d-flex flex-row">
 			<div class="flex-column ">
 					<h3>Contact me</h3>
+					<div class="line"></div>
 			</div>
 		</div>
 	</div>
@@ -144,7 +135,6 @@
 	</footer>
 
 	<!-- SCRIPT -->
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

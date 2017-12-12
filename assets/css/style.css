@@ -18,8 +18,25 @@ html {
 	text-align:center;
 }
 
+.row{
+	margin:0 auto;
+}
+
 section{
-	padding: 80px;
+	padding: 30px;
+}
+
+.line {
+	display:block;
+	height:2px;
+	background-color: #e67e22;
+	width:100px;
+	margin: 0 auto;
+	margin-bottom:10px;
+}
+
+a:active{
+	outline:none;
 }
 
 /*----------------------------*/
@@ -54,18 +71,13 @@ section{
 	font-size:950%;
 }
 
-/*#nav-title span {   
-   background: rgb(0, 0, 0);
-   background: rgba(0, 0, 0, 0.5);
-   padding:30px;
-}*/
-
 .btn-head{
   font-size: 250%;
   position:relative;
-	top:750%;
+	top:500px;
 	text-align:center;
 	padding:0;
+	transition: color 0.2s;
 }
 
 .btn-head:hover{
@@ -93,9 +105,10 @@ section{
   width: 90%;
 }
 
-/*a:focus {
-	outline:0 !important;
-}*/
+.btn-head li a:focus,
+.btn-head li a:visited {
+	outline:none !important;
+}
 
 .btn-head:hover:before {
   bottom: auto;
@@ -121,29 +134,15 @@ section{
 	z-index: 9999;
 }
 
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited{
-	padding:16px 0;
+.sticky .nav li a:link,
+.sticky .nav li a:visited{
+	padding:10px 0;
 	color:#555;
-}
-
-.sticky .main-nav{
-	margin-top:18px;
-}
-
-.sticky .logo{
-	display:none;
-}
-
-.sticky .logo-black{
-	display:block;
+	top: 0px;
+	font-size:120%;
 }
 
 /* ===============About Me ================*/
-
-.about-me{
-	margin-top:40px;
-}
 
 .profile-img{
 	border-radius:50%;
@@ -152,64 +151,87 @@ section{
 	box-shadow: 8px 8px 8px #888888;
 }
 
-.js-wp-1{
+.js-wp1{
 opacity:0;
 -webkit-animation-duration: 1s;
 }
 
-.js-wp-1.animated{
+.js-wp1.animated{
 	opacity:1;
 }
 
 #blurb{
 	text-align:left;
-	padding-right:20px;
-	font-size:20px;
+	line-height:200%;
+	font-size:120%;
 }
 
-#blurb-title{
-	font-size:50px;
+#blurb h3{
+	font-size:230%;
 }
 
 #bio{
-	padding: 50px 100px 0px 50px;
+	padding: 50px 30px 0px 50px;
 	text-align:left;
-	font-size: 20px;
+	line-height:200%;
+	font-size:130%;
 }
 
 /* ===============Featured Work ================*/
 
-#featured{
-	font-size:60px;
+.featured h2{
+	font-size:400%;
+}
+
+.featured{
+	background-color:#f4f4f4;
 }
 
 .apps{
-	padding:30px;
+	padding:40px 30px;
 }
 
-.app-description{
-text-align:left;
+.odd .app-description{
+text-align:right;
+}
+
+.even .app-description{
+	text-align:left;
+}
+
+.even{
+	background-color:#fff;
+	width:100vw;
 }
 
 .app-title{
-	font-size:50px;
-	color:coral;
+	font-size:230%;
+	color:#e67e22;
 }
 
 .app-text{
-	font-size:20px;
+	font-size:110%;
+	line-height:160%;
 }
 
 .app-image{
-	height:340px;
-	width:520px;
-	border-radius: 8px;
-	border: 10px solid #5272a5;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height:auto;
+	width:80%;
+	border:1px solid #ccc;
 }
 
 .app-btn{
-	background-color:#5272a5;
+	background-color:#e67e22;
+	border:1px solid transparent;
+	padding:10px 20px;
+	border-radius:200px;
+}
+
+.app-btn:hover,
+.app-btn:active{
+	background-color:#fff;
+	border:1px solid #e67e22;
+	color: #e67e22;
 }
 
 /*=============CONTACT SECTION=============*/
@@ -225,8 +247,8 @@ text-align:left;
 
 .contact-header h3{
 	font-size:60px;
-	color:coral;
-	margin:30px;
+	color:#e67e22;
+	margin:20px;
 }
 
 .contact-text{
@@ -275,99 +297,6 @@ footer p{
 	margin:0 42%;
 }
 
-/* ============MEDIA QUERIES 980PX============== */
-@media (max-width: 988px) {
-	#nav-title{
-		font-size:120px;
-	}
 
-	#nav-title span {   
-   padding:20px;
-	}
-
-	.apps{
-	margin:0px 20px;
-	}
-
-	.apps img{
-		margin:20px 0;
-	}
-
-}
-
-/* ============MEDIA QUERIES 768PX============== */
-@media (max-width: 768px) {
-
-	#nav-title{
-		font-size:90px;
-	}
-
-	#nav-title span {   
-   padding:20px;
-	}
-
-	.btn-head{
-  	font-size:35px;
-	}
-
-	#blurb-title{
-		font-size:40px;
-	}
-
-	.apps img{
-		margin-top:20px;
-	}
-
-}
-
-/* ============MEDIA QUERIES 576PX============== */
-@media (max-width: 576px) {
-	#nav-title{
-		font-size:70px;
-	}
-
-	#nav-title span {   
-   padding:10px;
-	}
-
-	.apps{
-	margin:0px 20px;
-	}
-
-	.apps img{
-		margin:20px 0;
-	}
-
-	.btn-head{
-  	font-size:30px;
-  	top:580px;
-	}
-
-	#mid-btn{
-		padding: 0 20px;
-	}
-
-	#bio{
-	padding: 40px 30px 0px 50px;
-}
-
-	#blurb{
-		padding: 20px 30px 0 50px;
-	}
-
-	.app-image{
-		height:320px;
-		width:500px;
-	}
-
-	.apps{
-		padding:0px;
-	}
-
-	.contact-text{
-		margin: 0;
-	}
-
-}
 
 

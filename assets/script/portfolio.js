@@ -60,16 +60,9 @@ $('a[href*="#"]')
     }
   });
 
-  $(".js--wp-1").waypoint(function(direction){
-
-		$(".js--wp-1").addClass("animated fadeIn");
-	  }, {
-	  	offset: "50%"
-  });
-
   $(".js-wp1").waypoint(function(direction){
 
-		$(".js-wp1").addClass("animated fadeInUp");
+		$(".js-wp1").addClass("animated fadeInLeft");
 	  }, {
 	  	offset: "50%"
   });

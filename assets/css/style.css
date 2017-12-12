@@ -31,12 +31,20 @@ section{
 	height:2px;
 	background-color: #e67e22;
 	width:100px;
-	margin: 0 auto;
-	margin-bottom:10px;
+	margin: 0 auto 40px auto;
 }
 
 a:active{
 	outline:none;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+	content: '.';
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
 }
 
 /*----------------------------*/
@@ -183,6 +191,45 @@ opacity:0;
 	font-size:130%;
 }
 
+/*----------------------------*/
+/* PHOTOS */
+/*----------------------------*/
+.photos{
+	padding:0;
+}
+
+.photos-list{
+	list-style: none;
+	width: 100%;
+	margin:0;
+}
+
+.photos-list li{
+	display:block;
+	float: left;
+	width: 25%;
+	height:auto;
+}
+
+.photo{
+	width:100%;
+	margin:0;
+	overflow:hidden;
+	background-color:black;
+}
+
+.photo img{
+	opacity:0.7;
+	width:100%;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover{
+	opacity:1;
+	transform: scale(1.03);
+}
+
 /* ===============Featured Work ================*/
 
 section h2{
@@ -190,12 +237,8 @@ section h2{
 	text-align:center;
 }
 
-.featured{
-	background-color:#f4f4f4;
-}
-
 .apps{
-	padding:40px 30px;
+	padding:60px 30px;
 }
 
 .odd .app-description{
@@ -207,7 +250,7 @@ section h2{
 }
 
 .even{
-	background-color:#fff;
+	background-color:#f4f4f4;
 	width:100vw;
 }
 
@@ -244,19 +287,39 @@ section h2{
 /*=============CONTACT SECTION=============*/
 
 .parallax-break{ 
-  background-image: url("../images/vesuvius.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/vesuvius.jpg");
   height: 450px; 
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-.contact-text span{
-	color:#e67e22;
+.contact{
+	background-color:#f7f7f7;
 }
 
-.contact-text{
-	margin: 0 80px 0 80px;
+.contact-panel{
+	text-decoration: none;
+	padding: 10px 25px 10px 30px;
+	background-color:#fff;
+	margin:30px auto 70px auto;
+	max-width:300px;
+	box-shadow:0 2px 2px #ccc;
+	
+}
+
+.contact-panel a {
+	text-decoration:none;
+}
+
+.contact-panel span{
+	transition:color 0.1s;
+	
+}
+
+.contact-panel span:hover{
+	color:#e67e22;
+	text-decoration:none;
 }
 
 .btn-foot{
@@ -265,11 +328,13 @@ section h2{
 	border-radius:50%;
 	cursor:pointer;
 	background-size: cover;
-	margin:20px 20px 50px 20px;
+	margin: 20px 0 20px 5px;
+	margin: 20px 30%;
+	transition: box-shadow 0.2s;
 }
 
 .btn-foot:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .github-btn{
@@ -292,13 +357,18 @@ section h2{
 
 footer{
 	background-color:#5272a5;
+	background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/sunset.jpg");
+	background-attachment: fixed;
+  background-position: center-top;
+  background-size: cover;
 	color:white;
   border: 0px solid;
 	box-shadow: 8px 0 0 0 rgba(0, 0, 0, 0.2), 8px 0 20px 0 rgba(0, 0, 0, 0.19);
+	height:160px;
 }
 
 footer p{
-	margin:0 42%;
+	margin:0 auto;
 }
 
 

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$(".container").waypoint(function(direction){
+	$(".about-me").waypoint(function(direction){
 		if(direction == "down"){
 			$("nav").addClass("sticky");
 		}else{
@@ -20,7 +20,7 @@ $(document).ready(function(){
 	});
 
 	$(".scroll-to-contact").click(function(){
-		$("html, body").animate({scrollTop: $(".contact-header").offset().top}, 1000);
+		$("html, body").animate({scrollTop: $(".contact").offset().top}, 1000);
 	});
 
 	// Select all links with hashes
@@ -67,6 +67,13 @@ $('a[href*="#"]')
 	  	offset: "50%"
   });
 
+  $(".js-wp2").waypoint(function(direction){
+
+		$(".js-wp2").addClass("animated pulse");
+	  }, {
+	  	offset: "50%"
+  });
+
   $(".js--wp-3").waypoint(function(direction){
 
 		$(".js--wp-3").addClass("animated fadeIn");
@@ -74,12 +81,7 @@ $('a[href*="#"]')
 	  	offset: "50%"
   });
 
-  $(".js--wp-4").waypoint(function(direction){
 
-		$(".js--wp-4").addClass("animated pulse");
-	  }, {
-	  	offset: "50%"
-  });
 
 
 });

@@ -3,11 +3,15 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+	font-weight:300;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
 }
 
 html {
-	color:; #555;
-	font-family: "Arial", sans-serif;
+	color: #555;
 	font-size:20px;
 	text-rendering: optimizeLegibility;
 }
@@ -20,6 +24,7 @@ html {
 
 .row{
 	margin:0 auto;
+	width:100%
 }
 
 section{
@@ -67,25 +72,29 @@ a:active{
 }
 
 #nav-title{
-	font-size:850%;
+	font-size:1000%;
 	position:relative;
-	top: 25%;
+	top: 20%;
 	color: #F2784B;
 	margin:0px;
 	transition: font-size 0.4s;
+	font-family: 'Dancing Script', cursive; 
+	text-shadow: 2px 2px 2px rgb(44, 44, 44);
 }
 
 #nav-title:hover{
-	font-size:950%;
+	font-size:1100%;
 }
 
 .btn-head{
-  font-size: 250%;
+  font-size: 300%;
   position:relative;
 	top:500px;
 	text-align:center;
 	padding:0;
 	transition: color 0.2s;
+	text-shadow: 1px 1px 1px rgb(41, 41, 41);
+	font-family: 'Dancing Script', cursive; 
 }
 
 .btn-head:hover{
@@ -137,9 +146,8 @@ a:active{
 	top:0;
 	left:0;
 	width:100%;
-	/* background-color:rgba(255, 255, 255, 0.98); */
 	background-color:#1f395a;
-	box-shadow:0 2px 2px #777676;
+	box-shadow:0 2px 2px #525151;
 	z-index: 9999;
 }
 
@@ -148,10 +156,13 @@ a:active{
 	padding:10px 0;
 	color:#fff;
 	top: 0px;
-	font-size:120%;
+	font-size:140%;
 }
 
-/* ===============About Me ================*/
+
+/*----------------------------*/
+/* ABOUT ME*/
+/*----------------------------*/
 
 .about-me{
 	padding-top:100px;
@@ -178,11 +189,13 @@ opacity:0;
 	text-align:left;
 	line-height:200%;
 	font-size:120%;
-	padding-top:70px;
+	padding-top:50px;
 }
 
 #blurb h3{
-	font-size:230%;
+	font-size:400%;
+	font-family: 'Dancing Script', cursive; 
+	color: #F2784B;
 }
 
 #bio{
@@ -223,7 +236,7 @@ opacity:0;
 	opacity:0.7;
 	width:100%;
 	transform: scale(1.15);
-	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.3s;
 }
 
 .photo img:hover{
@@ -231,14 +244,83 @@ opacity:0;
 	transform: scale(1.03);
 }
 
-/* ===============Featured Work ================*/
-section h2{
-	font-size:400%;
+/*----------------------------*/
+/* FEATURED WORK - TESTING */
+/*----------------------------*/
+
+.app-image{
+	height:300px;
+	width:500px;
+	border:1px solid #ccc;
+	transition: box-shadow 0.5s;
+	margin: 20px auto;
+	padding: 0;
+	background-position: center;
+	background-size: cover;
 	text-align:center;
-	margin-top:20px;
+	border-radius:5px;
 }
 
-.apps{
+.app-image:hover {
+	box-shadow:4px 4px 3px 3px #777676;
+	cursor: pointer
+}
+
+.rxMinder {
+	background-image: url("../images/rxMinder.png");
+}
+
+.dinner-show {
+	background-image: url("../images/dinner&show.png");
+}
+
+.friend-forum {
+	background-image: url("../images/forum.png");
+}
+
+.panel {
+	display: none;
+	padding: 8px 20px 15px 20px;
+	border: solid 1px #050505;
+	background-color: #eee;
+	width:500px;
+	margin: 15px auto;
+	border-radius:4px;
+}
+
+.panel h6 {
+	color: #e67e22;
+	font-size:250%;
+}
+
+.app-btn{
+	background-color:#e67e22;
+	border:1px solid transparent;
+	padding:5px 15px;
+	border-radius:200px;
+}
+
+.app-btn:hover,
+.app-btn:active{
+	background-color:#fff;
+	border:1px solid #e67e22;
+	color: #e67e22;
+}
+
+
+/*----------------------------*/
+/* FEATURED WORK */
+/*----------------------------*/
+section h2{
+	font-size:550%;
+	text-align:center;
+	margin-top:20px;
+	font-family: 'Dancing Script', cursive; 
+	color: #1f395a;
+	text-shadow: 1px 1px 1px rgb(223, 222, 222);
+}
+
+/* .apps{
 	padding:60px 30px;
 }
 
@@ -283,7 +365,7 @@ section h2{
 	background-color:#fff;
 	border:1px solid #e67e22;
 	color: #e67e22;
-}
+} */
 
 /*=============CONTACT SECTION=============*/
 

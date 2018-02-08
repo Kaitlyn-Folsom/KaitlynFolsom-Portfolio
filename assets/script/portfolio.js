@@ -81,7 +81,17 @@ $('a[href*="#"]')
 	  	offset: "50%"
   });
 
+  $("#flip-rx").click(function(){
 
+    $("#panel-rx").slideToggle("slow");
+  });
 
+  $("#flip-dinner").click(function(){
+    $("#panel-dinner").slideToggle("slow");
+  });
+
+  $("#flip-forum").click(function(){
+    $("#panel-forum").slideToggle("slow");
+  });
 
 });

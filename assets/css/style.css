@@ -189,7 +189,7 @@ opacity:0;
 	text-align:left;
 	line-height:250%;
 	font-size:120%;
-	padding-top:50px;
+	padding-top:30px;
 	text-align: justify;
 }
 
@@ -291,9 +291,7 @@ opacity:0;
 
 .panel {
 	display: none;
-	padding: 6px 20px 15px 20px;
-	border: solid 1px #050505;
-	background-color: #eee;
+	padding: 5px 20px 0 20px;
 	width:500px;
 	margin: 15px auto;
 	border-radius:4px;

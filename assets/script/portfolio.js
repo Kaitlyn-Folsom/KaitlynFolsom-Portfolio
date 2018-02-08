@@ -94,4 +94,8 @@ $('a[href*="#"]')
     $("#panel-forum").slideToggle("slow");
   });
 
+  $("#flip-trivia").click(function(){
+    $("#panel-trivia").slideToggle("slow");
+  });
+
 });

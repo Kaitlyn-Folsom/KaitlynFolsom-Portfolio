@@ -187,9 +187,10 @@ opacity:0;
 
 #blurb{
 	text-align:left;
-	line-height:200%;
+	line-height:250%;
 	font-size:120%;
 	padding-top:50px;
+	text-align: justify;
 }
 
 #blurb h3{
@@ -199,10 +200,16 @@ opacity:0;
 }
 
 #bio{
-	padding: 50px 30px 0px 50px;
+	padding: 50px 30px 10px 50px;
 	text-align:left;
 	line-height:200%;
 	font-size:130%;
+	text-align: justify;
+}
+
+.bio-line {
+	margin-top: 20px;
+	margin-bottom:20px;
 }
 
 /*----------------------------*/
@@ -245,7 +252,7 @@ opacity:0;
 }
 
 /*----------------------------*/
-/* FEATURED WORK - TESTING */
+/* FEATURED WORK */
 /*----------------------------*/
 
 .app-image{
@@ -278,9 +285,13 @@ opacity:0;
 	background-image: url("../images/forum.png");
 }
 
+.trivia {
+	background-image: url("../images/trivia.png");
+}
+
 .panel {
 	display: none;
-	padding: 8px 20px 15px 20px;
+	padding: 6px 20px 15px 20px;
 	border: solid 1px #050505;
 	background-color: #eee;
 	width:500px;
@@ -291,6 +302,12 @@ opacity:0;
 .panel h6 {
 	color: #e67e22;
 	font-size:250%;
+	font-family: 'Dancing Script', cursive;
+	text-align:center;
+}
+
+.panel p {
+	text-align:justify;
 }
 
 .app-btn{
@@ -305,12 +322,9 @@ opacity:0;
 	background-color:#fff;
 	border:1px solid #e67e22;
 	color: #e67e22;
+
 }
 
-
-/*----------------------------*/
-/* FEATURED WORK */
-/*----------------------------*/
 section h2{
 	font-size:550%;
 	text-align:center;
@@ -319,53 +333,6 @@ section h2{
 	color: #1f395a;
 	text-shadow: 1px 1px 1px rgb(223, 222, 222);
 }
-
-/* .apps{
-	padding:60px 30px;
-}
-
-.odd .app-description{
-	text-align:right;
-}
-
-.even .app-description{
-	text-align:left;
-}
-
-.even{
-	background-color:#f4f4f4;
-	width:100vw;
-}
-
-.app-title{
-	font-size:230%;
-	color:#e67e22;
-}
-
-.app-text{
-	font-size:110%;
-	line-height:160%;
-}
-
-.app-image{
-	height:auto;
-	width:80%;
-	border:1px solid #ccc;
-}
-
-.app-btn{
-	background-color:#e67e22;
-	border:1px solid transparent;
-	padding:10px 20px;
-	border-radius:200px;
-}
-
-.app-btn:hover,
-.app-btn:active{
-	background-color:#fff;
-	border:1px solid #e67e22;
-	color: #e67e22;
-} */
 
 /*=============CONTACT SECTION=============*/
 

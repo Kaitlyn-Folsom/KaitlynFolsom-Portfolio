@@ -1,204 +1,180 @@
-/*Big tablets to 1200px: widths smaller than the 1140px row*/
-@media only screen and (max-width:1200px){
 
+@media only screen and (min-width:960px) and (max-width:1200px) {
 
-}
-
-/*Small tablets to big tablets: from 768px to 1023px*/
-@media only screen and (max-width:1023px){
-
-	body{
-		font-size:18px;
+	.parallax-header { 
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
 	}
 
-	section{
-		padding:60px 0;
-	}
-
-	.profile-img{
-		width:70%;
-		margin-left:100px;
-	}
-
-	#blurb{
-		line-height:230%;
-		font-size:110%;
-		padding-top:0px;
-	}
-
-}
-
-/* ============MEDIA QUERIES 988PX============== */
-@media (max-width: 988px) {
 	#nav-title{
 		font-size:900%;
+		top: 18%;
 	}
-
-	#nav-title:hover{
-		font-size:1000%;
-	}
-
-	.profile-img{
-		width:70%;
-		margin-left:80px;
-	}
-
-	#blurb{
-		line-height:200%;
-		font-size:120%;
-		padding-top:0px;
-	}
-
-	#blurb h3{
-		font-size:300%;
-	}
-
-	.app-image{
-		height:230px;
-		width:400px;
-		margin: 20px auto;
-	}
-
-	.panel {
-		width:400px;
-		margin: 10px auto;
-	}
-
-	section h2{
-		font-size:500%;
-		margin-top:0px;
-	}
-
-	.parallax-break{ 
-		height: 400px; 
-	}
-
-	.contact-panel{
-		padding: 10px 15px 10px 20px;
-		margin:10px auto 50px auto;
-		max-width:220px;
-	}
-
-	.btn-foot{
-		height:70px;
-		width:70px;
-		margin: 20px 0 20px 5px;
-		margin: 20px 30%;
-	}
-
-}
-
-/*Small phones to small tablets: from 481px to 767px*/
-@media only screen and (max-width:767px){
-	#nav-title{
-		font-size:700%;
-		top: 20%;
-	}
-
-	#nav-title:hover{
-		font-size:800%;
-	}
+	
+	#nav-title:hover{ font-size:1000%; }
 
 	.btn-head{
-		font-size: 250%;
-		top:520px;
-	}
-
-	.profile-img{
-		width:60%;
-		margin-left:20%;
-	}
-
-	#blurb{
-		line-height:200%;
-		font-size:130%;
-		padding-top:0px;
-		padding: 30px 30px 10px 40px;
-	}
-
-	#blurb h3{
-		font-size:400%;
-		text-align: center;
-	}
-
-	#bio{
-		padding: 20px 30px 0px 40px;
-		line-height:180%;
-	}
-
-	.app-image{
-		height:300px;
-		width:470px;
-	}
-
-	.panel {
-		width:470px;
-	}
-
-	section h2{
-		font-size:500%;
-		margin-top:0px;
-	}
-
-	.parallax-break{ 
-		height: 350px; 
-	}
-
-	.contact-panel{
-		padding: 10px 15px 10px 20px;
-		margin:10px auto 30px auto;
-		max-width:300px;
-	}
-
-}
-
-/* ============MEDIA QUERIES 576PX============== */
-@media (max-width: 576px) {
-	#nav-title{
-		font-size:550%;
-		top: 27%;
-	}
-
-	#nav-title:hover{
-		font-size:600%;
-	}
-
-	.btn-head{
-		font-size: 200%;
-		top:400px;
+		top:550%;
 	}
 
 	.about-me{
 		padding-top:70px;
 	}
 
-	#blurb h3{
-		font-size:360%;
+	.profile-img{
+		width:70%;
+		box-shadow: 8px 8px 8px #888888;
+		margin-left:19%;
 	}
 
 	#blurb{
-		line-height:200%;
+		line-height:190%;
 		font-size:120%;
-		padding-top:30px;
+		padding-top:0px;
+	}
+	
+	#blurb h3{
+		font-size:300%;
 	}
 
-	#bio{
-		padding: 10px 30px 0px 30px;
-		line-height:180%;
+	.photo img{
+		opacity:1;
 	}
 
-	section h2{
-		font-size:400%;
+	.app-image{
+		height:500px;
+		width:730px;
+		margin: 20px auto;
+	}
+
+	.panel {
+		padding: 0 20px;
+		width:730px;
+		margin: 25px auto;
+	}
+
+	.panel h6 {
+		font-size:330%;
+	}
+
+	.panel p {
+		text-align:justify;
+		font-size:120%;
+	}
+
+	.parallax-break{ 
+		background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/vesuvius.jpg");
+		height: 400px; 
+		background-attachment: scroll;
 	}
 
 	.contact-panel{
-		padding: 10px 15px 10px 20px;
-		margin:10px auto 20px auto;
-		max-width:240px;
+		padding: 0px 10px 10px 15px;
+		margin:25px auto 70px auto;
+		max-width:200px;
+	}
+
+	.btn-foot{
+		height:70px;
+		width:70px;
 	}
 
 	footer{
-		height:100px;
+		background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/sunset.jpg");
+		background-attachment: scroll;
+		height:80px;
+		font-size:90%;
+	}
+}
+
+@media only screen and (max-width:959px) {
+
+	#nav-title{
+		font-size:700%;
+		top: 17%;
+	}
+	
+	#nav-title:hover{ font-size:800%; }
+
+	.btn-head{
+		top:550%;
+		font-size: 250%;
+	}
+
+
+	.profile-img{
+		width:65%;
+		box-shadow: 8px 8px 8px #888888;
+		margin-left:18%;
+	}
+
+	#blurb{
+		line-height:190%;
+		font-size:150%;
+		padding-top:30px;
+		
+	}
+	
+	#blurb h3{
+		font-size:300%;
+		text-align: center;
+	}
+
+	.photo img{
+		opacity:1;
+	}
+
+	.app-image{
+		height:300px;
+		width:530px;
+		margin: 20px auto;
+	}
+
+	.panel {
+		padding: 0 20px;
+		width:530px;
+		margin: 25px auto;
+	}
+
+	.panel h6 {
+		font-size:330%;
+	}
+
+	.panel p {
+		text-align:justify;
+		font-size:110%;
+	}
+
+	.parallax-break{ 
+		background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/vesuvius.jpg");
+		height: 350px; 
+		background-attachment: scroll;
+	}
+
+	section h2{
+		font-size:500%;
+		margin-top:10px;
+	}
+
+	.contact-panel{
+		padding: 0px 15px 10px 20px;
+		margin:25px auto 50px auto;
+		max-width:290px;
+	}
+
+	.btn-foot{
+		height:70px;
+		width:70px;
+		margin: 20px 37%;
+	}
+
+	footer{
+		background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/sunset.jpg");
+		background-attachment: scroll;
+		background-position: center;
+		height:80px;
+		font-size:80%;
 	}
 
 }

@@ -6,10 +6,6 @@
 	font-weight:300;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
-}
-
 html {
 	color: #555;
 	font-size:20px;
@@ -27,9 +23,9 @@ html {
 	width:100%
 }
 
-section{
-	padding: 30px;
-}
+section{ padding: 30px; }
+
+p { font-family: 'Lato', sans-serif; }
 
 .line {
 	display:block;
@@ -37,10 +33,6 @@ section{
 	background-color: #e67e22;
 	width:100px;
 	margin: 0 auto 40px auto;
-}
-
-a:active{
-	outline:none;
 }
 
 .clearfix {zoom: 1}
@@ -52,15 +44,16 @@ a:active{
 	visibility:hidden;
 }
 
-/*----------------------------*/
+/*---------------------------------*/
 /* HEADER -- parallax */
-/*----------------------------*/
+/*---------------------------------*/
 
 .jumbotron{
 	color:#fff;
 	text-align:center;
 	padding:0;
 	margin:0;
+	font-family: 'Dancing Script', cursive; 
 }
 
 .parallax-header { 
@@ -76,25 +69,19 @@ a:active{
 	position:relative;
 	top: 20%;
 	color: #F2784B;
-	margin:0px;
 	transition: font-size 0.4s;
 	font-family: 'Dancing Script', cursive; 
 	text-shadow: 2px 2px 2px rgb(44, 44, 44);
 }
 
-#nav-title:hover{
-	font-size:1100%;
-}
+#nav-title:hover{ font-size:1100%; }
 
 .btn-head{
   font-size: 300%;
   position:relative;
-	top:500px;
-	text-align:center;
-	padding:0;
+	top:600%;
 	transition: color 0.2s;
 	text-shadow: 1px 1px 1px rgb(41, 41, 41);
-	font-family: 'Dancing Script', cursive; 
 }
 
 .btn-head:hover{
@@ -157,8 +144,8 @@ a:active{
 	color:#fff;
 	top: 0px;
 	font-size:140%;
+	outline:none !important;
 }
-
 
 /*----------------------------*/
 /* ABOUT ME*/
@@ -173,7 +160,7 @@ a:active{
 	height:auto;
 	width:60%;
 	box-shadow: 8px 8px 8px #888888;
-	margin-left:150px;
+	margin-left:22%;
 }
 
 .js-wp1{
@@ -194,21 +181,18 @@ opacity:0;
 
 #blurb h3{
 	font-size:400%;
-	font-family: 'Dancing Script', cursive; 
+	font-family: 'Dancing Script', cursive, serif; 
 	color: #F2784B;
 }
 
-#bio{
-	padding: 50px 30px 10px 50px;
+#bio {
+	padding:30px 20px;
 	line-height:200%;
 	font-size:130%;
 	text-align: justify;
 }
 
-.bio-line {
-	margin-top: 20px;
-	margin-bottom:20px;
-}
+.bio-line { margin: 25px 47%; }
 
 /*----------------------------*/
 /* PHOTOS */
@@ -289,17 +273,17 @@ opacity:0;
 
 .panel {
 	display: none;
-	padding: 5px 20px 0 20px;
+	padding: 0 20px;
 	width:500px;
-	margin: 15px auto;
-	border-radius:4px;
+	margin: 25px auto;
 }
 
 .panel h6 {
 	color: #e67e22;
-	font-size:250%;
+	font-size:270%;
 	font-family: 'Dancing Script', cursive;
 	text-align:center;
+	text-shadow: 1px 1px 1px rgb(223, 222, 222);
 }
 
 .panel p {
@@ -337,7 +321,8 @@ section h2{
   height: 450px; 
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+	background-size: cover;
+	margin-top:30px
 }
 
 .contact{
@@ -346,13 +331,12 @@ section h2{
 
 .contact-panel{
 	text-decoration: none;
-	padding: 10px 25px 10px 30px;
+	padding: 0px 25px 10px 30px;
 	background-color:#fff;
-	margin:30px auto 70px auto;
+	margin:25px auto 70px auto;
 	max-width:300px;
 	box-shadow:0 2px 2px #ccc;
-	text-align:center;
-	
+	text-align:justify;	
 }
 
 .contact-panel a {
@@ -375,7 +359,6 @@ section h2{
 	border-radius:50%;
 	cursor:pointer;
 	background-size: cover;
-	margin: 20px 0 20px 5px;
 	margin: 20px 30%;
 	transition: box-shadow 0.2s;
 }
@@ -403,15 +386,15 @@ section h2{
 /*================FOOTER================*/
 
 footer{
-	background-color:#5272a5;
 	background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/sunset.jpg");
 	background-attachment: fixed;
-  background-position: center-top;
+  background-position: center-bottom;
   background-size: cover;
 	color:white;
   border: 0px solid;
-	box-shadow: 8px 0 0 0 rgba(0, 0, 0, 0.1), 8px 0 20px 0 rgba(0, 0, 0, 0.1);
-	height:160px;
+	box-shadow: 8px 0 5px 0 rgba(0, 0, 0, 0.1), 8px 0 20px 0 rgba(0, 0, 0, 0.1);
+	height:100px;
+	text-shadow: 2px 2px 2px #000;
 }
 
 footer p{

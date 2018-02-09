@@ -90,6 +90,12 @@
 
 @media only screen and (min-width:700px) and (max-width:959px) {
 
+	.parallax-header { 
+		background-image:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../images/amalfi.jpg");
+		height: 100vh; 
+		background-attachment: scroll;
+	}
+
 	#nav-title{
 		font-size:700%;
 		top: 17%;
@@ -261,8 +267,18 @@
 		top:360px;
 	}
 
+	#mid-btn{
+		margin: 0 25px;
+	}
+
+	.profile-img{
+		width:75%;
+		margin-left:18%;
+	}
+
 	#blurb h3{
 		font-size:300%;
+		text-align:center;
 	}
 
 	#blurb{
@@ -289,8 +305,8 @@
 	}
 
 	.app-image{
-		height:190px;
-		width:360px;
+		height:170px;
+		width:340px;
 	}
 
 	.parallax-break{ 
@@ -299,13 +315,13 @@
 	}
 
 	.panel {
-		width:360px;
+		width:340px;
 	}
 
 	.contact-panel{
 		padding: 10px 10px 10px 10px;
 		margin:8px auto 5px auto;
-		max-width:170px;
+		max-width:160px;
 		font-size:80%;
 	}
 
@@ -320,7 +336,7 @@
 	}
 
 	footer{
-		background-image:linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("../images/sunset.jpg");
+		background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/sunset.jpg");
 		height:70px;
 		font-size:70%;
 		background-position: center;

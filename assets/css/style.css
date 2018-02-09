@@ -186,7 +186,6 @@ opacity:0;
 }
 
 #blurb{
-	text-align:left;
 	line-height:250%;
 	font-size:120%;
 	padding-top:30px;
@@ -201,7 +200,6 @@ opacity:0;
 
 #bio{
 	padding: 50px 30px 10px 50px;
-	text-align:left;
 	line-height:200%;
 	font-size:130%;
 	text-align: justify;
@@ -328,7 +326,7 @@ section h2{
 	text-align:center;
 	margin-top:20px;
 	font-family: 'Dancing Script', cursive; 
-	color: #1f395a;
+	color: #27466e;
 	text-shadow: 1px 1px 1px rgb(223, 222, 222);
 }
 
@@ -353,6 +351,7 @@ section h2{
 	margin:30px auto 70px auto;
 	max-width:300px;
 	box-shadow:0 2px 2px #ccc;
+	text-align:center;
 	
 }
 

@@ -205,9 +205,15 @@
 
 /*Small phones: from 0 to 481px */
 @media only screen and (max-width:480px){
+	.parallax-header { 
+		background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/amalfi.jpg");
+		background-attachment: scroll;
+	}
+	
+	
 	#nav-title{
 		font-size:450%;
-		top: 30%;
+		top: 20%;
 	}
 
 	#nav-title:hover{
@@ -215,8 +221,8 @@
 	}
 
 	.btn-head{
-		font-size: 180%;
-		top:430px;
+		font-size: 175%;
+		top:360px;
 	}
 
 	#blurb h3{
@@ -234,14 +240,24 @@
 		font-size:100%;
 	}
 
+	.photo img{
+		opacity:1;
+		transform: scale(1);
+	}
+
 	section h2{
-		font-size:380%;
+		font-size:370%;
 		margin-top:0px;
 	}
 
 	.app-image{
-		height:230px;
-		width:400px;
+		height:190px;
+		width:360px;
+	}
+
+	.parallax-break{ 
+		background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/vesuvius.jpg");
+		background-attachment: scroll;
 	}
 
 	.panel {
@@ -250,13 +266,14 @@
 
 	.contact-panel{
 		padding: 10px 10px 10px 10px;
-		margin:8px auto 10px auto;
-		max-width:210px;
+		margin:8px auto 5px auto;
+		max-width:170px;
+		font-size:80%;
 	}
 
 	.btn-foot{
-		height:60px;
-		width:60px;
+		height:50px;
+		width:50px;
 		margin: 10px 20%;
 	}
 
@@ -265,8 +282,12 @@
 	}
 
 	footer{
-		height:80px;
-		font-size:80%;
+		background-image:linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("../images/sunset.jpg");
+		height:70px;
+		font-size:70%;
+		background-position: center;
+		background-attachment: scroll;
+		text-shadow: 2px 2px 2px #000;
 	}
 
 }

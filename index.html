@@ -3,54 +3,72 @@
 <head>
 	<title>Home | Kaitlyn Folsom</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, minimum-scale=1">
+	<meta name="description" content="Kaitlyn Folsom is a freelance creative web developer ready to create beautiful responsive web pages for any company's needs.">
   
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/queries.css">
+	<!-- <link rel="stylesheet" href="assets/css/queries.css"> -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script|" rel="stylesheet">
 </head>
 
-<!--================================ JUMBOTRON AND HEADER =========================== -->
+<!--=========== JUMBOTRON AND HEADER ================ -->
 <body>
 
 	<div class="jumbotron">
-		<div class="parallax-header">
+		<header>
+			<div class="hero">
+				<h1 class="hero-title first-letter">K</h1>
+				<h1 class="hero-title">a</h1>
+				<h1 class="hero-title">i</h1>
+				<h1 class="hero-title">t</h1>
+				<h1 class="hero-title">l</h1>
+				<h1 class="hero-title">y</h1>
+				<h1 class="hero-title">n</h1>
+				<h1 id="hero-space"></h1>
+				<h1 class="hero-title first-letter">F</h1>
+				<h1 class="hero-title">o</h1>
+				<h1 class="hero-title">l</h1>
+				<h1 class="hero-title">s</h1>
+				<h1 class="hero-title">o</h1>
+				<h1 class="hero-title">m</h1>
+			</div>
+
 			<nav>
-				<ul class="nav justify-content-center" id="nav-links">
-					<li class="nav-item">
-				  	<a class="btn btn-head scroll-to-about" href="#">About Me</a>
-				  </li>	
-				  <li class="nav-item">
-				    <a class="btn btn-head scroll-to-work" href="#" id="mid-btn">My Work</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="btn btn-head scroll-to-contact" href="#">Contact</a>
-				  </li>
+				<ul class="nav justify-content-center">
+					<li class="nav-item animate-pop-in nav-1">
+						<a class="btn btn-head scroll-to-about" href="#">About Me</a>
+					</li>	
+					<li class="nav-item animate-pop-in header-button nav-2">
+						<a class="btn btn-head scroll-to-work" href="#" id="mid-btn">My Work</a>
+					</li>
+					<li class="nav-item animate-pop-in nav-3">
+						<a class="btn btn-head scroll-to-contact" href="#">Contact</a>
+					</li>
 				</ul>
-			</nav>
-	  	<h1 id="nav-title">Kaitlyn Folsom</h1>
-		</div>
+			</nav>			
+		</header>
 	</div> <!-- End Jumbotron -->
 
 		<section class="about-me">
 			<div class="row">
-				<div class="col-md-6 col-sm-12">
-					<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img js-wp1">
+				<div class="col-lg-6 col-md-6 col-xs-12">
+					<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img img-responsive js-wp1">
 				</div>
-				<div class="col-md-5 col-sm-12" id="blurb">
-					<h3>Web Developer</h3>
-					<p>JAVASCRIPT • JQUERY • HTML • CSS • MYSQL • AJAX • REACT • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB •  HEROKU • APIs • SASS • JSON •  PASSPORT • SOCKET • RESPONSIVE DESIGN • PHP</p>
+				<div class="col-lg-6 col-md-6 col-xs-12 skills-div">
+					<h3 class="developer-header">Web Developer</h3>
+					<p class="skills">JAVASCRIPT • JQUERY • HTML • CSS • MYSQL • AJAX • REACT • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB •  HEROKU • APIs • SASS • JSON • PASSPORT • RESPONSIVE DESIGN • PHP • PHOTOSHOP</p>
 				</div>
 			</div> <!-- End row -->
+
 			<div class="row">
-				<div class="col-md-12" id="bio">
-					<p>I recently left my previous career as a producer in the film and television industry to pursue my love of programming and design. I have since gained extensive knowledge in front-end development and design along with back-end technologies such as Node and PHP.  </p>
-					<div class="line bio-line"></div>
+				<div class="col bio" id="bio">
+					<p>I recently left my previous career as a producer in the film and television industry to pursue my love of programming and design. I have since gained extensive knowledge in front-end development and design along with back-end technologies such as Node and PHP.</p>
+						<div class="line bio-line"></div>
 					<p>When I'm not coding, I enjoy traveling and photography. I have a life resolution to explore someplace new every year, whether it be a weekend getaway in upstate New York or exploring the countryside in ireland. I love discovering new cultures and capturing them in my photos.
 					<p>All photos presented on this site were taken by me.</p>
 				</div>
@@ -105,56 +123,58 @@
 		<section class="featured">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="section-title">Featured Work</h2>
+					<h2>Featured Work</h2>
 				</div>
 				<div class="line"></div>
 			</div>
 			
 			<div class="row">
-				<div class="col">
-						<div id="flip-rx" class="app-image rxMinder"></div>
-						<div id="panel-rx" class="panel">
-							<h6>RxMinder</h6>
-							<p>A React-based web application that keeps track of a person's medication by sending them text reminders</p>
-							<a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/RxMinder" role="button">Start your schedule</a>
-						</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img src="assets/images/rxMinder.png" class="app-image" id="flip-rx">
+					<div id="panel-rx" class="panel">
+						<h6>RxMinder</h6>
+						<p>A React-based web application that keeps track of a person's medication by sending them text reminders</p>
+						<a class="btn btn-primary app-btn" href="https://ancient-bastion-53743.herokuapp.com/" role="button">Go to App</a>
+						<a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/RxMinder" role="button">Github Repo</a>
+					</div>		
 				</div>
-				<div class="col">
-						<div id="flip-dinner" class="app-image dinner-show"></div>
-						<div id="panel-dinner" class="panel">
-							<h6>Dinner & a Show</h6>
-							<p>A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City.</p>
-							<a class="btn btn-primary app-btn" href="https://jewel0106.github.io/DinnerAndAShow/index.html" role="button">Find a restaurant!</a>
-						</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img src="assets/images/dinner&show.png" class="app-image" id="flip-dinner">
+					<div id="panel-dinner" class="panel">
+						<h6>Dinner & a Show</h6>
+						<p>A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City.</p>
+						<a class="btn btn-primary app-btn" href="https://jewel0106.github.io/DinnerAndAShow/index.html" role="button">Go to App</a>
+						<a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/DinnerAndAShow" role="button">Github Repo</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="row">
-					<div class="col">
-							<div id="flip-forum" class="app-image friend-forum"></div>
-							<div id="panel-forum" class="panel">
-								<h6>Friend Forum</h6>
-								<p>A social media web application where users create a profile based on their own interests whether it be music, sports, entertainment, technology, etc. They can then receive news related to that interest and live comment about it with other with that same interest.</p>
-								<a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/RxMinder" role="button">Start your schedule</a>
-							</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img src="assets/images/forum.png" class="app-image" id="flip-forum">
+					<div id="panel-forum" class="panel">
+						<h6>Friend Forum</h6>
+						<p>A social media web application where users create a profile based on their own interests whether it be music, sports, entertainment, technology, etc. They can then receive news related to that interest and live comment about it with other with that same interest.</p>
+						<a class="btn btn-primary app-btn" href="https://friend-forum.herokuapp.com/" role="button">Go to App</a>
+						<a class="btn btn-primary app-btn" href="https://github.com/alexanderpaulino/Social-Media-AP" role="button">Github Repo</a>
 					</div>
-					<div class="col">
-							<div id="flip-trivia" class="app-image trivia"></div>
-							<div id="panel-trivia" class="panel">
-								<h6>Wine Trivia</h6>
-								<p>This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. Good Luck!</p>
-								<a class="btn btn-primary app-btn" href="https://jewel0106.github.io/TriviaGame/" role="button">Take the Quiz!</a>
-							</div>
-					</div>	
 				</div>
-			
-	</section> 
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img src="assets/images/trivia.png" class="app-image" id="flip-trivia">
+					<div id="panel-trivia" class="panel">
+						<h6>Wine Trivia</h6>
+						<p>This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. Good Luck!</p>
+						<a class="btn btn-primary app-btn" href="https://github.com/Jewel0106/TriviaGame" role="button">Take the Quiz!</a>
+						<a class="btn btn-primary app-btn" href="https://jewel0106.github.io/TriviaGame/" role="button">Github Repo</a>
+					</div>
+				</div>	
+			</div>
 
-		<div class="jumbotron">
-			<div class="parallax-break"></div>
-		</div>
+		</section> 
+	
+	<div class="parallax-break"></div>
 
-<!--================================ CONTACT =========================== -->
+<!--============= CONTACT =============== -->
 
 	<section class="contact">
 		<div class="row">
@@ -165,23 +185,32 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-3 contact-panel js-wp2">
-				<a href="https://github.com/Jewel0106" target="_blank"><button type="button" class="btn btn-outline-secondary github-btn btn-foot"></button></a>
-				<p>If you would like to see more of my projects you can do so by checking me out on <a href="https://github.com/Jewel0106" target="_blank"><span>Github.</span></a></p>
+			<div class="col-lg-3 col-sm-6 js-wp2">
+				<div class="contact-panel">
+					<a href="https://github.com/Jewel0106" target="_blank"><img src="assets/images/github.png"></a>
+					<p>If you would like to see more of my projects you can do so by checking me out on <a href="https://github.com/Jewel0106" target="_blank"><span>Github.</span></a></p>
+				</div>				
 			</div>
-			<div class="col-md-3 contact-panel js-wp2">
-				<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><button type="button" class="btn btn-outline-secondary linkedin-btn btn-foot"></button></a>
+			<div class="col-md-3 col-sm-6 js-wp2">
+			<div class="contact-panel">
+				<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><img src="assets/images/linkedin.png"></a>
 				<p>Connect with me on Linkedin to see more of my previous work experience.</p>
+			</div>				
 			</div>
-			<div class="col-md-3 contact-panel js-wp2">
-				<a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><button type="button" class="btn btn-outline-secondary email-btn btn-foot"></button></a>
-				<p>Or please feel free to reach out via email anytime at <a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><span>kaitlynmfolsom@gmail.com.</span></a></p>
+			<div class="col-md-3 col-sm-6 js-wp2">
+				<div class="contact-panel">
+					<a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><img src="assets/images/email.png"></a>
+					<p>Or please feel free to reach out via email anytime at <a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><span>kaitlynmfolsom@gmail.com.</span></a></p>
+				</div>				
 			</div>
-			<div class="col-md-3 contact-panel js-wp2">
-				<a href="https://www.instagram.com/kaitlynnn_mae/?hl=en" target="_blank"><button type="button" class="btn btn-outline-secondary instagram-btn btn-foot"></button></a>
-				<p>Check me out on Instagram if you get a wild hair.</p>
+			<div class="col-md-3 col-sm-6 js-wp2">
+				<div class="contact-panel">
+					<a href="https://www.instagram.com/kaitlynnn_mae/?hl=en" target="_blank"><img src="assets/images/instagram.png"></a>
+					<p>Check me out on Instagram if you get a wild hair.</p>
+				</div>				
 			</div>
 		</div>
+
 	</section>
 
 	<footer class="navbar sticky-bottom">

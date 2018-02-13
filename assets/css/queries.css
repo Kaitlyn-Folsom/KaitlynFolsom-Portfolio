@@ -1,18 +1,231 @@
 /*Big tablets to 1200px: widths smaller than the 1140px row*/
 @media only screen and (max-width:1200px){
+	.skills-div {
+		text-align: justify;
+		padding-top:0px;
+	}
 
+	footer{
+		height:65px;
+		font-size:70%;
+	}
 
 }
 
 /*Small tablets to big tablets: from 768px to 1023px*/
 @media only screen and (max-width:1023px){
+	.jumbotron{
+		background-attachment: scroll;
+	}
 
+	section h2{
+		font-size:400%;
+	}
+
+	section { padding: 20px; }
+
+	header {
+		top: 15%;
+	}
+
+	.hero-title{
+		font-size:700%;
+	}
+	
+	.first-letter {
+		font-size: 800%;
+	}
+
+	.btn-head{
+		font-size: 250%;
+	}
+
+	#mid-btn{
+		margin: 0 20px;
+	}
+
+	.about-me{
+		padding-top:60px;
+	}
+
+	.skills-div {
+		text-align: justify;
+		padding-top:0px;
+	}
+
+	.developer-header {
+		font-size:280%;
+	}
+
+	.skills {
+		line-height:220%;
+		font-size:90%;
+	}
+
+	.bio {
+		padding:0px 20px;
+		margin-top:30px;
+		line-height:170%;
+		font-size:100%;
+	}
+	
+	.photo img{
+		opacity:1;
+	}
+
+	.app-image{
+		margin-top: 5px;
+	}
+
+	.app-image:hover {
+		box-shadow:0px 0px 0px 0px #777676;
+	}
+
+	.panel h6 {
+		font-size:250%;
+	}
+
+	.panel p {
+		font-size:90%;
+	}
+
+	.app-btn{
+		padding:5px 10px;
+		font-size:70%;
+	}
+
+	.parallax-break { 
+		height: 350px; 
+		background-attachment: scroll;
+	}
+
+	.contact-panel {
+		width:90%;
+		padding: 0px 8px 5px 8px;
+		margin:0px auto 10px auto;
+		font-size:90%;
+	}
+
+	.contact-panel img {
+		width:28%;
+		margin: 10px 30%;
+	}
+
+	footer{
+		background-attachment: scroll;
+		background-position: center;
+		height:70px;
+		font-size:70%;
+	}
 
 }
 
 /*Small phones to small tablets: from 481px to 767px*/
 @media only screen and (max-width:767px){
 
+	.jumbotron{
+		background-attachment: scroll;
+	}
+
+	section h2{
+		font-size:350%;
+	}
+
+	section { padding: 20px; }
+
+	header {
+		top: 15%;
+	}
+
+	.hero-title{
+		font-size:530%;
+	}
+	
+	.first-letter {
+		font-size: 570%;
+	}
+
+	.btn-head{
+		font-size: 250%;
+	}
+
+	#mid-btn{
+		margin: 0 20px;
+	}
+
+	.about-me{
+		padding-top:60px;
+	}
+
+	.skills-div {
+		text-align: justify;
+		padding-top:0px;
+	}
+
+	.developer-header {
+		font-size:250%;
+	}
+
+	.skills {
+		line-height:170%;
+		font-size:90%;
+	}
+
+	.bio {
+		padding:0px 20px;
+		margin-top:20px;
+		line-height:170%;
+		font-size:100%;
+	}
+	
+	.photo img{
+		opacity:1;
+	}
+
+	.app-image{
+		margin-top: 5px;
+	}
+
+	.app-image:hover {
+		box-shadow:0px 0px 0px 0px #777676;
+	}
+
+	.panel h6 {
+		font-size:200%;
+	}
+
+	.panel p {
+		font-size:90%;
+	}
+
+	.app-btn{
+		padding:5px 10px;
+		font-size:70%;
+	}
+
+	.parallax-break { 
+		height: 350px; 
+		background-attachment: scroll;
+	}
+
+	.contact-panel {
+		width:80%;
+		padding: 0px 8px 5px 8px;
+		margin:0px auto 10px auto;
+		font-size:90%;
+	}
+
+	.contact-panel img {
+		width:28%;
+		margin: 10px 30%;
+	}
+
+	footer{
+		background-attachment: scroll;
+		background-position: center;
+		height:70px;
+		font-size:60%;
+	}
 }
 
 /*Small phones: from 0 to 481px */
@@ -99,16 +312,15 @@
 		font-size:70%;
 	}
 
-	.parallax-break{ 
+	.parallax-break { 
 		height: 300px; 
 		background-attachment: scroll;
 	}
 
-	.contact-panel{
+	.contact-panel {
 		width:60%;
 		padding: 0px 8px 5px 8px;
 		margin:0px auto 10px auto;
-		text-align:center;	
 		font-size:80%;
 	}
 
@@ -120,7 +332,6 @@
 	footer{
 		background-attachment: scroll;
 		background-position: center;
-		background-size: cover;
 		height:70px;
 		font-size:60%;
 	}

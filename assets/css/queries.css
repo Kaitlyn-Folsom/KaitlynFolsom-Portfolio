@@ -1,0 +1,128 @@
+/*Big tablets to 1200px: widths smaller than the 1140px row*/
+@media only screen and (max-width:1200px){
+
+
+}
+
+/*Small tablets to big tablets: from 768px to 1023px*/
+@media only screen and (max-width:1023px){
+
+
+}
+
+/*Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width:767px){
+
+}
+
+/*Small phones: from 0 to 481px */
+@media only screen and (max-width:480px){
+
+	.jumbotron{
+		background-attachment: scroll;
+	}
+
+	section h2{
+		font-size:350%;
+	}
+
+	section { padding: 20px; }
+
+	header {
+		top: 15%;
+	}
+
+	.hero-title{
+		font-size:350%;
+	}
+	
+	.first-letter {
+		font-size: 450%;
+	}
+
+	.btn-head{
+		font-size: 150%;
+	}
+
+	#mid-btn{
+		margin: 0 20px;
+	}
+
+	.about-me{
+		padding-top:80px;
+	}
+
+	.skills-div {
+		text-align: justify;
+		padding-top:20px;
+	}
+
+	.developer-header {
+		font-size:300%;
+		text-align: center;
+	}
+
+	.skills {
+		line-height:200%;
+		font-size:100%;
+	}
+
+	.bio {
+		padding:0px 20px;
+		margin-top:0px;
+		line-height:170%;
+		font-size:100%;
+	}
+	
+	.photo img{
+		opacity:1;
+	}
+
+	.app-image{
+		margin-top: 0px;
+	}
+
+	.app-image:hover {
+		box-shadow:0px 0px 0px 0px #777676;
+	}
+
+	.panel h6 {
+		font-size:200%;
+	}
+
+	.panel p {
+		font-size:100%;
+	}
+
+	.app-btn{
+		padding:5px 10px;
+		font-size:70%;
+	}
+
+	.parallax-break{ 
+		height: 300px; 
+		background-attachment: scroll;
+	}
+
+	.contact-panel{
+		width:60%;
+		padding: 0px 8px 5px 8px;
+		margin:0px auto 10px auto;
+		text-align:center;	
+		font-size:80%;
+	}
+
+	.contact-panel img {
+		width:30%;
+		margin: 10px 30%;
+	}
+
+	footer{
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+		height:70px;
+		font-size:60%;
+	}
+
+}

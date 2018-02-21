@@ -6,6 +6,10 @@
 	font-weight:300;
 }
 
+*:focus{
+	outline:none;
+}
+
 html {
 	color: #555;
 	font-size:20px;

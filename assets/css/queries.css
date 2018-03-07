@@ -77,8 +77,8 @@
 		margin-top: 5px;
 	}
 
-	.app-image:hover {
-		box-shadow:0px 0px 0px 0px #777676;
+	.text {
+		font-size: 180%;
 	}
 
 	.panel h6 {
@@ -185,8 +185,8 @@
 		margin-top: 5px;
 	}
 
-	.app-image:hover {
-		box-shadow:0px 0px 0px 0px #777676;
+	.text {
+		font-size: 120%;
 	}
 
 	.panel h6 {
@@ -294,8 +294,8 @@
 		margin-top: 0px;
 	}
 
-	.app-image:hover {
-		box-shadow:0px 0px 0px 0px #777676;
+	.text {
+		font-size: 140%;
 	}
 
 	.panel h6 {

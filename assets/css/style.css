@@ -406,13 +406,47 @@ opacity:0;
 /*----------------------------*/
 /* FEATURED WORK */
 /*----------------------------*/
+.image-container {
+	position: relative;
+	margin: 20px auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+	background-color: #1f395a;
+	border-radius:5px;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.8;	
+	cursor:pointer;
+}
+
+.text {
+  color: #F2784B;
+	font-size: 220%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Lato', cursive;
+}
 
 .app-image{
 	height:auto;
 	width:100%;
 	border:1px solid #ccc;
 	transition: box-shadow 0.5s;
-	margin: 20px auto;
 	padding: 0;
 	background-position: center;
 	background-size: cover;
@@ -420,15 +454,12 @@ opacity:0;
 	border-radius:5px;
 }
 
-.app-image:hover {
-	box-shadow:4px 4px 3px 3px #777676;
-	cursor: pointer
-}
-
 .panel {
 	display: none;
 	width:90%;
 	margin-bottom:20px;
+	margin-left:5%;
+	
 }
 
 .panel h6 {

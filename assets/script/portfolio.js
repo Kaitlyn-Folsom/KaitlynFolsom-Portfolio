@@ -74,13 +74,15 @@ $(document).ready(function(){
 	  	offset: "50%"
   });
 
-  $(".js--wp-3").waypoint(function(direction){
+  $(".js-wp3").waypoint(function(direction){
 
-		$(".js--wp-3").addClass("animated fadeIn");
+		$(".js-wp3").addClass("animated fadeInRight");
 	  }, {
 	  	offset: "50%"
   });
 
+
+  //Toggle Panels
   $("#flip-rx").click(function(){
 
     $("#panel-rx").slideToggle("slow");

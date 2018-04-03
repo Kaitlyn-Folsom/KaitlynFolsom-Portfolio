@@ -409,13 +409,13 @@ opacity:0;
 .js-wp-1,
 .js-wp-2,
 .js-wp-3,
-.js-wp-4
+.js-wp-4,
 .js-wp-5,
 .js-wp-6,
 .js-wp-7,
 .js-wp-8{
 	opacity:0;
-	-webkit-animation-duration: 1.3s;
+	-webkit-animation-duration: 1.2s;
 }
 	
 .js-wp-1.animated,
@@ -445,8 +445,8 @@ opacity:0;
 	color: #e67e22;
 	font-size:300%;
 	font-family: 'Dancing Script', cursive;
-	text-align:center;
 	text-shadow: 1px 1px 1px rgb(223, 222, 222);
+	padding-top:10px;
 }
 
 .featured p {
@@ -457,9 +457,11 @@ opacity:0;
 .app-btn{
 	background-color:#e67e22;
 	border:1px solid transparent;
-	padding:5px 15px;
+	padding:8px 30px;
 	border-radius:200px;
 	display:inline-block;
+	color:#fff;
+	margin-top:10px;
 }
 
 .app-btn:hover,

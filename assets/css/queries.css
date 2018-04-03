@@ -5,6 +5,11 @@
 		padding-top:0px;
 	}
 
+	.contact-panel {
+		min-height:190px;
+		margin:0px auto 30px auto;
+	}
+
 	footer{
 		height:65px;
 		font-size:70%;
@@ -73,25 +78,17 @@
 		opacity:1;
 	}
 
-	.app-image{
-		margin-top: 5px;
-	}
-
-	.text {
-		font-size: 180%;
-	}
-
-	.panel h6 {
+	.featured h6 {
 		font-size:250%;
 	}
 
-	.panel p {
+	.featured p {
 		font-size:90%;
 	}
 
 	.app-btn{
-		padding:5px 10px;
-		font-size:70%;
+		padding:8px 15px;
+		font-size:75%;
 	}
 
 	.parallax-break { 
@@ -104,6 +101,7 @@
 		padding: 0px 8px 5px 8px;
 		margin:0px auto 10px auto;
 		font-size:90%;
+		min-height:150px;
 	}
 
 	.contact-panel img {
@@ -182,24 +180,21 @@
 	}
 
 	.app-image{
-		margin-top: 5px;
+		width:100%;
+	} 
+
+	.featured h6 {
+		font-size:250%;
+		text-align:center;
 	}
 
-	.text {
-		font-size: 120%;
-	}
-
-	.panel h6 {
-		font-size:200%;
-	}
-
-	.panel p {
+	.featured p {
 		font-size:90%;
 	}
 
 	.app-btn{
-		padding:5px 10px;
-		font-size:70%;
+		padding:8px 15px;
+		font-size:75%;
 	}
 
 	.parallax-break { 
@@ -209,9 +204,10 @@
 
 	.contact-panel {
 		width:80%;
-		padding: 0px 8px 5px 8px;
-		margin:0px auto 10px auto;
+		padding: 10px 8px 5px 8px;
+		margin:0px auto 20px auto;
 		font-size:90%;
+		min-height: 175px;
 	}
 
 	.contact-panel img {
@@ -294,15 +290,11 @@
 		margin-top: 0px;
 	}
 
-	.text {
-		font-size: 140%;
-	}
-
-	.panel h6 {
+	.featured h6 {
 		font-size:200%;
 	}
 
-	.panel p {
+	.featured p {
 		font-size:100%;
 	}
 
@@ -317,14 +309,14 @@
 	}
 
 	.contact-panel {
-		width:60%;
-		padding: 0px 8px 5px 8px;
-		margin:0px auto 10px auto;
+		width:80%;
+		padding: 10px 8px 5px 8px;
+		margin:0px auto 20px auto;
 		font-size:80%;
 	}
 
 	.contact-panel img {
-		width:30%;
+		width:25%;
 		margin: 10px 30%;
 	}
 

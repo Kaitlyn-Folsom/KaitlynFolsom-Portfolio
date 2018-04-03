@@ -2,4 +2,4 @@
 
 Git repository for my personal portfolio website
 
-Check out the site here![kaitlynfolsom.com](https://kaitlynfolsom.com)
+Check out the site [HERE!](https://kaitlynfolsom.com)

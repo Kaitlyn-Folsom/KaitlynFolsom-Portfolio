@@ -1,0 +1,215 @@
+/* COLORS
+Red:#C63943 */
+
+
+/* RESET STYLES */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header {
+    background-image:url(../images/hero-image.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    background-position:100% 100%;
+    top:0;
+    padding:100px;
+   
+    width:100%;
+    position:relative;
+}
+
+.overlay { 
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 60px;
+    height:100%;
+    width:100%;
+    display:table;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.header h1{
+    margin:0;
+    text-align:center;
+    color:#f0ca44;
+    font-family: "Dancing Script", cursive;
+    display:table-cell;
+    vertical-align:middle;
+    font-size:130px;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {opacity: 0;}
+    50:% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+#slide-1 {
+    background-image:url(../images/hero-image.jpg);
+    height:100vh;
+}
+
+
+/* ======================= */
+/* ====== PROJECTS ======= */
+/* ======================= */
+.member-image {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    background: rgb(62,36,87);
+    box-shadow: 0 0 0 7px rgba(62,36,87,.33);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -203px 0 0 -203px;
+}
+
+.member-image img {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img {
+    vertical-align: middle;
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+}
+
+.team:before {
+    position: absolute;
+    width: 25%;
+    left: 25%;
+    top: 50%;
+    margin-left: -100px;
+    content: "";
+    height: 1px;
+    background-color: rgba(229,150,240,0.3);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.team {
+    height: 100%;
+}
+
+.team:after {
+    position: absolute;
+    height: 80%;
+    left: 50%;
+    top: 10%;
+    margin-left: -100px;
+    width: 1px;
+    background-color: rgba(229,150,240,0.3);
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+    content: '';
+}
+
+.member-right, .member-left {
+    position: absolute;
+    height: 100%;
+    width: 520px;
+    margin-left: -620px;
+    top: 0;
+    left: 50%;
+}
+
+.member-right {
+    margin-left: 0;
+    height: 400%;
+    width: 720px;
+    margin-left: -100px;
+}
+
+.member-entry {
+    color: #fff;
+    display: table;
+    height: 25%;
+    vertical-align: middle;
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.member-entry-inner {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.member-entry h2 {
+    font-size: 47px;
+    line-height: 53px;
+    color: #fff;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.member-entry h2 span {
+    display: block;
+    font-weight: 100;
+}
+
+.member-entry p {
+    font-size: 20px;
+    line-height: 33px;
+    padding-bottom: 33px;
+    font-family: 'eurostile', sans-serif;
+}

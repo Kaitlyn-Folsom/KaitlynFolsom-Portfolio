@@ -48,6 +48,16 @@ table {
 	border-spacing: 0;
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
 .overlay { 
     background-color:rgba(0, 0, 0, 0.7);
     padding: 60px;
@@ -142,7 +152,7 @@ table {
 }
 
 .logo {
-    background: url(images/new/logo.png) no-repeat 0 0;
+    background: url(../images/scroll-arrow.png) no-repeat 0 0;
     width: 214px;
     height: 44px;
     position: absolute;
@@ -194,7 +204,7 @@ a {
     position: absolute;
     width: 26px;
     height: 26px;
-    background: url(images/ico-menu.png) no-repeat 0 0;
+    background: url(../images/scroll-arrow.png) no-repeat 0 0;
     left: 29px;
     top: 23px;
 }
@@ -352,7 +362,7 @@ a [class^="icon-"], a [class*=" icon-"] {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(images/image-overlay.png) repeat-x 0 bottom;
+    /* background: url(../images/scroll-arrow.png) repeat-x 0 bottom; */
     content: '';
 }
 
@@ -438,6 +448,123 @@ a [class^="icon-"], a [class*=" icon-"] {
     left: 50%;
     z-index: 3;
     background: url(../images/scroll-arrow.png) no-repeat 0 0;
+}
+
+/* ======================= */
+/* ====== ABOUT ========= */
+/* ======================= */
+
+.panel-about img {
+    height:300px; 
+    width:auto;
+}
+
+
+/* ======================= */
+/* ====== SKILLS ========= */
+/* ======================= */
+
+.services {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    left: 0;
+    top: 0;
+}
+
+.services .panel-head {
+    text-align: center;
+    background-color: #262626;
+}
+
+.panel-head {
+    position: absolute;
+    height: 20%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.panel-head .shell {
+    display: table;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.panel-head-inner {
+    -webkit-transition: padding-top 0.3s;
+    -moz-transition: padding-top 0.3s;
+    -ms-transition: padding-top 0.3s;
+    -o-transition: padding-top 0.3s;
+    transition: padding-top 0.3s;
+}
+
+.panel-head-inner {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.services .panel-head h2 {
+    color: #d31a6e;
+}
+
+.panel-head h2 {
+    font-family: 'eurostile', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+}
+h2 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.panel-head p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.service-first {
+    margin-left: -615px;
+}
+
+.service {
+    position: absolute;
+    height: 80%;
+    top: 20%;
+    left: 50%;
+    width: 290px;
+    padding: 0 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.service-third .service-img, .service-first .service-img {
+    margin-top: 40px;
+}
+
+.service-img {
+    display: block;
+    margin: 64px auto 44px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.service-second {
+    margin-left: -205px;
+    background-color: #191919;
+}
+
+.service-third {
+    margin-left: 205px;
 }
 
 

@@ -29,9 +29,9 @@
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="homepage panel-active-0 header-expanded" data-gr-c-s-loaded="true">
-<!-- 
-<div class="loading"></div> -->
+<body class="homepage loaded panel-active-0 header-expanded" data-gr-c-s-loaded="true">
+
+<!-- <div class="loading"></div> -->
 
 <header class="header cf">
 	<a href="/" class="logo"><span>Portfolio</span></a>
@@ -56,15 +56,15 @@
 	<div class="panel-center">
 		<div class="fullscreen fsr-container" data-menu-top="0p" style="background-image: url('assets/images/hero-image.jpg');">
 			<div class="overlay">
-		<div class="shell">
-			
-			<div class="panel-center-inner">
-				<h1>Kaitlyn Folsom</h1>
-				<h3>Web Developer &amp; Designer</h3>
-			</div><!-- /.panel-center-inner -->
+				<div class="shell">
+					
+					<div class="panel-center-inner">
+						<h1>Kaitlyn Folsom</h1>
+						<h3>Web Developer &amp; Designer</h3>
+					</div><!-- /.panel-center-inner -->
+				</div>
+			</div><!-- /.shell -->
 		</div>
-		</div><!-- /.shell -->
-	</div>
 	</div><!-- /.panel-center -->
 	
 	<a href="#services" class="navigate" data-menu-top="100p"></a>
@@ -74,10 +74,25 @@
 	<div class="services">		
 		<div class="panel-head">
 			<div class="shell">
-				<h2>A Little About Me</h2>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p> 
-					<img src="assets/images/profile.jpg" class="service-img" alt="">
+				<div class="row">
+					<div class="col-md-6 personal-description">
+						<h2>A Little About Me</h2>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="col-md-6">
+						<img src="assets/images/profile.jpg" class="service-img" alt="">
+					</div>					
+				</div>
+				<div class="row">
+						<div class="col-md-6">
+							<img src="assets/images/profile.jpg" alt="">
+						</div>
+						<div class="col-md-6 professional-description">
+							<h2>Professional Background</h2>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+						</div>					
+					</div>
+									
 			</div><!-- /.shell -->
 		</div><!-- /.panel-head -->
 	</div><!-- /.services -->
@@ -94,9 +109,9 @@
 		</div><!-- /.panel-head -->
                 
 		<div class="service service-first">
-			<img src="assets/.DS_Store" class="service-img" alt="">
+			<img src="" class="service-img" alt="">
 			<h2>FRONTEND</h2>
-			<p><strong>Brand positioning, identity design</strong>, and <strong>user experience planning</strong> round out our marketing expertise. We put in the leg work to make sure your idea is optimally positioned to dominate the world, and we do it with your feedback in mind at each and every step.</p>
+			<p><strong>HTML </strong><strong>CSS</strong> </p>
 			<div class="service-arrow service-arrow-1"></div><!-- /.service-arrow -->
 			<div class="service-arrow service-arrow-3"></div><!-- /.service-arrow -->
 		</div><!-- /.service -->
@@ -181,44 +196,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	 <script type="text/javascript" src="./assets/script/skrollr.menu.js"></script>
+
 	<script type="text/javascript" src="./assets/script/skrollr.min.js"></script>
-
-    <!-- <script type="text/javascript">
-		var s = skrollr.init();
-		var body = $('body');
-		var winW = $('window').width();
-		var winH = $('window').height();
-
-		var linkScrollDuration = 800;
-	s = skrollr.init({
-		forceHeight:false,
-		smoothScrollingDuration:linkScrollDuration,
-		beforerender: function(data){
-			// if (body.hasClass('video-active')){
-			// 	return false;
-			// }
-		},
-		render: function(data){
-            var isHomepage = body.hasClass('homepage');
-			if (isHomepage){
-				var secMax = data.maxTop/winH;
-				var curSecIdx = Math.round(data.curTop / winH);
-				
-				for ( i=0; i <= secMax; i++){
-					body.removeClass('panel-active-'+i)
-				}
-				
-				body.addClass('panel-active-'+curSecIdx)
-			}
-		}
-	});
-	
-	skrollr.menu.init(s, {
-		duration: linkScrollDuration
-	});
-	
-	</script> -->
+	<script type="text/javascript" src="./assets/script/skrollr.menu.js"></script>
 	<script src="assets/script/script.js"></script>
 
 </body>

@@ -18,79 +18,114 @@
   
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- <link rel="stylesheet" href="assets/css/queries.css"> -->
+
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script" rel="stylesheet">
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 
-<body>
+<body class="homepage panel-active-0 header-expanded" data-gr-c-s-loaded="true">
+<!-- 
+<div class="loading"></div> -->
 
-<header class="header" id="header">
-    <div class="overlay">
-        <h1>Kaitlyn Folsom</h1>
-    </div>
-        
+<header class="header cf">
+	<a href="/" class="logo"><span>Portfolio</span></a>
+
+	<a href="#" class="nav-toggle notext"><i class="ico-menu"></i></a>
+	
+	<nav class="nav">
+		<ul class="cf">
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#" data-popup="">PROJECTS</a></li>
+			<li><a href="#" data-popup="">CONTACT</a></li>
+			<li class="divider-mobile"></li><!-- /.divider-mobile -->
+			<li class="mail-mobile"><a href="#">kaitlynmfolsom@gmail.com</a></li><!-- /.divider-mobile -->
+			<li><a href="http://www.github.com/jewel0106" class="btn-social"><i class="fab fa-github"></i><span class="btn-text-mobile">Github</span></a></li>
+			<li><a href="http://twitter.com/joshsears" class="btn-social"><i class="icon-twitter"></i><span class="btn-text-mobile">Instagram</span></a></li>
+		</ul>
+	</nav><!-- /.nav -->
 </header>
 
-<!-- <section id="slide-1" class="homeSlide">
-        <div class="bcg"
-            data-center="background-position: 100% 100%;"
-            data-top-bottom="background-position: 50% -100px;"
-            data-anchor-target="#slide-1"
-            
-        >
-            <div class="hsContainer">
-                <div class="hsContent"
-                    data-center="bottom: 200px; opacity: 1"
-                    data-top="bottom: 1200px; opacity: 0"
-                    data-anchor-target="#slide-1 h2"
-                >
-                    <h2>Simple parallax scrolling is...</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="panel panel-intro skrollable skrollable-between" id="intro" data--100p="transform:translate(0,100%)" data--50p="transform:translate(0,0%)" data-0p="transform:translate(0,0%)" data-100p="transform:translate(0,-100%)" style="transform: translate(0px, 0%);">
 
-    <section id="slide-3" class="homeSlide">
-            <div class="bcg"
-                data-center="background-position: 50% 0px;"
-                data-top-bottom="background-position: 50% -100px;"
-                data-bottom-top="background-position: 50% 100px;"
-                data-anchor-target="#slide-3"
-            >
-                <div class="hsContainer">
-                    <div class="hsContent"
-                        data--50-bottom="opacity: 0;"
-                        data--200-bottom="opacity: 1;"
-                        data-center="opacity: 1"
-                        data-200-top="opacity: 0"
-                        data-anchor-target="#slide-3 p"
-                    >
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<section class="about">
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section> -->
-
-<!-- <section class="skills">
-
-</section> -->
-
-<section class="projects">
-
-</section>
-<div class="panel-team panel skrollable skrollable-after" id="team" data-300p="transform:translate(0,100%)" data-350p="transform:translate(0,0%)" data-400p="transform:translate(0,0%)" style="transform: translate(0px, 0%);">
+	<div class="panel-center">
+		<div class="fullscreen fsr-container" data-menu-top="0p" style="background-image: url('assets/images/hero-image.jpg');">
+			<div class="overlay">
+		<div class="shell">
+			
+			<div class="panel-center-inner">
+				<h1>Kaitlyn Folsom</h1>
+				<h3>Web Developer &amp; Designer</h3>
+			</div><!-- /.panel-center-inner -->
+		</div>
+		</div><!-- /.shell -->
+	</div>
+	</div><!-- /.panel-center -->
 	
-	<div class="team skrollable skrollable-between" data-350p="background-color:rgb(106,60,149)" data-400p="background-color:rgb(106,60,149)" data-500p="background-color:rgb(218,9,154)" data-600p="background-color:rgb(56,88,161)" data-700p="background-color:rgb(35,206,196)" style="background-color: rgb(80, 76, 160);">
+	<a href="#services" class="navigate" data-menu-top="100p"></a>
+</div>
+
+<div class="panel panel-about skrollable skrollable-between" id="about" data-0p="transform:translate(0,100%)" data-50p="transform:translate(0,0%)" data-100p="transform:translate(0,0%)" data-200p="transform:translate(0,-100%)" style="transform: translate(0px, 100%);">
+	<div class="services">		
+		<div class="panel-head">
+			<div class="shell">
+				<h2>A Little About Me</h2>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p> 
+					<img src="assets/images/profile.jpg" class="service-img" alt="">
+			</div><!-- /.shell -->
+		</div><!-- /.panel-head -->
+	</div><!-- /.services -->
+</div>
+
+<div class="panel panel-services skrollable skrollable-between" id="skills" data-100p="transform:translate(0,100%)" data-150p="transform:translate(0,0%)" data-200p="transform:translate(0,0%)" data-300p="transform:translate(0,-100%)" style="transform: translate(0px, 100%);">
+	<div class="services">
+		<div class="panel-head">
+			<div class="shell">
+				<div class="panel-head-inner">
+					<h2>SKILLS</h2>
+				</div><!-- /.panel-head-inner -->
+			</div><!-- /.shell -->
+		</div><!-- /.panel-head -->
+                
+		<div class="service service-first">
+			<img src="assets/.DS_Store" class="service-img" alt="">
+			<h2>FRONTEND</h2>
+			<p><strong>Brand positioning, identity design</strong>, and <strong>user experience planning</strong> round out our marketing expertise. We put in the leg work to make sure your idea is optimally positioned to dominate the world, and we do it with your feedback in mind at each and every step.</p>
+			<div class="service-arrow service-arrow-1"></div><!-- /.service-arrow -->
+			<div class="service-arrow service-arrow-3"></div><!-- /.service-arrow -->
+		</div><!-- /.service -->
+		<div class="service service-second">
+			<img src="" class="service-img" alt="">
+			<h2>BACKEND</h2>
+			<p>Pixel perfect <strong>web design</strong>, <strong>app design</strong>, and <strong>copywriting</strong> ensure that your product is a fully polished beast. Get ready to wipe the floors with your competitors, or, if that’s too dramatic, make some jaws drop, you know—<i>floorward.</i></p>
+		</div><!-- /.service -->
+		<div class="service service-third">
+			<img src="" class="service-img" alt="">
+			<h2>OTHER</h2>
+			<p>Beauty and brains is how we roll. We currently offer tip-top <strong>iOS, Ruby on Rails</strong> &amp; <strong>Wordpress development</strong>. Along the way, we’ll take care of every detail and prep for a stable, search engine ready release of your responsive website or mobile application.</p>
+			<div class="service-arrow service-arrow-2"></div><!-- /.service-arrow -->
+			<div class="service-arrow service-arrow-4"></div><!-- /.service-arrow -->
+		</div><!-- /.service -->
+		<div class="services-mobile">
+			<h2>OUR SERVICES &amp; PROCESS</h2>
+			<h3>Planning  <br> Design &amp; UX <br> Development</h3>
+			<a href="modals/quote.html" data-popup="" class="btn-launch"><span>LAUNCH</span></a>
+			<div class="service-arrow service-arrow-3"></div><!-- /.service-arrow -->
+			<div class="service-arrow service-arrow-4"></div><!-- /.service-arrow -->
+		</div><!-- /.services-mobile -->
+	</div><!-- /.services -->
+</div>
+
+<div class="panel-team panel skrollable skrollable-before" id="team" data-150p="transform:translate(0,100%)" data-250p="transform:translate(0,0%)" data-500p="transform:translate(0,0%)" style="transform: translate(0px, 0%);">
+	
+	<div class="team skrollable skrollable-between" 
+	data-350p="background-color:rgb(0,20,40)" data-400p="background-color:rgb(0, 0, 0)" data-500p="background-color:rgb(0,102,204)" data-600p="background-color:rgb(65, 68, 40)" data-700p="background-color:rgb(128,0,32)" style="background-color: rgb(255, 255, 255);">
 		<div class="member-left">
 			<div class="member-image">
 				<img src="assets/images/rxMinder.png" data-400p="opacity:1" data-500p="opacity:0" alt="" class="skrollable skrollable-after" style="opacity: 0;">
@@ -102,33 +137,32 @@
 		<div class="member-right skrollable skrollable-between" data-350p="transform:translate(0,0%)" data-400p="transform:translate(0,0%)" data-500p="transform:translate(0,-25%)" data-550p="transform:translate(0,-25%)" data-600p="transform:translate(0,-50%)" data-650p="transform:translate(0,-50%)" data-700p="transform:translate(0,-75%)" style="transform: translate(0px, -42.668%);">
 			<div class="member-entry">
 				<div class="member-entry-inner">
-					<h2>Josh Sears <span>Design &amp; Marketing</span></h2>
-					<p>Founder of Papertelevision, Josh is also the lead Creative Director on every project that comes through our virtual doors. Having worked with clients like Notre Dame, RocketHub, and Project Bly on multi-tier projects, he’s nabbed recognition from the likes of TechCrunch, ABC News, the Today Show, and Wired magazine. Neat!</p>
-					<p>With a background in marketing and a creative dude through and through, Josh oversees each project from conception, to successful launch.</p>
+					<h2>RxMinder <span>React / ES6</span></h2>
+					<p>A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.</p>
 				</div><!-- /.member-entry-inner -->
 			</div><!-- /.member-entry -->
 			
 			<div class="member-entry">
 				<div class="member-entry-inner">
-					<h2>Matt Sears <span>Developer</span></h2>
-					<p>Matt Sears was born and raised in Dayton, Ohio and spent most of his childhood drawing and painting. He ventured into the digital world by earning a degree in computer science and business, and founded Littlelines, a Ruby on Rails development studio, in 2007.</p>
-					<p>A proud Ruby on Rails engineer, these days Matt strives to combine the high-tech with the aesthetically pleasing. When he is not running Littlelines like a pro he enjoys bike rides with his lady and sharing Instagram shots of his dogs Simon and Griffin.</p>
+					<h2>Dinner &amp; a Show <span>Javascript / JQuery</span></h2>
+					<p>
+						This application is a resource for finding and purchasing broadway theatre tickets and then pairing it with a restaurant that is nearby. The app uses 4 APIsL: SeatGeek for tickets, Yelp for restaurants, Google Maps for directions and OpenWeather for current weather.</p>
 				</div><!-- /.member-entry-inner -->
 			</div><!-- /.member-entry -->
 			
 			<div class="member-entry">
 				<div class="member-entry-inner">
-					<h2>Colin Dullaghan <span>Writing &amp; Strategy</span></h2>
-					<p>Since his earliest days as a zygote<sup>19</sup>, Colin has displayed admirable acumen<sup>14</sup>  and has so far written a phalanx<sup>21</sup>  of campaigns, taglines, websites and names for clients in industries including retail, banking, consulting, healthcare, publishing, professional services and not-for-profit. Oh, and he'll *destroy* you in Words With Friends. </p>
-					<p>Colin is a master of words and adds that crucial, final polish to every project.</p>
+					<h2>Friend Forum <span>Javascript / Jquery / MySQL / Node</span></h2>
+					<p>A social media web application those who wish to have professional discussions with people around the country on topics you share interests in. Chat and debate through our live chat feature specific to each topic or send out a mesage in our global feed for all users to see.</p>
 				
 				</div><!-- /.member-entry-inner -->
 			</div><!-- /.member-entry -->
 			
 			<div class="member-entry">
 				<div class="member-entry-inner">
-					<h2>Evan Hunt <span>Photographer</span></h2>
-					<p>It was the romance of aviation that led Evan to love the art of shaping light and movement into a venture for storytelling. Evan began his photography career in the music industry, traveling the nation photographing some of the largest acts in the world on large commercial sets for major record labels.</p> <p>Evan also extends his exceptional talent to our projects, including the photos you see throughout this site.</p>
+					<h2>Wine Trivia <span>Javascript</span></h2>
+					<p>
+						This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. </p>
 				</div><!-- /.member-entry-inner -->
 			</div><!-- /.member-entry -->
 			
@@ -147,17 +181,46 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/script/skrollr.min.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init();
-    </script>
-    <!-- <script type="text/javascript" src="assets/script/jquery.switchstyle.js"></script>
-   
-    <script> 
-    $('#header').parallax('background-position-y', -0.01);
-    $('.overlay').parallax('margin-left', 0.3);
+	 <script type="text/javascript" src="./assets/script/skrollr.menu.js"></script>
+	<script type="text/javascript" src="./assets/script/skrollr.min.js"></script>
 
-    </script> -->
+    <!-- <script type="text/javascript">
+		var s = skrollr.init();
+		var body = $('body');
+		var winW = $('window').width();
+		var winH = $('window').height();
+
+		var linkScrollDuration = 800;
+	s = skrollr.init({
+		forceHeight:false,
+		smoothScrollingDuration:linkScrollDuration,
+		beforerender: function(data){
+			// if (body.hasClass('video-active')){
+			// 	return false;
+			// }
+		},
+		render: function(data){
+            var isHomepage = body.hasClass('homepage');
+			if (isHomepage){
+				var secMax = data.maxTop/winH;
+				var curSecIdx = Math.round(data.curTop / winH);
+				
+				for ( i=0; i <= secMax; i++){
+					body.removeClass('panel-active-'+i)
+				}
+				
+				body.addClass('panel-active-'+curSecIdx)
+			}
+		}
+	});
+	
+	skrollr.menu.init(s, {
+		duration: linkScrollDuration
+	});
+	
+	</script> -->
+	<script src="assets/script/script.js"></script>
+
 </body>
 
 </html>

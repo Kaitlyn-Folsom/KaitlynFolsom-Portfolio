@@ -1,84 +1,3 @@
-// var body = $('body');
-// var winW = $('window').width(); 
-// var winH = $('window').height(); 
-
-
-// initPanels()
-
-
-//     var linkScrollDuration = 800;
-// 	s = skrollr.init({
-// 		smoothScrollingDuration:linkScrollDuration,
-// 		beforerender: function(data){
-// 			if (body.hasClass('video-active')){
-// 				return false;
-// 			}
-// 		},
-// 		render: function(data){
-//             var isHomepage = body.hasClass('homepage');
-// 			if (isHomepage){
-// 				var secMax = data.maxTop/winH;
-// 				var curSecIdx = Math.round(data.curTop / winH);
-				
-// 				for ( i=0; i <= secMax; i++){
-// 					body.removeClass('panel-active-'+i)
-// 				}
-				
-// 				body.addClass('panel-active-'+curSecIdx)
-// 			}
-// 		}
-// 	});
-	
-// 	skrollr.menu.init(s, {
-// 		duration: linkScrollDuration
-// 	});
-	
-
-// /////////////////////
-// // window events
-// /////////////////////
-// 	$(window).on('load', function(){ // load
-		
-// 		var winW = $(window).width();
-// 		var winH = $(window).height();
-		
-// 		$('body').addClass('loaded');
-	
-
-// 	}).on('reisze', function(){
-// 		var winW = $(window).width();
-// 		var winH = $(window).height();
-//     });
-    
-//     $('.nav-toggle').on('click', function(e){
-// 		e.preventDefault()
-//         $('body').toggleClass('header-expanded');
-//         console.log('clicked');
-        
-//     });
-    
-//     function initPanels(){
-//         var panels = $('.panel');
-// 		$.each(panels, function(panelIdx){
-// 			var panel = panels.eq(panelIdx);
-// 				// panelStart = panelIdx == 0 ? '0%' : '100%',
-// 			panel.find('.navigate').attr('data-menu-top', (panelIdx+1)*100+'p')
-// 			panel.find('.goto').attr('data-menu-top', '0p')
-// 			panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
-// 			panel.find('.video-holder .close').attr('data-menu-top', (panelIdx)*100+'p')
-			
-			
-// 			panel.attr('data-'+(panelIdx-1)*100+'p', 'transform:translate(0,100%)') // -1 - in-start
-// 			panel.attr('data-'+(panelIdx-0.5)*100+'p', 'transform:translate(0,0%)') // -0.5 - in-end
-// 			panel.attr('data-'+(panelIdx)*100+'p', 'transform:translate(0,0%)') // 0 - out-start
-			
-// 			if (panelIdx + 1 < panels.length){
-// 				panel.attr('data-'+(panelIdx+1)*100+'p', 'transform:translate(0,-100%)') // +1 - out-end
-// 			}
-			
-			
-// 		})
-// 	}
 
 $(function() {
 
@@ -92,10 +11,14 @@ $(function() {
 	var	panelsLen = panels.length;
 	var	header = $('.header');
 	var	linkScrollDuration = 800;
-	var	clientVideo = $('.client-video .jp-jplayer');
 	var	isHomepage = body.hasClass('homepage');
 		
-	
+// 	$(".personal-description").waypoint(function(direction){
+
+// 		$(".personal-description").addClass("animated fadeInLeft");
+// 	  }, {
+// 	  	offset: "50%"
+//   });
 	
 	//////////////////////////
 	// delegated events
@@ -384,25 +307,15 @@ $(function() {
 	/////////////////////
 	// window events
 	/////////////////////
-	win.on('load', function(){ // load
+	doc.ready(function(){ // load
 		
 		winW = win.width();
 		winH = win.height();
 		
-		body.addClass('loaded');
-		
-		$('.fullscreen img, img.fullscreen, .client-top img').fullscreener();
-		
-		$('.tst-slides').carouFredSel({
-			auto:false,
-			items: {
-				visible:1
-			},
-			swipe:true,
-			height:'variable',
-			responsive: true,
-			next: '.tst-next'
-		})
+
+		setTimeout(function(){ 
+			body.addClass('loaded');
+		}, 1000);
 
 	}).on('reisze', function(){
 		winW = win.width();
@@ -412,16 +325,6 @@ $(function() {
 	//////////
 	// funcs
 	/////////
-	
-	// function mailValidation(email) {
-	// 	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-
-	// 	if (emailReg.test(email) && email.length != 0) {
-	// 		return true;
-	// 	} else {
-	// 		return false;
-	// 	}
-	// };
 
 	function initPanels(){
 		$.each(panels, function(panelIdx){
@@ -429,8 +332,8 @@ $(function() {
 				// panelStart = panelIdx == 0 ? '0%' : '100%',
 			panel.find('.navigate').attr('data-menu-top', (panelIdx+1)*100+'p')
 			panel.find('.goto').attr('data-menu-top', '0p')
-			panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
-			panel.find('.video-holder .close').attr('data-menu-top', (panelIdx)*100+'p')
+			// panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
+			// panel.find('.video-holder .close').attr('data-menu-top', (panelIdx)*100+'p')
 			
 			
 			panel.attr('data-'+(panelIdx-1)*100+'p', 'transform:translate(0,100%)') // -1 - in-start

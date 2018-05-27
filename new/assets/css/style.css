@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+p {
+    color:#fff;
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -65,23 +69,17 @@ h2 {
     margin:80px;
     width:90%;
     display:table;
-    animation-name: fadeIn;
-    animation-duration: 3s ;
-}
-
-/* The animation code */
-@keyframes fadeIn {
-    0%  {opacity: 0;}
-    10% {opacity: 0.10;}
-    25% {opacity:0.25;}
-    50% {opacity:0.5;}
-    75% {opacity:0.75;}
-    100% {opacity:1;}
 }
 
 /* ======================= */
 /* ====== LOADING ======= */
 /* ======================= */
+
+.loaded .loading {
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity=0);
+}
 
 .loading {
     transition: opacity .4s;
@@ -164,7 +162,6 @@ h2 {
 }
 
 a {
-    color: #225260;
     text-decoration: none;
     cursor: pointer;
 }
@@ -214,12 +211,6 @@ a {
     height: 26px;
     display: inline-block;
     background: url(../images/scroll-arrow.png) no-repeat 0 0;
-}
-
-a {
-    color: #225260;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .nav {
@@ -312,7 +303,7 @@ a [class^="icon-"], a [class*=" icon-"] {
 
 
 /* ======================= */
-/* ====== DEFAULT ======= */
+/* ======== DEFAULT ======= */
 /* ======================= */
 
 .panel {
@@ -362,7 +353,7 @@ a [class^="icon-"], a [class*=" icon-"] {
     top: 0;
     width: 100%;
     height: 100%;
-    /* background: url(../images/scroll-arrow.png) repeat-x 0 bottom; */
+    background: url(../images/scroll-arrow.png) repeat-x 0 bottom;
     content: '';
 }
 
@@ -371,7 +362,6 @@ a [class^="icon-"], a [class*=" icon-"] {
     display: table;
     vertical-align: middle;
     pointer-events: none;
-  
 }
 
 .shell {
@@ -392,28 +382,28 @@ a [class^="icon-"], a [class*=" icon-"] {
     font-size: 140px;
     line-height: 128px;
     font-weight: normal;
-    color: #fff;
+    color: #1a9be6;
     padding-bottom: 40px;
 }
 
 .loaded .panel-center p, .loaded .panel-center h1 {
-    opacity: .78;
-    filter: alpha(opacity=78);
+    opacity: .9;
+    filter: alpha(opacity=90);
 }
 
 .panel-center h1, .panel-center h3, .panel-center p {
     opacity: 0;
     filter: alpha(opacity=0);
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -ms-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    transition: opacity 3s;
 }
 
 .loaded .panel-center h3 {
-    opacity: .7;
-    filter: alpha(opacity=70);
+    opacity: .9;
+    filter: alpha(opacity=90);
 }
 
 .panel-center h3 {
@@ -427,8 +417,8 @@ a [class^="icon-"], a [class*=" icon-"] {
 }
 
 .loaded .panel-center p, .loaded .panel-center h1 {
-    opacity: .78;
-    filter: alpha(opacity=78);
+    opacity: .98;
+    filter: alpha(opacity=98);
 }
 
 .panel-center p {
@@ -439,13 +429,15 @@ a [class^="icon-"], a [class*=" icon-"] {
     padding-bottom: 14px;
 }
 
-.panel-client .navigate, .panel-intro .navigate {
-    width: 71px;
-    height: 35px;
-    margin-left: -35px;
+.scroll-arrow-link {
+    cursor:pointer;
+}
+
+ .navigate {
+    width: 300px;
+    height: 200px;
     position: absolute;
-    bottom: 17px;
-    left: 50%;
+    left: 37%;
     z-index: 3;
     background: url(../images/scroll-arrow.png) no-repeat 0 0;
 }
@@ -454,9 +446,41 @@ a [class^="icon-"], a [class*=" icon-"] {
 /* ====== ABOUT ========= */
 /* ======================= */
 
+.about {
+    display:table;
+    padding:0px 80px;
+}
+
 .panel-about img {
     height:300px; 
     width:auto;
+    position:relative;
+    z-index:2;
+}
+
+.panel-about .photo-background {
+    width:300px;
+    height:300px;
+    background-color:#d31a6e;
+    position:relative;
+    top:-310px;
+    left:50px;
+}
+
+.personal-description {
+    text-align:justify;
+    display:table-cell;
+    vertical-align:middle;
+    /* padding:0px 50px; */
+}
+
+.image-col {
+    height:350px;
+    padding:100px 0px 100px; 
+}
+
+.personal-description h2{
+    color:#d31a6e
 }
 
 
@@ -464,7 +488,7 @@ a [class^="icon-"], a [class*=" icon-"] {
 /* ====== SKILLS ========= */
 /* ======================= */
 
-.services {
+.section{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -472,11 +496,13 @@ a [class^="icon-"], a [class*=" icon-"] {
     background-color: #212121;
     left: 0;
     top: 0;
+    margin:0;
+    /* padding:0; */
 }
 
-.services .panel-head {
+.section .panel-head {
     text-align: center;
-    background-color: #262626;
+    background-color: hsl(0, 0%, 15%);
 }
 
 .panel-head {
@@ -508,7 +534,7 @@ a [class^="icon-"], a [class*=" icon-"] {
     vertical-align: middle;
 }
 
-.services .panel-head h2 {
+.section .panel-head h2 {
     color: #d31a6e;
 }
 
@@ -528,9 +554,7 @@ h2 {
     color: #fff;
 }
 
-.service-first {
-    margin-left: -615px;
-}
+
 
 .service {
     position: absolute;
@@ -541,6 +565,10 @@ h2 {
     padding: 0 60px;
     text-align: center;
     color: #fff;
+}
+
+.service-first {
+    margin-left: -615px;
 }
 
 .service-third .service-img, .service-first .service-img {
@@ -565,6 +593,34 @@ img {
 
 .service-third {
     margin-left: 205px;
+}
+
+.service-third .service-img, .service-first .service-img {
+    margin-top: 40px;
+}
+
+.service p strong {
+    font-weight: normal;
+    font-family: 'eurostile_demi', sans-serif;
+    color: #3ac8c0;
+}
+
+
+
+@media only screen and (max-height: 890px) {
+    .service p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .service h2 {
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+
+    .service-third .service-img {
+        width: 115px;
+    }
 }
 
 
@@ -654,7 +710,7 @@ img {
 }
 
 .member-entry {
-    color: #fff;
+    /* color: #fff; */
     display: table;
     height: 25%;
     vertical-align: middle;
@@ -672,7 +728,6 @@ img {
 .member-entry h2 {
     font-size: 47px;
     line-height: 53px;
-    color: #fff;
     font-weight: normal;
     padding-bottom: 20px;
 }
@@ -688,3 +743,7 @@ img {
     padding-bottom: 33px;
     font-family: 'eurostile', sans-serif;
 }
+
+/* ======================= */
+/* ====== CONTACT ======= */
+/* ======================= */

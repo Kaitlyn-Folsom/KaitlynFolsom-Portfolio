@@ -14,13 +14,15 @@
 	<title>Kaitlyn Folsom | Web developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1">
-	<meta name="description" content="Kaitlyn Folsom is a freelance creative web developer ready to create beautiful responsive web pages for any company's needs.">
+	<meta name="description" content="Kaitlyn Folsom is a creative web developer ready to create beautiful responsive web pages for any company's needs.">
   
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- <link rel="stylesheet" href="assets/css/queries.css"> -->
 
@@ -29,12 +31,12 @@
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="homepage loaded panel-active-0 header-expanded" data-gr-c-s-loaded="true">
+<body class="homepage panel-active-0" data-gr-c-s-loaded="true">
 
-<!-- <div class="loading"></div> -->
+<div class="loading"></div>
 
-<header class="header cf">
-	<a href="/" class="logo"><span>Portfolio</span></a>
+<!-- <header class="header cf">
+	<a href="/" class="logo"><span>KF</span></a>
 
 	<a href="#" class="nav-toggle notext"><i class="ico-menu"></i></a>
 	
@@ -43,71 +45,106 @@
 			<li><a href="#">ABOUT</a></li>
 			<li><a href="#" data-popup="">PROJECTS</a></li>
 			<li><a href="#" data-popup="">CONTACT</a></li>
-			<li class="divider-mobile"></li><!-- /.divider-mobile -->
-			<li class="mail-mobile"><a href="#">kaitlynmfolsom@gmail.com</a></li><!-- /.divider-mobile -->
+			<li class="divider-mobile"></li>
+			<li class="mail-mobile"><a href="#">kaitlynmfolsom@gmail.com</a></li>
 			<li><a href="http://www.github.com/jewel0106" class="btn-social"><i class="fab fa-github"></i><span class="btn-text-mobile">Github</span></a></li>
 			<li><a href="http://twitter.com/joshsears" class="btn-social"><i class="icon-twitter"></i><span class="btn-text-mobile">Instagram</span></a></li>
 		</ul>
-	</nav><!-- /.nav -->
-</header>
+	</nav>
+</header> -->
 
 <div class="panel panel-intro skrollable skrollable-between" id="intro" data--100p="transform:translate(0,100%)" data--50p="transform:translate(0,0%)" data-0p="transform:translate(0,0%)" data-100p="transform:translate(0,-100%)" style="transform: translate(0px, 0%);">
 
 	<div class="panel-center">
-		<div class="fullscreen fsr-container" data-menu-top="0p" style="background-image: url('assets/images/hero-image.jpg');">
-			<div class="overlay">
+		<div class="fullscreen fsr-container" data-menu-top="0p" style="background-image: url('assets/images/hero-image-no-color.jpg');">
+			<div class="overlay animated fadeIn">
 				<div class="shell">
 					
-					<div class="panel-center-inner">
+					<div class="panel-center-inner animated fadeIn">
 						<h1>Kaitlyn Folsom</h1>
 						<h3>Web Developer &amp; Designer</h3>
+						<a href="#services" class="scroll-arrow-link" data-menu-top="100p"><img class="navigate" src="assets/images/scroll-arrow.png"></a>
 					</div><!-- /.panel-center-inner -->
 				</div>
 			</div><!-- /.shell -->
 		</div>
 	</div><!-- /.panel-center -->
 	
-	<a href="#services" class="navigate" data-menu-top="100p"></a>
+	
 </div>
 
-<div class="panel panel-about skrollable skrollable-between" id="about" data-0p="transform:translate(0,100%)" data-50p="transform:translate(0,0%)" data-100p="transform:translate(0,0%)" data-200p="transform:translate(0,-100%)" style="transform: translate(0px, 100%);">
-	<div class="services">		
-		<div class="panel-head">
-			<div class="shell">
-				<div class="row">
-					<div class="col-md-6 personal-description">
-						<h2>A Little About Me</h2>
-						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-6">
-						<img src="assets/images/profile.jpg" class="service-img" alt="">
-					</div>					
+<section id="slide-1" class="homeSlide">
+
+		<div class="bcg"
+	
+			data-center="background-position: 50% 0px;"
+	
+			data-top-bottom="background-position: 50% -100px;"
+	
+			data-anchor-target="#slide-1"
+	
+		>
+	
+			<div class="hsContainer">
+	
+				<div class="hsContent"
+	
+					data-center="bottom: 200px; opacity: 1"
+	
+					data-top="bottom: 1200px; opacity: 0"
+	
+					data-anchor-target="#slide-1 h2"
+	
+				>
+	
+					<h2>Simple parallax scrolling is...</h2>
+	
 				</div>
-				<div class="row">
-						<div class="col-md-6">
-							<img src="assets/images/profile.jpg" alt="">
-						</div>
-						<div class="col-md-6 professional-description">
-							<h2>Professional Background</h2>
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-						</div>					
-					</div>
-									
-			</div><!-- /.shell -->
-		</div><!-- /.panel-head -->
+	
+			</div>
+	
+		</div>
+	
+	</section>
+
+<div class="panel panel-about skrollable skrollable-between" id="about" data-0p="transform:translate(0,100%)" data-50p="transform:translate(0,0%)" data-100p="transform:translate(0,0%)" data-200p="transform:translate(0,-100%)" style="transform: translate(0px, 100%);">
+	<div class="section about">		
+		<div class="row">
+			<div class="col-md-6 personal-description align-self-center" data-bottom-top="opacity:0;" 
+			data-center-top="opacity:1;">
+				<h2>A Little About Me</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md-6 image-col" data-bottom-top="opacity:0; right:-50%;" 
+			data-center-top="opacity:1; right:0%;">
+				<img src="assets/images/profile.jpg" class="about-img" alt="">
+				<div class="photo-background"></div>			
+			</div>					
+		</div>
+		<div class="row">
+				<div class="col-md-6 image-col" data-bottom-top="opacity:0; left:-50%;" 
+				data-bottom="opacity:1; left:0;">
+					<img class="about-image" src="assets/images/profile.jpg" alt="">
+					<div class="photo-background"></div>
+				</div>
+				<div class="col-md-6 personal-description" data-bottom-top="opacity:0;" 
+				data-top="opacity:1;">
+					<h2>Professional Background</h2>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+				</div>					
+			</div>
 	</div><!-- /.services -->
 </div>
 
 <div class="panel panel-services skrollable skrollable-between" id="skills" data-100p="transform:translate(0,100%)" data-150p="transform:translate(0,0%)" data-200p="transform:translate(0,0%)" data-300p="transform:translate(0,-100%)" style="transform: translate(0px, 100%);">
-	<div class="services">
+	<div class="section services">
 		<div class="panel-head">
 			<div class="shell">
 				<div class="panel-head-inner">
-					<h2>SKILLS</h2>
+					<h2>SKILLS and Technologies</h2>
 				</div><!-- /.panel-head-inner -->
 			</div><!-- /.shell -->
 		</div><!-- /.panel-head -->
-                
 		<div class="service service-first">
 			<img src="" class="service-img" alt="">
 			<h2>FRONTEND</h2>
@@ -127,20 +164,13 @@
 			<div class="service-arrow service-arrow-2"></div><!-- /.service-arrow -->
 			<div class="service-arrow service-arrow-4"></div><!-- /.service-arrow -->
 		</div><!-- /.service -->
-		<div class="services-mobile">
-			<h2>OUR SERVICES &amp; PROCESS</h2>
-			<h3>Planning  <br> Design &amp; UX <br> Development</h3>
-			<a href="modals/quote.html" data-popup="" class="btn-launch"><span>LAUNCH</span></a>
-			<div class="service-arrow service-arrow-3"></div><!-- /.service-arrow -->
-			<div class="service-arrow service-arrow-4"></div><!-- /.service-arrow -->
-		</div><!-- /.services-mobile -->
 	</div><!-- /.services -->
 </div>
 
 <div class="panel-team panel skrollable skrollable-before" id="team" data-150p="transform:translate(0,100%)" data-250p="transform:translate(0,0%)" data-500p="transform:translate(0,0%)" style="transform: translate(0px, 0%);">
 	
 	<div class="team skrollable skrollable-between" 
-	data-350p="background-color:rgb(0,20,40)" data-400p="background-color:rgb(0, 0, 0)" data-500p="background-color:rgb(0,102,204)" data-600p="background-color:rgb(65, 68, 40)" data-700p="background-color:rgb(128,0,32)" style="background-color: rgb(255, 255, 255);">
+	data-350p="background-color:rgb(0,20,40); color:rgb(255, 255, 255);"  data-500p="background-color:rgb(0,102,204); color:rgb(0, 0, 0);" data-700p="background-color:rgb(128,0,32)" style="background-color: rgb(255, 255, 255);">
 		<div class="member-left">
 			<div class="member-image">
 				<img src="assets/images/rxMinder.png" data-400p="opacity:1" data-500p="opacity:0" alt="" class="skrollable skrollable-after" style="opacity: 0;">
@@ -186,10 +216,6 @@
 	
 </div>
 
-<!-- <section class="contact">
-
-</section> -->
-
 
 	<!-- SCRIPT -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -199,6 +225,7 @@
 
 	<script type="text/javascript" src="./assets/script/skrollr.min.js"></script>
 	<script type="text/javascript" src="./assets/script/skrollr.menu.js"></script>
+	<script src="assets/script/jquery.waypoints.min.js"></script>
 	<script src="assets/script/script.js"></script>
 
 </body>

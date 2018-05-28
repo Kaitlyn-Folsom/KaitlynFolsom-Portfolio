@@ -274,7 +274,7 @@ $(function() {
 	$('.nav-toggle').on('click', function(e){
 		e.preventDefault()
 		body.toggleClass('header-expanded')
-	})
+	});
 	
 	
 	initPanels()
@@ -311,11 +311,23 @@ $(function() {
 		
 		winW = win.width();
 		winH = win.height();
-		
 
 		setTimeout(function(){ 
 			body.addClass('loaded');
 		}, 1000);
+		
+		$('.tst-slides').carouFredSel({
+			auto:false,
+			items: {
+				visible:1
+			},
+			swipe:true,
+			height:'variable',
+			responsive: true,
+			next: '.tst-next'
+		});
+
+
 
 	}).on('reisze', function(){
 		winW = win.width();
@@ -332,7 +344,7 @@ $(function() {
 				// panelStart = panelIdx == 0 ? '0%' : '100%',
 			panel.find('.navigate').attr('data-menu-top', (panelIdx+1)*100+'p')
 			panel.find('.goto').attr('data-menu-top', '0p')
-			// panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
+			panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
 			// panel.find('.video-holder .close').attr('data-menu-top', (panelIdx)*100+'p')
 			
 			

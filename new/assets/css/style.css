@@ -175,6 +175,22 @@ a {
     cursor: pointer;
 }
 
+.header-expanded .nav-toggle .ico-menu {
+    -webkit-transform: rotate(450deg);
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    transform: rotate(450deg);
+}
+
+.header-expanded .logo, .header-expanded .nav {
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
 .nav-toggle {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -210,7 +226,7 @@ a {
     position: absolute;
     width: 26px;
     height: 26px;
-    background: url(../images/scroll-arrow.png) no-repeat 0 0;
+    background: url(../images/ico-menu.png) no-repeat 0 0;
     left: 29px;
     top: 23px;
 }
@@ -219,7 +235,7 @@ a {
     width: 26px;
     height: 26px;
     display: inline-block;
-    background: url(../images/scroll-arrow.png) no-repeat 0 0;
+    background: url(../images/ico-menu.png) no-repeat 0 0;
 }
 
 .nav {
@@ -472,20 +488,18 @@ a [class^="icon-"], a [class*=" icon-"] {
     height:300px;
     background-color:#d31a6e;
     position:relative;
-    top:-310px;
+    top:-330px;
     left:50px;
 }
 
 .personal-description {
     text-align:justify;
-    display:table-cell;
-    vertical-align:middle;
-    /* padding:0px 50px; */
+    margin-top:100px;
 }
 
 .image-col {
     height:350px;
-    padding:100px 0px 100px; 
+    padding:80px 0px 0px 100px; 
 }
 
 .personal-description h2{
@@ -632,6 +646,64 @@ img {
     }
 }
 
+/* ======================= */
+/* ====== PROJECTS ======= */
+/* ======================= */
+
+.panel-testimonials .caroufredsel_wrapper {
+    height: 100% !important;
+}
+
+.tst-next {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #3ac8c0 url(../images/scroll-arrow.png) no-repeat center center;
+    width: 84px;
+    z-index: 2;
+}
+
+.tst-slide {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tst-image {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+img {
+    vertical-align: middle;
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.tst-entry {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+}
+
+.tst-entry p {
+    font-size: 25px;
+    line-height: 42px;
+    font-family: 'eurostile', sans-serif;
+    color: #3e3e3e;
+    padding-bottom: 30px;
+}
+
+.tst-entry p.author {
+    font-size: 31px;
+    font-family: 'eurostile_demi', sans-serif;
+}
 
 
 /* ======================= */

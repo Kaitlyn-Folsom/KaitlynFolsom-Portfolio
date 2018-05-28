@@ -378,7 +378,6 @@ a [class^="icon-"], a [class*=" icon-"] {
     top: 0;
     width: 100%;
     height: 100%;
-    /* background: url(../images/scroll-arrow.png) repeat-x 0 bottom; */
     content: '';
 }
 
@@ -472,9 +471,16 @@ a [class^="icon-"], a [class*=" icon-"] {
 /* ======================= */
 
 .about {
-    display:table;
-    padding:0px 80px;
+    background:url(../images/hero-image-no-color.jpg) no-repeat;
 }
+
+.about .overlay{
+        height:100vh;
+        width:100vw;
+        margin:0;
+        padding:0 80px;
+}
+
 
 .panel-about img {
     height:300px; 
@@ -520,7 +526,7 @@ a [class^="icon-"], a [class*=" icon-"] {
     left: 0;
     top: 0;
     margin:0;
-    /* padding:0; */
+    padding:0;
 }
 
 .section .panel-head {
@@ -710,24 +716,25 @@ img {
 /* ====== PROJECTS ======= */
 /* ======================= */
 .member-image {
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     overflow: hidden;
     background: rgb(62,36,87);
     box-shadow: 0 0 0 7px rgba(62,36,87,.33);
     position: absolute;
     top: 60%;
     left: 50%;
-    margin: -203px 0 0 -203px;
+    margin: -250px 0 0 -250px;
 }
 
 .member-image img {
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     position: absolute;
     left: 0;
     top: 0;
 }
+
 
 img {
     vertical-align: middle;

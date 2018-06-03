@@ -133,7 +133,7 @@ h2 {
     left: 0;
     right: 0;
     z-index: 10;
-    height: 52px;
+    height: 72px;
     background-color: rgba(0,0,0,0);
 }
 
@@ -159,7 +159,7 @@ h2 {
 }
 
 .logo {
-    background: url(../images/scroll-arrow.png) no-repeat 0 0;
+    /* background: url(../images/scroll-arrow.png) no-repeat 0 0; */
     width: 214px;
     height: 44px;
     position: absolute;
@@ -168,6 +168,13 @@ h2 {
     font-size: 18px;
     line-height: 40px;
     color: #e0e0e0;
+}
+
+.logo span {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    letter-spacing: 2px;
 }
 
 a {
@@ -462,6 +469,17 @@ a [class^="icon-"], a [class*=" icon-"] {
     height: 200px;
     position: absolute;
     left: 37%;
+    z-index: 3;
+    background: url(../images/scroll-arrow.png) no-repeat 0 0;
+}
+
+.panel-client .navigate, .panel-intro .navigate {
+    width: 71px;
+    height: 35px;
+    margin-left: -35px;
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
     z-index: 3;
     background: url(../images/scroll-arrow.png) no-repeat 0 0;
 }

@@ -1,0 +1,162 @@
+/* COLORS
+Red:#C63943 */
+
+
+/* RESET STYLES */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ======================*/
+/* ======== NAV =========*/
+/* ======================*/
+.no-touch #cd-vertical-nav {
+	/*fix the navigation*/
+	position: fixed;
+	right: 40px;
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+  }
+  
+  .no-touch #cd-vertical-nav a span {
+	float: right;
+	/*scale down navigation dots and labels*/
+	transform: scale(0.6);
+  }
+  
+  .no-touch #cd-vertical-nav .cd-dot {
+	transform-origin: 50% 50%;
+  }
+  
+  .no-touch #cd-vertical-nav .cd-label {
+	transform-origin: 100% 50%;
+  }
+  
+  .no-touch #vertical-nav a:hover span {
+	/*scale up navigation dots and labels*/
+	transform: scale(1);
+  }
+  
+  .no-touch #cd-vertical-nav a:hover .cd-label {
+	/*show labels*/
+	opacity: 1;
+  }
+
+  .touch #cd-vertical-nav {
+	position: fixed;
+	z-index: 1;
+	right: 5%;
+	bottom: 30px;
+	width: 90%;
+	max-width: 400px;
+	max-height: 90%;
+	transform: scale(0);
+	transition-property: transform;
+	transition-duration: 0.2s;
+  }
+  .touch #cd-vertical-nav.open {
+	transform: scale(1);
+  }
+
+  .cd-dot {
+	position: relative;
+	/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+	top: 8px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #ccc;;
+	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
+	transition: transform 0.2s, background-color 0.5s;
+}
+
+.cd-label {
+	position: relative;
+	margin-right: 10px;
+	padding: .4em .5em;
+	color: #000;
+
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	opacity: 0;
+}
+
+/* ======================*/
+/* ====== SECTIONS ======*/
+/* ======================*/
+
+.cd-section {
+	min-height: 100vh;
+	position: relative;
+
+}
+
+.cd-img-replace { /* replace text with a background-image */
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+/* ======================*/
+/* ======= HEADER =======*/
+/* ======================*/
+.header {
+   text-align:center !important;
+}
+/* ======================*/
+/* ======= SKILLS =======*/
+/* ======================*/
+
+/* ======================*/
+/* ====== PROJECTS ======*/
+/* ======================*/
+
+/* ======================*/
+/* ======= CONTACT ======*/
+/* ======================*/

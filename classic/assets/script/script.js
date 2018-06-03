@@ -13,12 +13,6 @@ $(function() {
 	var	linkScrollDuration = 800;
 	var	isHomepage = body.hasClass('homepage');
 		
-// 	$(".personal-description").waypoint(function(direction){
-
-// 		$(".personal-description").addClass("animated fadeInLeft");
-// 	  }, {
-// 	  	offset: "50%"
-//   });
 	
 	//////////////////////////
 	// delegated events
@@ -281,11 +275,6 @@ $(function() {
 	
 	s = skrollr.init({
 		smoothScrollingDuration:linkScrollDuration,
-		beforerender: function(data){
-			if (body.hasClass('video-active')){
-				return false;
-			}
-		},
 		render: function(data){
 			if (isHomepage){
 				var secMax = data.maxTop/winH;
@@ -309,8 +298,8 @@ $(function() {
 	/////////////////////
 	doc.ready(function(){ // load
 		
-		winW = win.width();
-		winH = win.height();
+		var winW = $("window").width();
+		var winH = $("window").height();
 
 		setTimeout(function(){ 
 			body.addClass('loaded');
@@ -329,7 +318,7 @@ $(function() {
 
 
 
-	}).on('reisze', function(){
+	}).on('resize', function(){
 		winW = win.width();
 		winH = win.height();
 	})
@@ -344,7 +333,7 @@ $(function() {
 				// panelStart = panelIdx == 0 ? '0%' : '100%',
 			panel.find('.navigate').attr('data-menu-top', (panelIdx+1)*100+'p')
 			panel.find('.goto').attr('data-menu-top', '0p')
-			panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
+			// panel.find('a.fullscreen').attr('data-menu-top', (panelIdx)*100+'p')
 			// panel.find('.video-holder .close').attr('data-menu-top', (panelIdx)*100+'p')
 			
 			

@@ -4,6 +4,16 @@ $('document').ready(function(){
 		$('body').addClass('loaded');
 	}, 1000);
 
+	$('#nav-toggle').click(function() {
+		$(this).toggleClass('active');
+		$('#overlay').toggleClass('open');
+	 });
+	 
+	 $('#overlay ul li a').click(function() {
+		 $('#nav-toggle').toggleClass('active');
+		 $('#overlay').toggleClass('open');
+	 });
+
 
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');

@@ -27,7 +27,7 @@
 	<script src="assets/script/modernizr.js"></script> <!-- Modernizr -->
 
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Playfair+Display+SC" rel="stylesheet">
 
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
 
@@ -39,26 +39,41 @@
 		<img src="assets/images/portfolio-logo-gold.png">
 	</div>
 
-	<div class="button_container wow fadeInDownBig" data-wow-duration="2s" id="toggle" style="visibility: visible; animation-duration: 2s; animation-name: fadeInDownBig;">
+	<header class="header cd-section" id="section1">
+		
+		<div class="logo-container wow fadeInLeft" data-wow-duration="2s" id="toggle" style="visibility: visible; animation-duration: 2s; animation-name: fadeInLeft;">
+			<img src="assets/images/portfolio-logo-gold.png">
+		</div>
+
+		<div class="navBtn_container wow fadeInDownBig" data-wow-duration="2s" id="nav-toggle" style="visibility: visible; animation-duration: 2s; animation-name: fadeInDownBig;">
 			<span class="top"></span>
 			<span class="middle"></span>
 			<span class="bottom"></span>
-		  </div>
-
-	<header class="header cd-section" id="section1">
-			<div class="header-name">
-				<h1>Kaitlyn Folsom</h1>
-				<h3>Developer // Designer</h3>
-			</div>
+		</div>
+		<div class="overlay" id="overlay">
+			<nav class="overlay-menu">
+				<ul>
+					<li><a href="#section1">Home</a></li>
+					<li><a href="#section2">About</a></li>
+					<li><a href="#section3">Work</a></li>
+					<li><a href="#section4">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="header-name">
+			<h1>Kaitlyn   Folsom</h1>
+			<h3>Developer // Designer </h3>
+		</div>
 			<div class="d-flex flex-row nav-links justify-content-around" id="cd-vertical-nav">
 					<div class="section-link">
-						<a href="#section2">About</a>
+						<a class="shimmer" href="#section2">About</a>
 					</div>
 					<div class="section-link">
-						<a href="#section3">Work</a>
+						<a class="shimmer" href="#section3">Work</a>
 					</div>
 					<div class="section-link">
-						<a href="#section4">Contact</a>
+						<a class="shimmer" href="#section4">Contact</a>
 					</div>
 			</div>
 	</header>

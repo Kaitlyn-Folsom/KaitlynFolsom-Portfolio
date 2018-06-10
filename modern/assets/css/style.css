@@ -89,12 +89,20 @@ table {
 	width:auto;
 }
 
+/* ======================*/
+/* ====== CONSTANT ======*/
+/* ======================*/
+
+body {
+	font-family: 'Cormorant Garamond', serif !important;
+}
+
+
 
 /* ======================*/
-/* ======= HEADER =======*/
+/* ===== NAVIGATION =====*/
 /* ======================*/
-
-.button_container {
+.navBtn_container {
     position: fixed;
     top: 40px;
     right: 40px;
@@ -104,6 +112,146 @@ table {
     z-index: 100;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
+}
+
+.navBtn_container span {
+    background: #bb7875;
+    border: none;
+    height: 2px;
+    -moz-border-radius: 1px / 1px;
+    -webkit-border-radius: 1px 1px;
+    border-radius: 1px / 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.navBtn_container.active .top {
+    -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+    -ms-transform: translateY(7px) translateX(0) rotate(45deg);
+    transform: translateY(7px) translateX(0) rotate(45deg);
+    background: #FFF;
+    z-index: 3;
+}
+
+.navBtn_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+}
+
+.navBtn_container.active .bottom {
+    -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -ms-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    transform: translateY(-7px) translateX(0) rotate(-45deg);
+    background: #FFF;
+    z-index: 3;
+}
+
+.navBtn_container span:nth-of-type(2) {
+    top: 7px;
+}
+
+.navBtn_container span:nth-of-type(3) {
+    top: 14px;
+}
+
+.overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+    z-index: 3;
+}
+
+.overlay {
+    position: fixed;
+    background: #947b5c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 45px;
+    font-family: 'bitterregular', serif;
+    text-align: center;
+}
+
+.hide {
+    text-indent: -998em;
+    height: 0px;
+}
+
+.hide {
+    display: none!important;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay.open li {
+    -webkit-animation: fadeInRight .5s ease forwards;
+    animation: fadeInRight .5s ease forwards;
+    -webkit-animation-delay: .35s;
+    animation-delay: .35s;
+}
+
+.overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+	text-decoration: none;
+	transition:0.2s;
+}
+
+.overlay ul li a:hover {
+    color: rgb(10, 23, 43);
+}
+
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    -webkit-transition: .35s;
+    transition: .35s;
 }
 
 
@@ -119,36 +267,100 @@ table {
 }
 
 .header img {
-	width:50px;
-	height:auto;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
 }
 
 .header-name {
 	position:relative;
-	top:20%;
+	top:30%;
 }
 
 .header h1 {
 	font-size:80px;
+	margin:0;
 	color:#fff;
+	/* font-family: 'Playfair Display SC', serif; */
+	font-family: 'Cormorant Garamond', serif;
+	font-weight:300;
+	text-transform: uppercase;
 }
 
 .header h3 {
-	font-size:30px;
+	font-size:40px;
+	margin:0;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight:400;
+	color:#bb7875;
+	text-transform: uppercase;
 }
 
 .nav-links {
 	position:relative;
-	top:35%;
+	top:50%;
 	font-size:30px;
 }
 
 .nav-links a {
 	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:300;
+	border:5px solid #947b5c;
+	padding:12px 20px;
+	overflow:hidden;
+	position: relative;
+	transition:0.2s;
+	/* color:#fff; */
 }
 
 .nav-links a:hover {
 	color:#fff;
+	border-color:#bb7875;
+	/* background-color:#bb7875; */
+}
+
+/* generated element for shine effect.
+ * normal state is semi-transparent
+ * white but with zero width. Set no
+ * transition here for no mouse-leave
+ * animations. Otherwise the effect
+ * will play in reverse when your mouse
+ * leaves the element
+ */
+.shimmer:after {
+	content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+	transition: none;
+    
+}
+/* on hover we animate the width to
+ * 100% and opacity to 0 so the element
+ * grows and fades out 
+ */
+.shimmer:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 /* ======================*/

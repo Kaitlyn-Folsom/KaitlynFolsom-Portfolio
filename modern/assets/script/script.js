@@ -1,4 +1,10 @@
-jQuery(document).ready(function($){
+$('document').ready(function(){
+
+	setTimeout(function(){ 
+		$('body').addClass('loaded');
+	}, 1000);
+
+
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
 

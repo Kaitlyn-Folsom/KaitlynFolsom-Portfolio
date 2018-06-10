@@ -28,68 +28,83 @@
 
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
 </head>
 
 <body>
 
-	<a class="cd-nav-trigger cd-img-replace">Open navigation</a>
-	<nav id="cd-vertical-nav" >
-		<ul>
-			<li>
-				<a href="#section1" data-number="1">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Item 1</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section2" data-number="2">
-					<span class="cd-dot"></span>
-					<span class="cd-label">About</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section3" data-number="3">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Skills</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section4" data-number="4">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Projects</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<div class="loading">
+		<img src="assets/images/portfolio-logo-gold.png">
+	</div>
+
+	<div class="button_container wow fadeInDownBig" data-wow-duration="2s" id="toggle" style="visibility: visible; animation-duration: 2s; animation-name: fadeInDownBig;">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		  </div>
 
 	<header class="header cd-section" id="section1">
-		<h1>Kaitlyn Folsom</h1>
-		<h5>Developer Designer</h5>
-		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+			<div class="header-name">
+				<h1>Kaitlyn Folsom</h1>
+				<h3>Developer // Designer</h3>
+			</div>
+			<div class="d-flex flex-row nav-links justify-content-around" id="cd-vertical-nav">
+					<div class="section-link">
+						<a href="#section2">About</a>
+					</div>
+					<div class="section-link">
+						<a href="#section3">Work</a>
+					</div>
+					<div class="section-link">
+						<a href="#section4">Contact</a>
+					</div>
+			</div>
 	</header>
 
-	<div class="container">
-			<section class="about cd-section" id="section2">
+	<section class="container">
+			<section class="about cd-section wow fadeInUp" id="section2">
 				<h2>About</h2>
 				<p>Adipisicing Lorem nulla labore exercitation minim consequat. In veniam enim laboris ullamco culpa magna. Sit consectetur esse cupidatat ea labore excepteur Lorem tempor laboris aliqua proident. Nostrud voluptate velit ullamco et esse. Dolor nostrud consectetur aliquip et aliqua amet tempor. Dolore veniam qui nisi sunt non reprehenderit.</p>
-				<a href="#section3" class="cd-scroll-down cd-img-replace">scroll down</a>
-			</section>
-		
-			<section class="skills cd-section" id="section3">
-				<h2>Skills</h2>
-				<a href="#section4" class="cd-scroll-down cd-img-replace">scroll down</a>
 			</section>
 
 			<section class="projects cd-section" id="section4">
 				<h2>Projects</h2>
-				<a href="#section1" class="cd-scroll-down cd-img-replace">Back to top</a>
+			</section>
+
+
+			<section class="contact cd-section" id="section4">
+				<h2 class="pack">Let's Get In Touch.</h2>
+				<h3 class="pack">Brian Nathan Hartwell</h3>
+				<p>
+					<a href="mailto:hello@briannathanhartwell.com">hello@briannathanhartwell.com</a>
+					<br>+1 248 245 3468
+				</p>
+
+				<div id="info" class="main">
+					<div class="container pack">
+						<div class="info">
+							<h5><span class="info-title">Dribbble</span></h5>
+							<p><a href="https://dribbble.com/briannathanhartwell" target="_blank">dribbble.com/briannathanhartwell</a></p>
+						</div>
+						<div class="info">
+							<h5><span class="info-title">Behance</span></h5>
+							<p><a href="https://www.behance.net/briannathanhartwell" target="_blank">behance.net/briannathanhartwell</a></p>
+						</div>
+						<div class="info">
+							<h5><span class="info-title">LinkedIn</span></h5>
+							<p><a href="http://www.linkedin.com/in/briannathanhartwell" target="_blank">linkedin.com/in/briannathanhartwell</a></p>
+						</div>
+						<div class="info">
+							<h5><span class="info-title">Resume</span></h5>
+							<p><a href="files/bnh-resume.pdf">Download PDF</a></p>
+						</div>
+					</div><!-- /.container -->
+				</div>
 			</section>
 	</div>
-	
 
-
-	
 </div>
 
 
@@ -100,7 +115,10 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/script/jquery.waypoints.min.js"></script>
 	<script src="assets/script/script.js"></script>
-	<script src="assets/script/main.js"></script>
+	<script src="assets/script/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 </body>
 

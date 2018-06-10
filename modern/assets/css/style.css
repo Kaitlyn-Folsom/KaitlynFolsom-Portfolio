@@ -1,5 +1,10 @@
 /* COLORS
-Red:#C63943 */
+Navy: rgb(10, 23, 43);
+Gold: # c49e6b
+Light Pink: #dc8e8c
+seafoam blue: #759f9d
+light blue: #bcd7d7
+muted navy: #39586d
 
 
 /* RESET STYLES */
@@ -50,105 +55,102 @@ table {
 
 
 /* ======================*/
-/* ======== NAV =========*/
+/* ==== LOADING PAGE ====*/
 /* ======================*/
-.no-touch #cd-vertical-nav {
-	/*fix the navigation*/
-	position: fixed;
-	right: 40px;
-	top: 50%;
-	bottom: auto;
-	transform: translateY(-50%);
-  }
-  
-  .no-touch #cd-vertical-nav a span {
-	float: right;
-	/*scale down navigation dots and labels*/
-	transform: scale(0.6);
-  }
-  
-  .no-touch #cd-vertical-nav .cd-dot {
-	transform-origin: 50% 50%;
-  }
-  
-  .no-touch #cd-vertical-nav .cd-label {
-	transform-origin: 100% 50%;
-  }
-  
-  .no-touch #vertical-nav a:hover span {
-	/*scale up navigation dots and labels*/
-	transform: scale(1);
-  }
-  
-  .no-touch #cd-vertical-nav a:hover .cd-label {
-	/*show labels*/
-	opacity: 1;
-  }
-
-  .touch #cd-vertical-nav {
-	position: fixed;
-	z-index: 1;
-	right: 5%;
-	bottom: 30px;
-	width: 90%;
-	max-width: 400px;
-	max-height: 90%;
-	transform: scale(0);
-	transition-property: transform;
-	transition-duration: 0.2s;
-  }
-  .touch #cd-vertical-nav.open {
-	transform: scale(1);
-  }
-
-  .cd-dot {
-	position: relative;
-	/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-	top: 8px;
-	height: 12px;
-	width: 12px;
-	border-radius: 50%;
-	background-color: #ccc;;
-	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
-	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
-	transition: transform 0.2s, background-color 0.5s;
+.loaded .loading {
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity=0);
 }
 
-.cd-label {
-	position: relative;
-	margin-right: 10px;
-	padding: .4em .5em;
-	color: #000;
-
-	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
-	transition: transform 0.2s, opacity 0.2s;
-	opacity: 0;
+.loading {
+    transition: opacity .4s;
+    -webkit-transition: opacity .4s;
 }
 
-/* ======================*/
-/* ====== SECTIONS ======*/
-/* ======================*/
-
-.cd-section {
-	min-height: 100vh;
-	position: relative;
-
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: rgb(10, 23, 43);
+	display:table;
 }
 
-.cd-img-replace { /* replace text with a background-image */
-	display: inline-block;
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
+.loading img {
+	display:table-cell;
+	vertical-align:middle;
+	margin:auto;
+	height:300px;
+	width:auto;
 }
+
 
 /* ======================*/
 /* ======= HEADER =======*/
 /* ======================*/
-.header {
-   text-align:center !important;
+
+.button_container {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: 17px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
 }
+
+
+/* ======================*/
+/* ======= HEADER =======*/
+/* ======================*/
+.header {	
+	text-align:center !important;
+	color:#947b5c;
+	height:100vh;
+	width:100vw;
+	background-color:rgb(10, 23, 43);
+}
+
+.header img {
+	width:50px;
+	height:auto;
+}
+
+.header-name {
+	position:relative;
+	top:20%;
+}
+
+.header h1 {
+	font-size:80px;
+	color:#fff;
+}
+
+.header h3 {
+	font-size:30px;
+}
+
+.nav-links {
+	position:relative;
+	top:35%;
+	font-size:30px;
+}
+
+.nav-links a {
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	color:#fff;
+}
+
 /* ======================*/
 /* ======= SKILLS =======*/
 /* ======================*/
@@ -160,3 +162,6 @@ table {
 /* ======================*/
 /* ======= CONTACT ======*/
 /* ======================*/
+.contact{
+    text-align: center;
+}

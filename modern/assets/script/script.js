@@ -2,7 +2,7 @@ $('document').ready(function(){
 
 	setTimeout(function(){ 
 		$('body').addClass('loaded');
-	}, 1000);
+	}, 4000);
 
 	$('#nav-toggle').click(function() {
 		$(this).toggleClass('active');
@@ -16,7 +16,7 @@ $('document').ready(function(){
 
 
 	var contentSections = $('.cd-section'),
-		navigationItems = $('#cd-vertical-nav a');
+		navigationItems = $('.cd-vertical-nav a');
 
 	updateNavigation();
 	$(window).on('scroll', function(){

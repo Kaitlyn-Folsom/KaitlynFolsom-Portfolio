@@ -64,8 +64,11 @@ table {
 }
 
 .loading {
-    transition: opacity .4s;
-    -webkit-transition: opacity .4s;
+    /* transition: opacity .4s;
+    -webkit-transition: opacity .4s; */
+
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
 }
 
 .loading {
@@ -81,10 +84,16 @@ table {
 	display:table;
 }
 
-.loading img {
+.loading div {
 	display:table-cell;
-	vertical-align:middle;
+	vertical-align: middle;
 	margin:auto;
+	width:100%;
+	text-align:center;
+}
+
+.loading img {
+	position:relative;
 	height:300px;
 	width:auto;
 }
@@ -96,8 +105,6 @@ table {
 body {
 	font-family: 'Cormorant Garamond', serif !important;
 }
-
-
 
 /* ======================*/
 /* ===== NAVIGATION =====*/
@@ -168,7 +175,7 @@ body {
 
 .overlay {
     position: fixed;
-    background: #947b5c;
+    background:#bb7875;
     top: 0;
     left: 0;
     width: 100%;
@@ -189,7 +196,6 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 45px;
-    font-family: 'bitterregular', serif;
     text-align: center;
 }
 
@@ -230,13 +236,14 @@ body {
 .overlay ul li a {
     display: block;
     position: relative;
-    color: #FFF;
+    color: rgb(10, 23, 43);
 	text-decoration: none;
-	transition:0.2s;
+    transition:0.2s;
+    font-weight:400;
 }
 
 .overlay ul li a:hover {
-    color: rgb(10, 23, 43);
+    color: #fff;
 }
 
 .overlay ul li a:after {
@@ -266,28 +273,30 @@ body {
 	background-color:rgb(10, 23, 43);
 }
 
-.header img {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    height: 75px;
-    width: 75px;
-    cursor: pointer;
+.header .logo-container {
+	position: static;
+	margin:0;
+	text-align:left !important;
+	padding:20px 0 0 20px;
     z-index: 100;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
 }
 
+.logo-container img {
+    height: 75px;
+    width: 75px;
+}
+
 .header-name {
 	position:relative;
-	top:30%;
+	top:20%;
 }
 
 .header h1 {
 	font-size:80px;
 	margin:0;
 	color:#fff;
-	/* font-family: 'Playfair Display SC', serif; */
 	font-family: 'Cormorant Garamond', serif;
 	font-weight:300;
 	text-transform: uppercase;
@@ -304,7 +313,7 @@ body {
 
 .nav-links {
 	position:relative;
-	top:50%;
+	top:35%;
 	font-size:30px;
 }
 
@@ -312,18 +321,18 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight:300;
-	border:5px solid #947b5c;
+    border:5px solid rgb(148, 123, 92);
+    color:#fff;
 	padding:12px 20px;
 	overflow:hidden;
 	position: relative;
 	transition:0.2s;
-	/* color:#fff; */
 }
 
 .nav-links a:hover {
 	color:#fff;
-	border-color:#bb7875;
-	/* background-color:#bb7875; */
+	border-color:rgb(187, 120, 117);
+    box-shadow: 2px 2px 5px #000;
 }
 
 /* generated element for shine effect.

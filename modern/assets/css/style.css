@@ -53,6 +53,10 @@ table {
 	border-spacing: 0;
 }
 
+section {
+    padding: 120px 20px;
+}
+
 
 /* ======================*/
 /* ==== LOADING PAGE ====*/
@@ -236,7 +240,7 @@ body {
 .overlay ul li a {
     display: block;
     position: relative;
-    color: rgb(10, 23, 43);
+    color: #0a172b;
 	text-decoration: none;
     transition:0.2s;
     font-weight:400;
@@ -302,6 +306,11 @@ body {
 	text-transform: uppercase;
 }
 
+.header h1 span,
+.header h3 span {
+    padding:0 20px;
+}
+
 .header h3 {
 	font-size:40px;
 	margin:0;
@@ -314,7 +323,8 @@ body {
 .nav-links {
 	position:relative;
 	top:35%;
-	font-size:30px;
+    font-size:30px;
+    margin:0 50px;
 }
 
 .nav-links a {
@@ -373,16 +383,90 @@ body {
 }
 
 /* ======================*/
+/* ======= ABOUT ========*/
+/* ======================*/
+
+.about {
+    background-image:url(../images/profile-chair-sand.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+}
+
+.about p {
+    font-size:20px;
+}
+
+.about img {
+    width:100%;
+}
+
+.about .hi {
+    font-size:120px;
+    font-weight:bold;
+}
+
+.about .intro-name {
+    font-size:70px;
+    font-weight:bold;
+}
+
+/* ======================*/
 /* ======= SKILLS =======*/
 /* ======================*/
 
 /* ======================*/
 /* ====== PROJECTS ======*/
 /* ======================*/
+.projects {
+    background-color:#dc8e8c;
+}
+
 
 /* ======================*/
 /* ======= CONTACT ======*/
 /* ======================*/
 .contact{
     text-align: center;
+}
+
+/* ======================*/
+/* ======= FOOTER =======*/
+/* ======================*/
+
+footer {
+    background-color:#0a172b;
+    color:#947b5c;
+    width:100%;
+    padding:10px;
+}
+
+.footer-content {
+    display:flex;
+    justify-content:space-around;
+}
+
+.footer-col {
+    align-self:center;
+}
+
+.footer-col ul {
+    display:inline-flex;
+}
+
+footer li {
+    padding:5px 10px;
+}
+
+footer li a {
+    color:#947b5c;
+    text-decoration:none;
+    transition:color 0.1s;
+
+}
+
+footer li a:hover {
+    color:#bb7875;
+    text-decoration:none;
 }

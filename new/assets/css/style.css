@@ -342,47 +342,38 @@ body, h1, h2, h3, h4 {
 /* ======= ABOUT ========*/
 /* ======================*/
 
-.about {
-    background-image:url(../images/profile-chair-sand.png);
-    background-size:cover;
-    width:100%;
-    height:100vh;
-    background-repeat:no-repeat;
-}
-
 .about p {
     font-size:20px;
 }
 
 .about img {
-    width:100%;
+    width:350px;
+    height:300px;
+    border-radius:50%;
 }
 
-.about .hi {
-    font-size:120px;
-    font-weight:bold;
-}
-
-.about .intro-name {
-    font-size:70px;
-    font-weight:bold;
-}
 
 /* ======================*/
 /* ======= SKILLS =======*/
 /* ======================*/
+.projects-container {
+    background-color: #759f9d;
+    text-align:center;
+}
+
+.projects-container h2 {
+    font-size:60px;
+}
+
+.project img {
+    width:500px;
+    height:auto;
+    border:10px solid #0a172b;
+}
 
 /* ======================*/
 /* ====== PROJECTS ======*/
 /* ======================*/
-.sand-fade {
-    width:120vw;
-    height:50%;
-    position:relative;
-    top:-5px;
-    left:0;
-    right:0;
-}
 
 .projects {
     color:#fff;
@@ -466,6 +457,7 @@ body, h1, h2, h3, h4 {
     font-size:40px;
     font-weight:bold;
     color:#947b5c;
+    
 }
 
 .project-image img {
@@ -484,6 +476,42 @@ body, h1, h2, h3, h4 {
 }
 
 /* ======================*/
+/* ======= SOCIAL =======*/
+/* ======================*/
+.social {
+    background-color:#bb7875;
+    width:100%;
+    padding:30px;
+    display:flex;
+    justify-content: center;
+}
+
+.social .icon {
+    background: url(../images/Social_Media_Icon_Sprite.png) no-repeat;
+    height:50px;
+    width:50px;
+    float:left;
+    margin:0 10px;
+   
+}
+
+.social .facebook {
+    background-position: 0 0;
+}
+
+.social .instagram {
+    background-position: -50px 0;
+}
+
+.social .github {
+    background-position: -100px 0;
+}
+
+.social .linkedIn {
+    background-position: -150px 0;
+}
+
+/* ======================*/
 /* ======= FOOTER =======*/
 /* ======================*/
 
@@ -491,31 +519,13 @@ footer {
     background-color:#0a172b;
     color:#947b5c;
     width:100%;
-    padding:10px;
+    padding:20px;
+    
 }
 
 .footer-content {
     display:flex;
     justify-content:space-around;
-}
-
-.footer-col {
-    align-self:center;
-}
-
-.footer-col ul {
-    display:inline-flex;
-}
-
-footer li {
-    padding:5px 10px;
-}
-
-footer li a {
-    color:#947b5c;
-    text-decoration:none;
-    transition:color 0.1s;
-
 }
 
 footer li a:hover {

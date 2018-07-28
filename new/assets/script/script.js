@@ -1,8 +1,66 @@
+
+
 $('document').ready(function(){
 
-	setTimeout(function(){ 
-		$('body').addClass('loaded');
-	}, 4000);
+// ===================
+// == ANIMATED MODAL
+// ===================
+
+
+	// $("#modal1").animatedModal();
+	// $("#modal2").animatedModal();
+	// $("#modal3").animatedModal();
+	// $("#modal4").animatedModal();
+	// $("#modal5").animatedModal();
+
+	$("#modal1").animatedModal();
+	$("#modal1").click(function() {
+		getdinnerShowProject();
+	});
+
+	$("#modal2").animatedModal();
+	$("#modal2").click(function() {
+		getRxProject();
+	});
+
+	$("#modal3").animatedModal();
+	$("#modal3").click(function() {
+		getforumProject();
+	});
+
+	$("#modal4").animatedModal();
+	$("#modal4").click(function() {
+		getTriviaProject();
+	});
+
+	$("#modal5").animatedModal();
+	$("#modal5").click(function() {
+		getCuisineProject();
+	});
+
+
+
+
+	function getdinnerShowProject() {
+		$("#projectTitle").text("Dinner & a Show");
+	}
+
+	function getForumProject() {
+		$("#projectTitle").text("Friend Forum");
+	}
+
+	function getRxProject() {
+		$("#projectTitle").text("RxMinder");
+	}
+
+	function getTriviaProject() {
+		$("#projectTitle").text("Wine Trivia");
+	}
+
+	function getCuisineProject() {
+		$("#projectTitle").text("Knox Cuisine");
+	}
+
 
 	$('#nav-toggle').click(function() {
 		$(this).toggleClass('active');

@@ -32,7 +32,7 @@ $('document').ready(function(){
 	});
 
 	function getdinnerShowProject() {
-		$("#projectTitle").text("Dinner & a Show");
+		$("#projectTitle").text("Dinner & A Show");
 	}
 
 	function getForumProject() {
@@ -52,6 +52,7 @@ $('document').ready(function(){
 	}
 
 
+	// NAVIGATION
 	$('#nav-toggle').click(function() {
 		$(this).toggleClass('active');
 		$('#overlay').toggleClass('open');

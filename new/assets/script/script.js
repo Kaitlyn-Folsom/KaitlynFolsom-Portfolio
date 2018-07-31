@@ -2,16 +2,9 @@
 
 $('document').ready(function(){
 
-// ===================
-// == ANIMATED MODAL
-// ===================
-
-
-	// $("#modal1").animatedModal();
-	// $("#modal2").animatedModal();
-	// $("#modal3").animatedModal();
-	// $("#modal4").animatedModal();
-	// $("#modal5").animatedModal();
+	// ===================
+	// == ANIMATED MODAL
+	// ===================
 
 	$("#modal1").animatedModal();
 	$("#modal1").click(function() {
@@ -37,9 +30,6 @@ $('document').ready(function(){
 	$("#modal5").click(function() {
 		getCuisineProject();
 	});
-
-
-
 
 	function getdinnerShowProject() {
 		$("#projectTitle").text("Dinner & a Show");

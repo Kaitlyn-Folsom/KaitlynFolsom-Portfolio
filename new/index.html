@@ -20,13 +20,9 @@
 
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/queries.css">
-	<script src="assets/script/modernizr.js"></script> <!-- Modernizr -->
-
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Playfair+Display+SC" rel="stylesheet">
 
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
@@ -47,8 +43,8 @@
 			<span class="bottom"></span>
 		</div>
 
-		<div class="overlay" id="overlay">
-			<nav class="overlay-menu">
+		<div class="overlay-dropdown" id="overlay">
+			<nav class="overlay-menu-dropdown">
 				<ul>
 					<li class="cd-vertical-nav"><a href="#section1">Top</a></li>
 					<li class="cd-vertical-nav"><a href="#section2">About</a></li>
@@ -64,7 +60,7 @@
 		</div>
 
 		<div class="d-flex flex-row nav-links justify-content-around cd-vertical-nav">
-			<div class="section-link animated zoomIn" style="visibility: visible; animation-duration: 3s; animation-delay:3s;">
+			<div class="section-link animated zoomIn" style="visibility: visible; animation-duration: 2s; animation-delay:3s;">
 				<a class="shimmer" href="#section2">About</a>
 			</div>
 			<div class="section-link animated zoomIn" style="visibility: visible; animation-duration: 3s; animation-delay:3s;">
@@ -76,34 +72,97 @@
 		</div>
 	</header>
 
-	<div class="container">
-		<section class="row about cd-section" id="section2">
-			<div class="col-md-4 wow slideInLeft" style="animation-duration:2s;">
-				<img class="profile-img" alt="Profile Image" src="assets/images/profile-chair-sand.png">
+		
+	<section class="about row">
+		<div class="col-md-12">
+			<div id="wrap-shape">
+				<img src="assets/images/profile.jpg" alt="A photograph of sliced kiwifruit on a while plate" class="curve left">
+				<h2>Hi! I'm Kaitlyn</h2>
+				<p>This is kiwifruit: originally called “yang tao”, “melonette” or Chinese gooseberry. Cultivated in its fuzzy variety from Chinese imports, the fruit proved popular with American military servicemen stationed in New Zealand during World War II, with commercial export to the United States starting after the end of the war. In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New Zealand’s national bird. However, it is not a “kiwi”, which is also the demonym for native New Zealanders. Saying “I’m going to eat a kiwi” implies that you are either a cannibal or planning to dine on an endangered flightless bird. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit culpa officia tempore magni, quas dignissimos, itaque placeat enim laudantium architecto, sit optio! Atque explicabo excepturi unde quasi </p>
+				<img src="assets/images/profile.jpg" alt="A photograph of sliced kiwifruit on a while plate" class="curve right">
+				<p>sit optio! Atque explicabo excepturi unde quasi voluptates a? This is kiwifruit: originally called “yang tao”, “melonette” or Chinese gooseberry. Cultivated in its fuzzy variety from Chinese imports, the fruit proved popular with American military servicemen stationed in New Zealand during World War II, with commercial export to the United States starting after the end of the war. In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New Zealand’s national bird. However, it is not a “kiwi”, which is also the demonym for native New Zealanders. Saying “I’m going to eat a kiwi” implies that you are either a cannibal or planning to dine on an endangered flightless bird.</p>			
 			</div>
-			<div class="col-md-8" style="animation-duration:2s;">
-					<h2>Hi! I'm Kaitlyn.</h2>
-					<div class="box">
+		</div>
+	</section>
+			
+	<section class="skills row d-flex">
+		<div class="container">
+				<div class="p-2">
+						<div class="underline"></div>
+						<h2>Professional Experience</h2>
+						
+						<div class="experience-item">
+							<h3>MISTRAS Group, Inc. <small>Princeton Junction, NJ</small></h3>
+							<p>Junior Web Designer  <small>Mar 2018 - present</small></p>
+						</div>
+			
+						<div class="experience-item">
+							<h3>Weinberger Media<small>New York, NY</small></h3>
+							<p>Associate Field Produceer <small>Aug 2014 - Aug 2017</small></p>
+						</div>
+			
+						<div class="experience-item">
+								<h3>Rutgers Continuing Studies<small>Somerset, NJ</small></h3>
+								<p>Full Stack Web development<small>Fall 2017</small></p>
+							</div>
+			
+						<a href="assets/kaitlynfolsom_resume.pdf" target="_blank" class="resume-link">
+							view resume <i class="fas fa-external-link-alt fa-xs"></i>
+						</a>
+					</div>
+					<div class="p-2">
+						<div class="underline"></div>
+						<h2>Technical Experience</h2>
+						
+						<div class="experience-item">
+							<ul class="inline-list tech-items">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Javascript</li>
+								<li>jQuery</li>
+								<li>Photoshop</li>
+								<li>Git</li>
+								<li>Bootstrap</li>
+								<li>Materialize</li>
+								<li>Express</li>
+								<li>Node</li>
+								<li>Responsive Design</li>
+								<li>React</li>
+								<li>MySql</li>
+								<li>Mongo</li>
+								<li>GraphQl</li>
+							</ul>
+						</div>
+			
+						<div class="underline"></div>
+						<h2>Let's Connect</h2>
+						<div class=" social">
+							<a href="https://www.facebook.com/kaitlyn.folsom" target="_blank"><div class="icon facebook"></div></a>
+							<a href="https://www.instagram.com/kaitlynnn_mae/" target="_blank"><div class="icon instagram"></div></a>
+							<a href="https://github.com/Jewel0106" target="_blank"><div class="icon github"></div></a>
+							<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><div class="icon linkedIn"></div></a>
+						</div>
+					</div>
+		</div>
+		
+			
+	</section>
 
-					<p class="split">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo quis deleniti dolores perspiciatis reiciendis maiores obcaecati, facere debitis quibusdam omnis enim sed perferendis cum, non consequuntur quod eligendi accusamus.</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo quis deleniti dolores perspiciatis reiciendis maiores obcaecati, facere debitis quibusdam omnis enim sed perferendis cum, non consequuntur quod eligendi accusamus.</p>
-				</div>
-			</div>		
-		</section>
-	</div>
 	
 		<section class="projects-container cd-section">
 			<h2 class="wow fadeInUp" style="animation-duration:2s;">My Work</h2>
 			<div class=" d-flex justify-content-center flex-wrap wow fadeIn" style="animation-duration:2s;">
-				<div class="project p-2">
+				<div class="project p-2 project-overlay">
 					<a id="modal1" href="#animatedModal">
 						<img src="assets/images/dinner&show.png">
 					</a>
 				</div>
 				<div class="project p-2">
-					<a id="modal2" href="#animatedModal">
-						<img src="assets/images/rxMinder.png">
-					</a>
+					<div class="project-overlay">
+						<a id="modal2" href="#animatedModal">
+							<img src="assets/images/rxMinder.png">
+						</a>
+					</div>
 				</div>
 				<div class="project p-2">
 					<a id="modal3" href="#animatedModal">
@@ -123,49 +182,23 @@
 			</div>
 		</section>
 
-		<section class="contact cd-section" id="section4">
-			<h2 class="pack">Let's Get In Touch.</h2>
-			<p>
-				<a href="mailto:kaitlynmfolsom@gmail.com">kaitlynmfolsom@gmail.com</a>
-				<br>+1 908 451 3744
-			</p>
-
-			<div id="info" class="main">
-				<div class="container pack">
-					<div class="info">
-						<h5><span class="info-title">LinkedIn</span></h5>
-						<p><a href="http://www.linkedin.com/in/kaitlynfolsom" target="_blank">linkedin.com/in/kaitlynfolsom</a></p>
-					</div>
-					<div class="info">
-						<h5><span class="info-title">Resume</span></h5>
-						<p><a href="files/bnh-resume.pdf">Download PDF</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="social">
-			<a href="" target="_blank"><div class="icon facebook"></div></a>
-			<a href="" target="_blank"><div class="icon instagram"></div></a>
+	<footer class="page-footer footer-content">
+		<div class=" social">
+			<a href="https://www.facebook.com/kaitlyn.folsom" target="_blank"><div class="icon facebook"></div></a>
+			<a href="https://www.instagram.com/kaitlynnn_mae/" target="_blank"><div class="icon instagram"></div></a>
 			<a href="https://github.com/Jewel0106" target="_blank"><div class="icon github"></div></a>
 			<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><div class="icon linkedIn"></div></a>
 		</div>
-
-
-	<footer class="footer-content">
-		KAITLYN // FOLSOM
+		<p>Kaitlyn Folsom © 2018</p>
 	</footer>
 
 	<!--Project Modals-->
 	<div id="animatedModal">
 		<div id="closebt-container" class="close-animatedModal">
-			<img class="closebt" src="assets/images/closebt.svg">
+			<img class="closebt" src="assets/images/closebt.svg" alt="close button">
 		</div>
-
-		<h3 id="projectTitle"></h3>
-
-		<div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
-
+		<div id="modal-container" class="col-lg-8">
+				<h3 id="projectTitle"></h3>
 			
 		</div>
 	</div>
@@ -177,7 +210,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/script/jquery.waypoints.min.js"></script>
-
+	<script src="assets/script/materialize.min.js"></script>
 	<script src="assets/script/wow.min.js"></script>
 	<script src="assets/script/animatedModal.min.js"></script>
 	<script src="assets/script/script.js"></script>

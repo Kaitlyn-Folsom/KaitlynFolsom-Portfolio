@@ -364,41 +364,32 @@ a:hover {
 /* ======================*/
 /* ======= ABOUT ========*/
 /* ======================*/
-#wrap-shape {
-    margin: 0 50px;
-}
+/* #wrap-shape {
+    margin: 0 100px;
+} */
 
 #wrap-shape p { 
     line-height: 1.8; 
 }
 
-#wrap-shape .curve { 
-    width: 18%; 
+.curve { 
+    width: 30%; 
     height: auto;
     min-width: 150px;
     border-radius: 50%;
     -webkit-shape-outside:circle();
     shape-outside:circle();
-}
-
-#wrap-shape .curve.left {
     float:left;
     margin-right:60px;
 }
 
-#wrap-shape .curve.right {
-    float:right;
-    margin-left:60px;
+.carousel img {
+
 }
-/* 
-.about p {
-    font-size:20px;
-} */
 
 .about h2 {
-    margin:5px 0;
+    margin:0 0 5px 290px;
 }
-
 
 
 /* ======================*/
@@ -483,6 +474,11 @@ small{
     background: rgba(204, 198, 180, 0.2);
     padding: 3px 8px;
     margin: 0 5px 7px 0;
+    cursor:pointer;
+}
+
+.tech-items li:hover {
+    background: rgba(187, 120, 117, 0.7);
 }
 
 .tech-items {

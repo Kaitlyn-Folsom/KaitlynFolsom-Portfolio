@@ -1,6 +1,7 @@
 
 
 $('document').ready(function(){
+	$('.carousel').carousel()
 
 	// ===================
 	// == ANIMATED MODAL

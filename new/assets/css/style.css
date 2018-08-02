@@ -291,7 +291,7 @@ a:hover {
 }
 
 .header h3 {
-	font-size:40px;
+	font-size:30px;
 	margin:0;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight:400;
@@ -510,16 +510,71 @@ small{
     padding-top:10px;
 }
 
-.project img {
-    width:400px;
-    height:auto;
-    border:1px solid #0a172b;
+.project.p-2 {
+    padding:0 !important;
 }
 
-.project {
-    margin:10px 0;
+.project .project-image {
+    background-size:cover;
+    background-position: center;
+    width: 400px;
+    height:250px;
+    background-repeat: no-repeat;
+    transition:0.5s ease;
 }
 
+.project .dinner {
+    background-image:url(../images/dinner&show.png);
+}
+
+.project .forum {
+    background-image:url(../images/friend-forum.png);
+}
+
+.project .rxMinder {
+    background-image:url(../images/rxMinder.png);
+}
+
+.project .trivia {
+    background-image:url(../images/trivia.png);
+}
+
+.project .cuisine {
+    background-image:url(../images/knoxCuisine.png);
+}
+
+.project:hover .project-image{
+    opacity:0.5;
+}
+
+.project:hover .project-overlay {
+    opacity: 1;
+  }
+
+.project .project-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    z-index:2;
+}
+
+.project .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+/* ======================*/
+/* == PROJECT MODALS ====*/
+/* ======================*/
 #animatedModal {
     background-color: #0a172b !important; 
     color:#fff;

@@ -3,6 +3,8 @@
 $('document').ready(function(){
 	$('.carousel').carousel()
 
+
+	console.log("Hello Jimmy")
 	// ===================
 	// == ANIMATED MODAL
 	// ===================
@@ -19,7 +21,7 @@ $('document').ready(function(){
 
 	$("#modal3").animatedModal();
 	$("#modal3").click(function() {
-		getforumProject();
+		getForumProject();
 	});
 
 	$("#modal4").animatedModal();

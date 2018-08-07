@@ -563,9 +563,9 @@ small{
     z-index:2;
 }
 
-.project .text {
+.project-overlay .text {
     background-color: #4CAF50;
-    color: white;
+    color: #000;
     font-size: 16px;
     padding: 16px 32px;
   }
@@ -601,6 +601,31 @@ small{
 	transform:rotate(180deg);
 }
 
+.project-slideshow {
+    margin-bottom:50px;
+}
+
+.project-slideshow img{
+    width:70%;
+    height:100%;
+    margin:auto;
+}
+
+#bottom-close-btn {
+    width:100%;
+    height:50px;
+    background-color:#947b5c;
+    margin-top:50px;
+    cursor:pointer;
+    font-size:30px;
+    text-align: center;
+    transition: 0.2s;
+    padding:10px 0;
+}
+
+#bottom-close-btn:hover {
+    background-color:#bb7875;
+}
 /* ======================*/
 /* ======= SOCIAL =======*/
 /* ======================*/

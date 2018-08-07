@@ -35,7 +35,16 @@ $('document').ready(function(){
 	});
 
 	function getdinnerShowProject() {
+		$('.project-slideshow').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			fade: true
+
+		});
+
 		$("#projectTitle").text("Dinner & A Show");
+
+		$("#project-overview").text("A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.");
 	}
 
 	function getForumProject() {

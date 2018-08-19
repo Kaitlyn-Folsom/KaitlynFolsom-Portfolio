@@ -364,9 +364,6 @@ a:hover {
 /* ======================*/
 /* ======= ABOUT ========*/
 /* ======================*/
-/* #wrap-shape {
-    margin: 0 100px;
-} */
 
 #wrap-shape p { 
     line-height: 1.8; 
@@ -399,7 +396,6 @@ a:hover {
     background-color:#0a172b;
     color:#fff;
     justify-content:center;
-    /* margin:auto; */
 }
 
 .skills .p-2 {
@@ -521,6 +517,7 @@ small{
     height:250px;
     background-repeat: no-repeat;
     transition:0.5s ease;
+
 }
 
 .project .dinner {
@@ -549,22 +546,26 @@ small{
 
 .project:hover .project-overlay {
     opacity: 1;
+    
   }
 
 .project .project-overlay {
     transition: .5s ease;
     opacity: 0;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 60%;
     left: 50%;
+    width: 200px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     z-index:2;
+   
+    cursor:pointer;
 }
 
 .project-overlay .text {
-    background-color: #4CAF50;
+    background-color: #947b5c;
     color: #000;
     font-size: 16px;
     padding: 16px 32px;
@@ -626,6 +627,33 @@ small{
 #bottom-close-btn:hover {
     background-color:#bb7875;
 }
+
+.project-links {
+    float:left;
+    margin: 0 50px 20px auto;
+}
+
+.project-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:300;
+    border:3px solid rgb(148, 123, 92);
+    color:#fff;
+	padding:12px 20px;
+	overflow:hidden;
+	position: relative;
+	transition:0.2s;
+}
+
+.project-links a:hover {
+	border-color:rgb(187, 120, 117);
+    box-shadow: 2px 2px 5px #000;
+}
+
+.underline {
+    clear:both;
+}
+
 /* ======================*/
 /* ======= SOCIAL =======*/
 /* ======================*/

@@ -14,16 +14,27 @@ var projectObj = [
 		],
 		screenshots: [
 			"assets/images/dinner&show.png",
-			"assets/images/trivia.png",
-			"assets/images/friend-forum.png"
 		],
 		collaborators: [
-			"Kaitlyn Folsom",
-			"Louis Hellinger",
-			""
+			{
+				name: "Kaitlyn Folsom",
+				github: "https://github.com/Jewel0106"
+			},
+			{
+				name: "Louis Hellinger",
+				github: "https://github.com/louisHellinger"
+			},
+			{
+				name: "Charles Dunn",
+				github: "https://github.com/crdunn"
+			},
+			{
+				name: "Anthony DiTomasso",
+				github: "https://github.com/Antditto"
+			}			
 		],
-		githubLink: "",
-		projectLink: ""
+		githubLink: "https://github.com/Jewel0106/DinnerAndAShow",
+		projectLink: "https://jewel0106.github.io/DinnerAndAShow/index.html"
 	},
 	{
 		projectName: "RxMinder",
@@ -32,18 +43,35 @@ var projectObj = [
 			"React",
 			"JSX",
 			"Passport",
-			"Twillio",
+			"Twilio",
+			"NodeJs",
+			"Express",
+			"Mongo",
+			"Passport"
 		],
 		screenshots: [
-			"assets/images/dinner&show.png",
-			"assets/images/trivia.png",
-			"assets/images/rxMinder.png"
+			"assets/images/rxMinder-1.png",
+			"assets/images/rxMinder-2.png",
+			"assets/images/rxMinder-3.png",
+			"assets/images/rxMinder-4.png"
 		],
 		collaborators: [
-			"Andrew Apicello",
-			"Kaitlyn Folsom",
-			"Nicole Carvalho",
-			"Annie Leote"
+			{
+				name: "Andrew Apicello",
+				github: "https://github.com/andrew-apicello"
+			},
+			{
+				name: "Kaitlyn Folsom",
+				github: "https://github.com/Jewel0106"
+			},
+			{
+				name: "Nicole Carvalho",
+				github: "https://github.com/nicolelcarvalho"
+			},
+			{
+				name: "Annie Leote",
+				github: "https://github.com/aleote"
+			}
 		],
 		githubLink: "https://github.com/Jewel0106/RxMinder",
 		projectLink: "https://rx-minder.herokuapp.com/"
@@ -66,22 +94,36 @@ var projectObj = [
 			"News API"
 		],
 		screenshots: [
-			"assets/images/dinner&show.png",
-			"assets/images/trivia.png",
-			"assets/images/friend-forum.png"
+			"assets/images/friend-forum-1.png",
+			"assets/images/friend-forum-2.png",
+			"assets/images/friend-forum-3.png",
+			"assets/images/friend-forum-4.png"
 		],
 		collaborators: [
-			"Andrew Apicello",
-			"Benjamin Danis",
-			"Kaitlyn Folsom",
-			"Alexander Paulino"
+			{
+				name: "Andrew Apicello",
+				github: "https://github.com/andrew-apicello"
+			},
+			{
+				name: "Kaitlyn Folsom",
+				github: "https://github.com/Jewel0106"
+			},
+			{
+				name: "Benjamin Danis",
+				github: "https://github.com/benjaminDanis"
+			},
+			{
+				name: "Alexander Paulino",
+				github: "https://github.com/alexanderpaulino"
+			}
+			
 		],
 		githubLink: "https://github.com/Jewel0106/Friend-Forum",
 		projectLink: "https://friend-forum-social.herokuapp.com"
 	},
 	{
 		projectName: "Wine Trivia",
-		overview: "This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. Good Luck!",
+		overview: "This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. If you make it to the end you will see a summary of your results. Good Luck!",
 		tech: [
 			"Javascript",
 			"JQuery",
@@ -89,26 +131,28 @@ var projectObj = [
 			"CSS"
 		],
 		screenshots: [
-			"assets/images/dinner&show.png",
-			"assets/images/trivia.png",
-			"assets/images/friend-forum.png"
+			"assets/images/trivia-1.png",
+			"assets/images/trivia-2.png",
+			"assets/images/trivia-3.png",
+			"assets/images/trivia-4.png"
 		],
 		collaborators: [],
 		githubLink: "https://github.com/Jewel0106/TriviaGame",
-		projectLink: "https://jewel0106.github.io/TriviaGame/"
+		projectLink: "https://www.kaitlynfolsom.com/trivia"
 	},
 	{
 		projectName: "Knox Cuisine",
-		overview: "",
+		overview: "Knox Cuisine is a startup catering company based out of Summit, NJ. It is owned by Hamza Knox who is also the head chef. Their services include sit-down dinners, buffets, corporate lunches, butler passes, custom menus, and a private chef.",
 		tech: [
 			"Wordpress",
 			"Javascript",
 			"CSS",
 		],
 		screenshots: [
-			"assets/images/dinner&show.png",
-			"assets/images/trivia.png",
-			"assets/images/friend-forum.png"
+			"assets/images/knoxCuisine-1.png",
+			"assets/images/knoxCuisine-2.png",
+			"assets/images/knoxCuisine-3.png",
+			"assets/images/knoxCuisine-4.png"
 		],
 		collaborators: [],
 		githubLink: "",
@@ -127,12 +171,16 @@ $('document').ready(function(){
 
 		$("#project-overview").empty();
 
-		$(".tech-items").empty()
+		$(".tech-items").empty();
 
-		// $(".project-slideshow").empty();
+		$(".collaborators").empty();
+
+		$(".project-slideshow").slick("unslick");
+		$(".project-slideshow").empty();
+
+		$(".links").empty();
 	});
 
-	$('.carousel').carousel();
 
 	// =======================
 	// == ANIMATED MODAL =====
@@ -197,16 +245,21 @@ $('document').ready(function(){
 			focusOnSelect: true,
 		});
 
-		for (var i = 0; i < project.collaborators.length; i++) {
-			$(".collaborators").append("<li>" + project.collaborators[i] + "</li>")
+		if (project.collaborators.length > 1) {
+			$(".collaborators-col").css("visibility", "visible");
+			for (var i = 0; i < project.collaborators.length; i++) {
+				$(".collaborators").append("<a href=" + project.collaborators[i].github + "><li>" + project.collaborators[i].name + "</li></a>")
+			}
+		} else {
+			$(".collaborators-col").css("visibility", "hidden");
 		}
-
+		
 		if (project.githubLink != "") {
 			$(".links").append('<div class="project-links d-flex justify-content-center github-link"><a href="' + project.githubLink + '" class="shimmer">GITHUB REPO</a></div>')
 		}
 
 		if (project.projectLink != "") {
-			$(".links").append('<div class="project-links d-flex justify-content-center github-link"><a href="' + project.projectLink + '" class="shimmer">GITHUB REPO</a></div>')
+			$(".links").append('<div class="project-links d-flex justify-content-center github-link"><a href="' + project.projectLink + '" class="shimmer">PROJECT SITE</a></div>')
 		}
 	}
 

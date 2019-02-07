@@ -11,229 +11,289 @@
   gtag('config', 'UA-115781259-1');
 </script>
 
-	<title>Kaitlyn Folsom | Web developer</title>
+	<title>Kaitlyn Folsom | Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1">
-	<meta name="description" content="Kaitlyn Folsom is a freelance creative web developer ready to create beautiful responsive web pages for any company's needs.">
+	<meta name="description" content="Kaitlyn Folsom is a creative web developer ready to create beautiful responsive web pages for any company's needs.">
   
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/queries.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Playfair+Display+SC" rel="stylesheet">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.jpg">
+
 </head>
 
-<!--=========== JUMBOTRON AND HEADER ================ -->
 <body>
 
-	<div class="jumbotron">
-		<header>
-			<div class="hero">
-				<h1 class="hero-title first-letter">K</h1>
-				<h1 class="hero-title">a</h1>
-				<h1 class="hero-title">i</h1>
-				<h1 class="hero-title">t</h1>
-				<h1 class="hero-title">l</h1>
-				<h1 class="hero-title">y</h1>
-				<h1 class="hero-title hero-space">n</h1>
-				<h1 class="hero-title first-letter">F</h1>
-				<h1 class="hero-title">o</h1>
-				<h1 class="hero-title">l</h1>
-				<h1 class="hero-title">s</h1>
-				<h1 class="hero-title">o</h1>
-				<h1 class="hero-title">m</h1>
-			</div>
+	<header class="header cd-section" id="section1">
 
-			<nav>
-				<ul class="nav justify-content-center">
-					<li class="nav-item animate-pop-in nav-1">
-						<a class="btn btn-head scroll-to-about" href="#">About Me</a>
-					</li>	
-					<li class="nav-item animate-pop-in header-button nav-2">
-						<a class="btn btn-head scroll-to-work" href="#" id="mid-btn">My Work</a>
-					</li>
-					<li class="nav-item animate-pop-in nav-3">
-						<a class="btn btn-head scroll-to-contact" href="#">Contact</a>
-					</li>
+		<div class="logo-container animated fadeInDown" id="toggle" style="visibility: visible; animation-duration: 3s; animation-delay: 2s">
+			<img src="assets/images/portfolio-logo-gold.png">
+		</div>
+
+		<div class="navBtn_container animated fadeInDown" id="nav-toggle" style="visibility: visible; animation-duration: 3s; animation-delay:2s;">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</div>
+
+		<div class="overlay-dropdown" id="overlay">
+			<nav class="overlay-menu-dropdown">
+				<ul>
+					<li class="cd-vertical-nav"><a href="#about">About</a></li>
+					<li class="cd-vertical-nav"><a href="#experience">Projects</a></li>
+					<li class="cd-vertical-nav"><a href="#work">Contact</a></li>					
 				</ul>
-			</nav>			
-		</header>
-	</div> <!-- End Jumbotron -->
-
-		<section class="about-me">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img img-responsive js-wp1">
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 skills-div">
-					<h3 class="developer-header">Web Developer</h3>
-					<p class="skills">JAVASCRIPT • JQUERY • HTML • CSS • MYSQL • AJAX • REACT • EXPRESS • NODEJS • GIT • GITHUB • BOOTSTRAP • MONGODB •  HEROKU • APIs • SASS • JSON • PASSPORT • RESPONSIVE DESIGN • PHP • PHOTOSHOP</p>
-				</div>
-			</div> <!-- End row -->
-
-			<div class="row">
-				<div class="col bio" id="bio">
-					<p>I recently left my previous career as a producer in the film and television industry to pursue my love of programming and design. I have since gained extensive knowledge in front-end development and design along with back-end technologies such as Node and PHP.</p>
-						<div class="line bio-line"></div>
-					<p>When I'm not coding, I enjoy traveling and photography. I have a life resolution to explore someplace new every year, whether it be a weekend getaway in upstate New York or exploring the countryside in Ireland. I love discovering new cultures and capturing them in my photos.
-					<p> I own the rights to all photos presented on this site.</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="photos">
-			<ul class="photos-list clearfix">
-				<li>
-					<figure class="photo">
-						<img src="assets/images/beach.jpg" alt="Beach chairs in St. Pete Beach, FL">
-					</figure>
-				</li>
-				<li>
-					<figure class="photo">
-						<img src="assets/images/NYC.jpg" alt="NYC skyline seen from New Jersey at sunrise">
-					</figure>
-				</li>
-				<li>
-					<figure class="photo">
-						<img src="assets/images/sunset2.jpg" alt="Florida sunset">
-					</figure>
-				</li><li>
-					<figure class="photo">
-						<img src="assets/images/nola.jpg" alt="Air boat through New Orleans marshes">
-					</figure>
-				</li>
-			</ul>
-			<ul class="photos-list clearfix">
-				<li>
-					<figure class="photo">
-						<img src="assets/images/venice.jpg" alt="Grand Canal in Venice, Italy">
-					</figure>
-				</li>
-				<li>
-					<figure class="photo">
-						<img src="assets/images/swiss.jpg" alt="Lake and Mountain landscape in Lucerne, Switzerland">
-					</figure>
-				</li>
-				<li>
-					<figure class="photo">
-						<img src="assets/images/florence.jpg" alt="Ponte Vecchio in Florence, Italy">
-					</figure>
-				</li><li>
-					<figure class="photo">
-						<img src="assets/images/pont.jpg" alt="Pont du Gard in southern France">
-					</figure>
-				</li>
-			</ul>
-		</section>
-
-		<!-- NEW FEATURED SECTION -->
-		<section class="featured">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Featured Work</h2>
-				</div>
-				<div class="line"></div>
-			</div>
-
-			<div class="row section-row">
-				<div class="col-md-6">
-					<img src="./assets/images/rxMinder.png" alt="R X Minder App Screenshot" class="js-wp-1 app-image">
-				</div>
-				<div class="col-md-6 js-wp-5">
-					<h6>RxMinder</h6>
-					<p>A React-based web application that keeps track of a person's medication by sending them text reminders</p>
-					<a class="btn app-btn" href="https://rx-minder.herokuapp.com/" role="button">Go to App</a>
-					<a class="btn app-btn" href="https://github.com/Jewel0106/RxMinder" role="button">Github Repo</a>
-				</div>
-			</div>
-
-			<div class="row section-row">
-				<div class="col-md-6">
-					<img src="./assets/images/dinner&show.png" alt="Dinner and a Show App Screenshot" class="js-wp-2 app-image">
-				</div>
-				<div class="col-md-6 js-wp-6">
-					<h6>Dinner & a Show</h6>
-					<p>A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City.</p>
-							<a class="btn app-btn" href="https://jewel0106.github.io/DinnerAndAShow/index.html" role="button">Go to App</a>
-							<a class="btn app-btn" href="https://github.com/Jewel0106/DinnerAndAShow" role="button">Github Repo</a>
-				</div>
-			</div>
-
-			<div class="row section-row">
-				<div class="col-md-6">
-					<img src="./assets/images/friend-forum.png" alt="Friend Forum App Screenshot" class="js-wp-3 app-image">
-				</div>
-				<div class="col-md-6 js-wp-7">
-						<h6>Friend Forum</h6>
-						<p>A social media web application those who wish to have professional discussions with people around the country on topics you share interests in. Chat and debate through our live chat feature specific to each topic or send out a mesage in our global feed for all users to see.</p>
-						<a class="btn app-btn" href="https://friend-forum-social.herokuapp.com/" role="button">Go to App</a>
-						<a class="btn app-btn" href="https://github.com/Jewel0106/Friend-Forum" role="button">Github Repo</a>
-				</div>
-			</div>
-
-			<div class="row section-row">
-				<div class="col-md-6">
-					<img src="./assets/images/trivia.png" alt="Wine Trivia App Screenshot" class="js-wp-4 app-image">
-				</div>
-				<div class="col-md-6 js-wp-8">
-						<h6>Wine Trivia</h6>
-						<p>This quiz on random wine facts has 10 multiple choice questions. You will have 30 seconds to answer each question. Good Luck!</p>
-						<a class="btn app-btn" href="https://jewel0106.github.io/TriviaGame/" role="button">Take the Quiz!</a>
-						<a class="btn app-btn" href="https://github.com/Jewel0106/TriviaGame" role="button">Github Repo</a>
-				</div>
-			</div>
-		</section>
-	
-	<div class="parallax-break"></div>
-
-<!--============= CONTACT =============== -->
-
-	<section class="contact">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>Contact Me</h2>
-				<div class="line"></div>
-			</div>
+			</nav>
+		</div>
+		
+		<div class="header-name">
+			<h1 class="animated fadeInUp" style="visibility: visible; animation-duration: 3s; animation-delay:1s; ">K a i t l y n <span></span> F o l s o m</h1>
+			<h3 class="animated fadeInUp" style="visibility: visible; animation-duration: 2s; animation-delay:2s; ">D e v e l o p e r<span>//</span>  D e s i g n e r </h3>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-3 col-sm-6 col-xs-6 js-wp2">
-				<div class="contact-panel">
-					<a href="https://github.com/Jewel0106" target="_blank"><img src="assets/images/github.png" alt="Github Logo"></a>
-					<p>If you would like to see more of my projects you can do so by checking me out on <a href="https://github.com/Jewel0106" target="_blank"><span>Github.</span></a></p>
-				</div>				
+		<div class="row nav-links cd-vertical-nav">
+			<div class="col-md-4">
+				<div class="section-link animated fadeIn" style="animation-duration: 3s; animation-delay:3s;"><a class="shimmer" href="#about">About</a></div>
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 js-wp2">
-			<div class="contact-panel">
-				<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin Logo"></a>
-				<p>Connect with me on Linkedin to see more of my previous work experience.</p>
-			</div>				
+			<div class="col-md-4">
+				<div class="section-link animated fadeIn" style="animation-duration: 3s; animation-delay:3s;"><a class="shimmer" href="#experience">Projects</a></div>
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 js-wp2">
-				<div class="contact-panel">
-					<a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><img src="assets/images/email.png" alt="email Icon"></a>
-					<p>Or please feel free to reach out via email anytime at <a href="mailto:kaitlynmfolsom@gmail.com" target="_blank"><span>kaitlynmfolsom@gmail.com.</span></a></p>
-				</div>				
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-6 js-wp2">
-				<div class="contact-panel">
-					<a href="https://www.instagram.com/kaitlynnn_mae/?hl=en" target="_blank"><img src="assets/images/instagram.png" alt="instagram icon"></a>
-					<p>Check me out on Instagram if you get a wild hair.</p>
-				</div>				
+			<div class="col-md-4">
+				<div class="section-link animated fadeIn" style="animation-duration: 3s; animation-delay:3s;"><a class="shimmer" href="#contact">Contact</a></div>
 			</div>
 		</div>
+	</header>
 
+		
+	<section class="row about-row cd-section" id="about">
+		<div class="col-md-6 collage">
+
+		</div>
+		<div class="col-md-6 about-content">
+			<p class="bg-welcome">Hi!</p>
+			<p class="bg-intro">My name is Kaitlyn and I strive to produce high-quality websites with exceptional user experience.</p>
+			<p class="bg-content"></p>
+
+			<div class="underline"></div>
+			<h6>Let's Connect</h6>
+			<div class=" social">
+				<a href="https://www.facebook.com/kaitlyn.folsom" target="_blank"><div class="icon facebook"></div></a>
+				<a href="https://www.instagram.com/kaitlynnn_mae/" target="_blank"><div class="icon instagram"></div></a>
+				<a href="https://github.com/Jewel0106" target="_blank"><div class="icon github"></div></a>
+				<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><div class="icon linkedIn"></div></a>
+			</div>
+		</div>
 	</section>
 
-	<footer class="navbar sticky-bottom">
-		<p>Web Developer</p>
-		<p>Kaitlyn Folsom © 2017</p>
-		<p>New York / New Jersey</p>
+	<section class="row experience-row" id="experience" style="background-color: #ddd;">
+		<div class="header-sub-wrapper container">
+			<h2 class="slider-selection-top">
+				<span class="title-sub">My</span>
+				<span class="title-1">Experience</span>
+			</h2>
+
+			<div class="skills-graph">Graph to go here</div>
+		</div>
+	</section>
+
+
+	<section class="home-review observable visible">
+			<div class="wrapper-1440">
+				<h2 class="home-review-top">
+					<span class="title-sub">My</span>
+					<span class="title-1">Projects</span>
+				</h2>
+	
+				<div class="slider-container" id="home-review-slider" data-total="3">
+	
+					<!-- Slider nav -->
+					<div class="slider-nav">
+						<div class="slider-nav-container">
+							<div class="slider-nav-buttons">
+								<div class="slider-nav-item slider-nav-item-next" id="home-review-slider-next">
+									<div class="slider-nav-item-icon-container">
+										<span class="slider-nav-item-icon-1"><svg class="icon icon-fleche">	<use xlink:href="#fleche"></use></svg></span>
+										<span class="slider-nav-item-icon-2"><svg class="icon icon-fleche">	<use xlink:href="#fleche"></use></svg></span>
+									</div>
+								</div>
+								<div class="slider-nav-item slider-nav-item-prev" id="home-review-slider-prev">
+									<div class="slider-nav-item-icon-container">
+										<span class="slider-nav-item-icon-1"><svg class="icon icon-fleche">	<use xlink:href="#fleche"></use></svg></span>
+										<span class="slider-nav-item-icon-2"><svg class="icon icon-fleche">	<use xlink:href="#fleche"></use></svg></span>
+									</div>
+								</div>
+							</div>
+	
+							<div class="slider-nav-pagination">
+								<span class="slider-nav-page">01</span>
+								<span class="slider-nav-total">03</span>
+							</div>
+							<!-- Progress bar -->
+							<div class="slider-progress slider-nav-progress" id="home-review-slider-progress">
+								<div class="slider-progress-inner"></div>
+							</div>
+						</div>
+					</div>
+					<div class="home-review-slider-slides">
+												<div class="home-review-slider-item active" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<div class="home-review-slider-card">
+									<div class="home-review-slider-card-bg img-lazyload-container loaded">
+										<img class="img-lazyload" data-lazyload="true" src="https://photos.altai-travel.com/960x400/ours-polaires-au-spitzberg-234.jpg" alt="Ours polaires au Spitzberg" title="Ours polaires au Spitzberg - © Benezech Ronan" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-map img-lazyload-container loaded" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+										<img class="img-lazyload" data-lazyload="true" src="https://www.66nord.com/front/img/others/svg/map-countries/spitzberg.svg" alt=" - 66° Nord" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-content">
+																				<div class="home-review-slider-card-stars" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+												<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+											</div>
+																			<h4 class="home-review-slider-card-name" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);"><strong>NATHALIE,</strong>
+											29 ans, BULLE</h4>
+										<p class="home-review-slider-card-travel" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">Spitzberg - Les cinq glaciers</p>
+										<p class="home-review-slider-card-txt" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">Voyage hors du temps incroyable. Une belle expérience à vivre avec beaucoup de découvertes sur cet endroit magnifique et sur soi-même. Nous avons eu la chance d'avoir un guide extraordinaire Erwann [x]. Avec lui, même les moments les plus difficiles sont "fun". Bref, que des sourires, des informations très intéressantes sur ce qui nous entoure, des conseils, un cuisinier hors pairs, beaucoup d'idées pour une belle ambiance dans le groupe et beaucoup d'histoires passionnantes à nous raconter sur...</p>
+										<div class="home-review-slider-card-details" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+																						<div class="home-review-slider-card-detail">
+													<svg class="icon icon-kayak">	<use xlink:href="#kayak"></use></svg>
+													Rando Kayak
+												</div>
+																				</div>
+									</div>
+								</div>
+							</div>
+												<div class="home-review-slider-item ">
+								<div class="home-review-slider-card">
+									<div class="home-review-slider-card-bg img-lazyload-container loaded">
+										<img class="img-lazyload" data-lazyload="true" src="https://photos.altai-travel.com/960x400/ours-polaires-au-spitzberg-234.jpg" alt="Ours polaires au Spitzberg" title="Ours polaires au Spitzberg - © Benezech Ronan" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-map img-lazyload-container loaded">
+										<img class="img-lazyload" data-lazyload="true" src="https://www.66nord.com/front/img/others/svg/map-countries/spitzberg.svg" alt=" - 66° Nord" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-content">
+																				<div class="home-review-slider-card-stars">
+												<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+											</div>
+																			<h4 class="home-review-slider-card-name"><strong>YVES,</strong>
+											45 ans, BALARUC LES BAINS</h4>
+										<p class="home-review-slider-card-travel">Spitzberg - Le camp de Svéa</p>
+										<p class="home-review-slider-card-txt">professionalisme de 66 degres nord, site somptueux et merci aux guides(quentin et robin) qui ont su faire en sorte que ce voyage soit inoubliable et époustouflant . le groupe était génial.</p>
+										<div class="home-review-slider-card-details">
+																						<div class="home-review-slider-card-detail">
+													<svg class="icon icon-kayak">	<use xlink:href="#kayak"></use></svg>
+													Rando Kayak
+												</div>
+																				</div>
+									</div>
+								</div>
+							</div>
+												<div class="home-review-slider-item ">
+								<div class="home-review-slider-card">
+									<div class="home-review-slider-card-bg img-lazyload-container loaded">
+										<img class="img-lazyload" data-lazyload="true" src="https://photos.altai-travel.com/960x400/paysage-de-montagnes-en-islande-massif-de-kerlingarfjoell-445.jpg" alt="Paysage de montagnes en Islande, massif de Kerlingarfjöll" title="Paysage de montagnes en Islande, massif de Kerlingarfjöll - © Pixa Bay" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-map img-lazyload-container loaded">
+										<img class="img-lazyload" data-lazyload="true" src="https://www.66nord.com/front/img/others/svg/map-countries/islande.svg" alt=" - 66° Nord" data-src="lazyloaded">
+									</div>
+									<div class="home-review-slider-card-content">
+																				<div class="home-review-slider-card-stars">
+												<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-full">	<use xlink:href="#star-full"></use></svg></div>
+	<div class="home-review-slider-card-star"><svg class="icon icon-star-empty">	<use xlink:href="#star-empty"></use></svg></div>
+											</div>
+																			<h4 class="home-review-slider-card-name"><strong>ADELINE,</strong>
+											35 ans, COMMUNAY</h4>
+										<p class="home-review-slider-card-travel">Islande</p>
+										<p class="home-review-slider-card-txt">Superbe voyage! Bonne organisation. Le confort des refuges et guest-houses était vraiment appréciable étant donnée la météo islandaise. Supers guide (Alban) et apprenti-guide (Antoine) qui étaient aussi chauffeurs et cuisiniers, bravo! Petit groupe de 9 ce qui rend le voyage très convivial. Je recommande vivement ce circuit et 66° Nord.</p>
+										<div class="home-review-slider-card-details">
+																				</div>
+									</div>
+								</div>
+							</div>
+											<div class="home-review-all">
+							<a href="/avis-clients" class="all-button change-page">
+								<span class="all-button-inner">Tous les avis</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<footer class="d-flex footer-content">
+		<p>Kaitlyn Folsom © 2018</p>
+		<div class="social p-2">
+			<a href="https://www.facebook.com/kaitlyn.folsom" target="_blank"><div class="icon facebook"></div></a>
+			<a href="https://www.instagram.com/kaitlynnn_mae/" target="_blank"><div class="icon instagram"></div></a>
+			<a href="https://github.com/Jewel0106" target="_blank"><div class="icon github"></div></a>
+			<a href="https://www.linkedin.com/in/kaitlynfolsom/" target="_blank"><div class="icon linkedIn"></div></a>
+		</div>
 	</footer>
+
+	<!--Project Modals-->
+	<div id="animatedModal">
+		<div id="closebt-container" class="close-animatedModal">
+			<img class="closebt" src="assets/images/closebt.svg" alt="close button">
+		</div>
+		<div class="container" id="modal-container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="project-slideshow"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 title">
+					<div class="underline"></div>
+					<h2 id="projectTitle"></h2>
+				</div>
+				<div class="col-md-6 links"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p id="project-overview"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="underline"></div>
+					<h3>Technologies Used</h3>
+					<div class="experience-item">
+						<ul class="inline-list tech-items"></ul>
+					</div>
+				</div>
+				<div class="col-lg-6 collaborators-col">
+					<div class="underline"></div>
+					<h3>Collaborators</h3>
+					<ul class="collaborators"></ul>
+				</div>
+			</div>	
+			<!-- <div class="row">
+				<div class="col-lg-7">
+					<div class="underline"></div>
+					<h3>Utilizing the App</h3>
+				</div>				
+			</div>	 -->
+		</div>	
+		<div id="bottom-close-btn" class="close-animatedModal">Back to Projects
+		</div>	
+	</div>
+
 
 	<!-- SCRIPT -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -241,7 +301,16 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/script/jquery.waypoints.min.js"></script>
-	<script src="./assets/script/portfolio.js"></script>
+	<script src="assets/script/materialize.min.js"></script>
+	<script src="assets/script/wow.min.js"></script>
+	<script src="assets/script/slick.min.js"></script>
+	<script src="assets/script/animatedModal.min.js"></script>
+	<script src="assets/script/script.js"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+
 </body>
 
 </html>

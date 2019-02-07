@@ -160,108 +160,12 @@ var projectObj = [
 	}
 ]
 
-$('document').ready(function(){
-
-	for (var i = 0; i < projectObj.length; i++) {
-		console.log(projectObj[i]);
-	}
-
-	$(".close-animatedModal").click(function() {
-		$("#projectTitle").empty();
-
-		$("#project-overview").empty();
-
-		$(".tech-items").empty();
-
-		$(".collaborators").empty();
-
-		$(".project-slideshow").slick("unslick");
-		$(".project-slideshow").empty();
-
-		$(".links").empty();
+$(document).ready(function(){
+	$('.project-slider').slick({
+		appendArrows: $(""),
+		appendDots: $(""),
 	});
 
-
-	// =======================
-	// == ANIMATED MODAL =====
-	// =======================
-
-	$("#modal1").animatedModal();
-	$("#modal1").click(function() {
-		getProject(projectObj[0]);
-	});
-
-	$("#modal2").animatedModal();
-	$("#modal2").click(function() {
-		getProject(projectObj[1]);
-	});
-
-	$("#modal3").animatedModal();
-	$("#modal3").click(function() {
-		getProject(projectObj[2]);
-	});
-
-	$("#modal4").animatedModal();
-	$("#modal4").click(function() {
-		getProject(projectObj[3]);
-	});
-
-	$("#modal5").animatedModal();
-	$("#modal5").click(function() {
-		getProject(projectObj[4]);
-	});
-
-
-	function getProject(project) {
-		console.log(project);
-
-		$("#projectTitle").text(project.projectName);
-		$("#project-overview").text(project.overview);
-
-		for (var i = 0; i < project.tech.length; i++) {
-			$(".tech-items").append("<li>" + project.tech[i] + "</li>")
-		}
-
-		for (var i = 0; i < project.screenshots.length; i++) {
-			console.log(project.screenshots[i])
-			$(".project-slideshow").append("<div><img src='" + project.screenshots[i] + "'></div>")
-		}
-
-		$('.project-slideshow').slick({
-			autoplay: true,
-			autoplaySpeed: 3000,
-			fade: true,
-			arrows:false,
-			dots:true,
-			slidesToShow:1,
-			customPaging: function(slider, i) {
-				console.log(slider);
-				console.log(i);
-				$(".slideshow-dots").append("<img src='" + project.screenshots[i] + "'>");
-			}, 
-			infinite:true,
-			dotsClass: "image-pagers",
-			cssEase: 'linear',
-			focusOnSelect: true,
-		});
-
-		if (project.collaborators.length > 1) {
-			$(".collaborators-col").css("visibility", "visible");
-			for (var i = 0; i < project.collaborators.length; i++) {
-				$(".collaborators").append("<a href=" + project.collaborators[i].github + "><li>" + project.collaborators[i].name + "</li></a>")
-			}
-		} else {
-			$(".collaborators-col").css("visibility", "hidden");
-		}
-		
-		if (project.githubLink != "") {
-			$(".links").append('<div class="project-links d-flex justify-content-center github-link" target="_blank"><a href="' + project.githubLink + '" class="shimmer">GITHUB REPO</a></div>')
-		}
-
-		if (project.projectLink != "") {
-			$(".links").append('<div class="project-links d-flex justify-content-center github-link" target="_blank"><a href="' + project.projectLink + '" class="shimmer">PROJECT SITE</a></div>')
-		}
-	}
 
 	// ===================
 	// == NAVIGATION =====

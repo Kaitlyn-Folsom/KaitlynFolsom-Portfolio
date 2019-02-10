@@ -12,27 +12,6 @@ var projectObj = [
 			"Google Maps",
 			"Yelp API"
 		],
-		screenshots: [
-			"assets/images/dinner&show.png",
-		],
-		collaborators: [
-			{
-				name: "Kaitlyn Folsom",
-				github: "https://github.com/Jewel0106"
-			},
-			{
-				name: "Louis Hellinger",
-				github: "https://github.com/louisHellinger"
-			},
-			{
-				name: "Charles Dunn",
-				github: "https://github.com/crdunn"
-			},
-			{
-				name: "Anthony DiTomasso",
-				github: "https://github.com/Antditto"
-			}			
-		],
 		githubLink: "https://github.com/Jewel0106/DinnerAndAShow",
 		projectLink: "https://jewel0106.github.io/DinnerAndAShow/index.html"
 	},
@@ -48,30 +27,6 @@ var projectObj = [
 			"Express",
 			"Mongo",
 			"Passport"
-		],
-		screenshots: [
-			"assets/images/rxMinder-1.png",
-			"assets/images/rxMinder-2.png",
-			"assets/images/rxMinder-3.png",
-			"assets/images/rxMinder-4.png"
-		],
-		collaborators: [
-			{
-				name: "Andrew Apicello",
-				github: "https://github.com/andrew-apicello"
-			},
-			{
-				name: "Kaitlyn Folsom",
-				github: "https://github.com/Jewel0106"
-			},
-			{
-				name: "Nicole Carvalho",
-				github: "https://github.com/nicolelcarvalho"
-			},
-			{
-				name: "Annie Leote",
-				github: "https://github.com/aleote"
-			}
 		],
 		githubLink: "https://github.com/Jewel0106/RxMinder",
 		projectLink: "https://rx-minder.herokuapp.com/"
@@ -93,31 +48,6 @@ var projectObj = [
 			"Moment",
 			"News API"
 		],
-		screenshots: [
-			"assets/images/friend-forum-1.png",
-			"assets/images/friend-forum-2.png",
-			"assets/images/friend-forum-3.png",
-			"assets/images/friend-forum-4.png"
-		],
-		collaborators: [
-			{
-				name: "Andrew Apicello",
-				github: "https://github.com/andrew-apicello"
-			},
-			{
-				name: "Kaitlyn Folsom",
-				github: "https://github.com/Jewel0106"
-			},
-			{
-				name: "Benjamin Danis",
-				github: "https://github.com/benjaminDanis"
-			},
-			{
-				name: "Alexander Paulino",
-				github: "https://github.com/alexanderpaulino"
-			}
-			
-		],
 		githubLink: "https://github.com/Jewel0106/Friend-Forum",
 		projectLink: "https://friend-forum-social.herokuapp.com"
 	},
@@ -130,13 +60,6 @@ var projectObj = [
 			"HTML",
 			"CSS"
 		],
-		screenshots: [
-			"assets/images/trivia-1.png",
-			"assets/images/trivia-2.png",
-			"assets/images/trivia-3.png",
-			"assets/images/trivia-4.png"
-		],
-		collaborators: [],
 		githubLink: "https://github.com/Jewel0106/TriviaGame",
 		projectLink: "https://www.kaitlynfolsom.com/trivia"
 	},
@@ -154,18 +77,42 @@ var projectObj = [
 			"assets/images/knoxCuisine-3.png",
 			"assets/images/knoxCuisine-4.png"
 		],
-		collaborators: [],
 		githubLink: "",
 		projectLink: "http://www.knoxcuisine.com"
 	}
 ]
 
+
 $(document).ready(function(){
 	$('.project-slider').slick({
-		appendArrows: $(""),
-		appendDots: $(""),
+		dots:true,
+		appendArrows: $(".slider-nav-btns"),
+		appendDots: $(".slider-dots"),
+		speed:600,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				dots:false
+			  }
+			}
+		],
 	});
 
+	$(".slick-arrow").empty();
+	$(".slick-dots li button").empty();
+
+	$('.grid').packery({
+		// options
+		itemSelector: '.grid-item',
+		stagger:30,
+	  });
 
 	// ===================
 	// == NAVIGATION =====

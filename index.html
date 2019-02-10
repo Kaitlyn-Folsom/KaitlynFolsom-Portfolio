@@ -75,8 +75,10 @@
 
 		
 	<section class="about-row cd-section" id="about">
-		<div class="col-md-6 collage" style="background-color:#000;">
-
+		<div class="col-md-6 grid">
+			<img class="grid-item" src="./assets/images/sadie.jpg">
+			<div class="grid-item light-blue"></div>
+			<img class="grid-item" src="./assets/images/profile.jpg">
 		</div>
 		<div class="col-md-6 about-content">
 			<p class="bg-welcome">Hi!</p>
@@ -93,7 +95,6 @@
 				<span class="title-1">Experience</span>
 			</h2>
 
-			<div class="skills-graph">Graph to go here</div>
 		</div>
 	</section>
 
@@ -103,23 +104,64 @@
 			<span class="title-sub">My</span>
 			<span class="title-1">Projects</span>
 		</h2>
-	
-		<div class="slider-container" id="home-review-slider" data-total="3">
 
-			<div class="container slides">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="project-slider">
-							<div class="slide">Project 1</div>
-							<div class="slide">Project 2</div>
-							<div class="slide">Project 3</div>
-						</div>
+		<div class="project-content">
+			<div class="row project-bg">
+				<div class="col-md-4 left-block d-flex justify-content-center align-items-center">
+					<div class="slider-nav-btns"></div>
+				</div>
+				<div class="col-md-5 slider-dots d-flex justify-content-center"></div>
+				<div class="col-md-2 right-block"></div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="project-slider">
+				<div class="slide">
+					<div class="project-screenshot">
+						<img src="./assets/images/MISTRAS-Screenshots.png">
+					</div>
+					<div class="project-info">
+						<h3><strong>MISTRAS Group, Inc.</strong></h3>
+						<p class="release-date">Released January 2019</p>
+						<p class="description">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen. chedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen</p>
+						<p>Built with:</p>
+						<img src="https://via.placeholder.com/50x50">
+						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
+						
 					</div>
 				</div>
-				
+				<div class="slide">
+					<div class="project-screenshot">
+						<img src="./assets/images/MISTRAS-Screenshots.png">
+					</div>
+					<div class="project-info">
+						<h3><strong>Dinner & a Show</strong></h3>
+						<p class="release-date">Created September 2017</p>
+						<p class="description">A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City. This site uses four API's to create an application for users to search for a broadway show (SeatGeek API) and a place to eat nearby (Yelp API). Additionally, you can get walking directions (Google Maps API) from the restaurant to the theatre and the current weather (Open Weather API).</p>
+						<p>Built with:</p>
+						<img src="https://via.placeholder.com/50x50">
+						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
+						
+					</div>
+				</div>
+				<div class="slide">
+					<div class="project-screenshot">
+						<img src="./assets/images/MISTRAS-Screenshots.png">
+					</div>
+					<div class="project-info">
+						<h3><strong>RxMinder</strong></h3>
+						<p class="release-date">Created November 2017</p>
+						<p class="description">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.</p>
+						<p>Built with:</p>
+						<img src="https://via.placeholder.com/50x50">
+						<img src="https://via.placeholder.com/50x50">
+						<img src="https://via.placeholder.com/50x50">
+						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
+						
+					</div>
+				</div>
 			</div>
-			
-		</div>
+		</div>			
 	</section>
 
 	<section class="contact-row">
@@ -127,11 +169,16 @@
 			<span class="title-sub">Let's</span>
 			<span class="title-1">Get in Touch</span>
 		</h2>
+
+		<p>I am based out of New York/New Jersey</p>
+		<p>I am currently open for work opportunities and collaborations</p>
+
+		<a href="mailto:kaitlynmfolsom@gmail.com" class="email">kaitlynmfolsom@gmail.com</a>
 	</section>
 
 	<footer class="d-flex footer-content">
 		<p>Kaitlyn Folsom © 2018</p>
-		<div class="social p-2">
+		<div class="social justify-content-center">
 			<a href="https://www.facebook.com/kaitlyn.folsom" target="_blank"><div class="icon facebook"></div></a>
 			<a href="https://www.instagram.com/kaitlynnn_mae/" target="_blank"><div class="icon instagram"></div></a>
 			<a href="https://github.com/Jewel0106" target="_blank"><div class="icon github"></div></a>
@@ -149,8 +196,8 @@
 	<script src="assets/script/jquery.waypoints.min.js"></script>
 	<script src="assets/script/materialize.min.js"></script>
 	<script src="assets/script/wow.min.js"></script>
+	<script src="assets/script/masonry.min.js"></script>
 	<script src="assets/script/slick.min.js"></script>
-	<script src="assets/script/animatedModal.min.js"></script>
 	<script src="assets/script/script.js"></script>
 
 	<script>

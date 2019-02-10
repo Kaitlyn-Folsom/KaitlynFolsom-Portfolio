@@ -1,7 +1,7 @@
 /* COLORS
 Navy: rgb(10, 23, 43);
 Gold: # c49e6b
-Light Pink: #dc8e8c
+Light Pink: #bf7877
 seafoam blue: #759f9d
 light blue: #bcd7d7
 muted navy: #39586d
@@ -17,6 +17,10 @@ body, h1, h2, h3, h4 {
 p {
     font-size:20px;
     color:#09182a;
+}
+
+a {
+    color:#bf7877;
 }
 
 a:hover {
@@ -40,6 +44,14 @@ a:hover {
     text-align: center;
     letter-spacing: .4em;
     margin-bottom: 0;
+}
+
+section {
+    padding:100px 0;
+}
+
+section h2 {
+    padding-bottom:40px;
 }
 
 /* ======================*/
@@ -321,8 +333,20 @@ a:hover {
 .about-row {
     height:100vh;
     display:flex;
+    padding:0;
 }
 /* ===== LEFT Column === */
+.grid {
+    background-color:#947b5c;
+    padding:0;
+}
+
+.grid-item { width: 300px; }
+.grid-item.light-blue { 
+    width: 100px;
+    background-color:#96daf0;
+    height:100px;
+ }
 
 /* ===== RIGHT Column === */
 
@@ -356,44 +380,144 @@ a:hover {
 }
 
 
+
 /* ======================*/
 /* ======= PROJECTS =====*/
 /* ======================*/
 .projects-row {
     height:100vh;
-    padding:80px 0;
     position: relative;
 }
 
-.slider-container {
-    position: absolute;
-    height: 570px;
-    width:100vw;
+.project-content {
+    position:relative;
 }
 
-.slider-container .project-slider {
-    height: 100%;
-    position: relative;
-    background-color: #ddd;
-    min-height:400px;
-    top:50%;
+.project-content .project-bg {
+    height:70vh;
 }
 
-.slides {
-    position: relative;
-    min-height:400px;
-    top:50%;
+.project-content .project-bg .left-block {
+    background-color:#0a172b; 
+    height:100%;
 }
 
-.slider-container:before {
-    content: "";
+/* == Nav Button Styles == */
+.project-content .project-bg .left-block .slider-nav-btns {
+    margin-right:100px;
+}
+
+.project-content .project-bg .left-block .slider-nav-btns .slick-arrow {
+    background-color:transparent;
     display: block;
-    background-color: #09182a;
-    width: 400px;
-    left: 0;
-    height: 100%;
-    position: absolute;
+    border:3px solid #bf7877;
+    border-radius: 50%;
+    margin:25px 0;
+    width:60px;
+    height:60px;
+    z-index:10000;
+    position:relative;
+    cursor:pointer;
+    outline:none;
+}
 
+/* == Dot Styles == */
+.project-content .project-bg .slider-dots {
+    align-items:flex-end;
+    padding-bottom:20px;
+
+}
+
+.project-content .project-bg .slider-dots .slick-dots {
+    list-style:none;
+    display:flex;
+}
+
+.project-content .project-bg .slider-dots .slick-dots li{
+    padding: 0 10px;
+}
+
+.project-content .project-bg .slider-dots .slick-dots li button{
+    background-color:#ddd; 
+    height:5px;
+    width:40px;
+    border:none;
+}
+
+.project-content .project-bg .slider-dots .slick-dots li.slick-active button{
+    background-color:#bf7877; 
+    outline:none;
+}
+
+.project-content .project-bg .right-block {
+    background-color:#96daf0; 
+    height:70%; 
+    margin-top:150px;
+}
+
+.project-content .project-slider {
+    position:absolute;
+    width:100%;
+    top:10%;
+   
+    overflow:hidden;  
+}
+
+.project-content .project-slider p {
+    font-size:18px;
+}
+
+.project-content .project-slider .description {
+    height:130px;
+    overflow:scroll;
+}
+
+.project-content .project-slider .slide {
+    margin: 0 250px 0 350px;
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
+    background-color:#fff;
+    padding:30px;
+    outline:none;
+    max-height:55vh;
+}
+
+.project-content .project-slider .slide .project-screenshot {
+    float:left;
+    padding-right:30px;
+}
+
+.project-content .project-slider .slide .project-screenshot img{
+    width:300px;
+    height:auto;
+}
+
+.project-content .project-slider .slide .project-info {
+    overflow:hidden;
+}
+
+.project-content .project-slider .slide .project-info img{
+    float:left;
+    padding:0 10px;
+}
+
+.project-content .project-slider .slide .project-info img:first-child{
+    padding-left:0;
+}
+
+.project-content .project-slider .slide h3 {
+    margin-bottom:0;
+}
+
+.project-content .project-slider .slide .release-date {
+    color:#bf7877; 
+    font-size:16px;
+}
+
+.project-content .project-slider .slide .project-info .visit-link {
+    float:right;
+    clear:both;
 }
 
 /* ======================*/
@@ -401,6 +525,11 @@ a:hover {
 /* ======================*/
 .contact-row {
     padding:80px 0;
+    text-align:center;
+}
+
+.contact-row a {
+    color:#bf7877;
 }
 
 /* ======================*/
@@ -447,4 +576,8 @@ footer {
 
 footer .social {
     float:right;
+}
+
+footer p {
+    color:#fff
 }

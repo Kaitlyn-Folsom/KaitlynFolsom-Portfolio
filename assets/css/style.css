@@ -383,7 +383,6 @@ section h2 {
 
 .about-row .about-content .bg-welcome{
     font-size:80px;
-    font-weight:bold;
     color:#bf7877;
     margin:0;
 }
@@ -400,6 +399,9 @@ section h2 {
     padding:80px 0;
 }
 
+.experience-row #myChart {
+    padding:40px 80px 80px 80px;
+}
 
 
 /* ======================*/
@@ -452,6 +454,7 @@ section h2 {
 .project-content .project-bg .slider-dots .slick-dots {
     list-style:none;
     display:flex;
+   
 }
 
 .project-content .project-bg .slider-dots .slick-dots li{
@@ -463,6 +466,7 @@ section h2 {
     height:5px;
     width:40px;
     border:none;
+    cursor:pointer;
 }
 
 .project-content .project-bg .slider-dots .slick-dots li.slick-active button{
@@ -479,8 +483,7 @@ section h2 {
 .project-content .project-slider {
     position:absolute;
     width:100%;
-    top:10%;
-   
+    top:10%;  
     overflow:hidden;  
 }
 
@@ -529,6 +532,7 @@ section h2 {
 
 .project-content .project-slider .slide h3 {
     margin-bottom:0;
+    font-size:30px;
 }
 
 .project-content .project-slider .slide .release-date {

@@ -339,14 +339,35 @@ section h2 {
 .grid {
     background-color:#947b5c;
     padding:0;
+    width:100%;
 }
 
-.grid-item { width: 300px; }
-.grid-item.light-blue { 
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    float: left;
     width: 100px;
+    height: auto;
+}
+
+.grid-item.third { width: 33%; }
+.grid-item.quarter { width: 25%; }
+.grid-item.light-blue { 
     background-color:#96daf0;
-    height:100px;
- }
+    height:40%;
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
+.grid-item.pink { 
+    background-color:#bf7877;
+    height:40%;
+}
 
 /* ===== RIGHT Column === */
 
@@ -468,15 +489,15 @@ section h2 {
 }
 
 .project-content .project-slider .description {
-    height:130px;
+    height:135px;
     overflow:scroll;
 }
 
 .project-content .project-slider .slide {
     margin: 0 250px 0 350px;
-    -webkit-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 10px 10px 17px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 10px 17px 5px rgba(0,0,0,0.4);
+    box-shadow: 10px 50px 17px 5px rgba(0,0,0,0.4);
     background-color:#fff;
     padding:30px;
     outline:none;

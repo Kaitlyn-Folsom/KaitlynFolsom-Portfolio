@@ -21,6 +21,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- <link rel="stylesheet" href="assets/css/queries.css"> -->
@@ -76,9 +77,13 @@
 		
 	<section class="about-row cd-section" id="about">
 		<div class="col-md-6 grid">
-			<img class="grid-item" src="./assets/images/sadie.jpg">
-			<div class="grid-item light-blue"></div>
-			<img class="grid-item" src="./assets/images/profile.jpg">
+			<img class="grid-item grid-item--width2" src="./assets/images/sadie.jpg">
+			<div class="grid-item quarter light-blue"></div>
+			<img class="grid-item grid-item--width2 grid-item--height2" src="./assets/images/profile.jpg">
+			
+			<div class="grid-item quarter pink"></div>
+			<img class="grid-item third" src="./assets/images/capri.jpg">
+			<img class="grid-item third" src="./assets/images/swiss.jpg">
 		</div>
 		<div class="col-md-6 about-content">
 			<p class="bg-welcome">Hi!</p>
@@ -123,7 +128,7 @@
 					<div class="project-info">
 						<h3><strong>MISTRAS Group, Inc.</strong></h3>
 						<p class="release-date">Released January 2019</p>
-						<p class="description">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen. chedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen</p>
+						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen. chedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen</p>
 						<p>Built with:</p>
 						<img src="https://via.placeholder.com/50x50">
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
@@ -137,7 +142,7 @@
 					<div class="project-info">
 						<h3><strong>Dinner & a Show</strong></h3>
 						<p class="release-date">Created September 2017</p>
-						<p class="description">A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City. This site uses four API's to create an application for users to search for a broadway show (SeatGeek API) and a place to eat nearby (Yelp API). Additionally, you can get walking directions (Google Maps API) from the restaurant to the theatre and the current weather (Open Weather API).</p>
+						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City. This site uses four API's to create an application for users to search for a broadway show (SeatGeek API) and a place to eat nearby (Yelp API). Additionally, you can get walking directions (Google Maps API) from the restaurant to the theatre and the current weather (Open Weather API).</p>
 						<p>Built with:</p>
 						<img src="https://via.placeholder.com/50x50">
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
@@ -151,10 +156,24 @@
 					<div class="project-info">
 						<h3><strong>RxMinder</strong></h3>
 						<p class="release-date">Created November 2017</p>
-						<p class="description">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.</p>
+						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.</p>
 						<p>Built with:</p>
 						<img src="https://via.placeholder.com/50x50">
 						<img src="https://via.placeholder.com/50x50">
+						<img src="https://via.placeholder.com/50x50">
+						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
+						
+					</div>
+				</div>
+				<div class="slide">
+					<div class="project-screenshot">
+						<img src="./assets/images/MISTRAS-Screenshots.png">
+					</div>
+					<div class="project-info">
+						<h3><strong>Knox Cuisine</strong></h3>
+						<p class="release-date">Released June 2018</p>
+						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">Knox Cuisine is a startup catering company based out of Summit, NJ. It is owned by Hamza Knox who is also the head chef. Their services include sit-down dinners, buffets, corporate lunches, butler passes, custom menus, and a private chef.</p>
+						<p>Built with:</p>
 						<img src="https://via.placeholder.com/50x50">
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
 						
@@ -173,7 +192,8 @@
 		<p>I am based out of New York/New Jersey</p>
 		<p>I am currently open for work opportunities and collaborations</p>
 
-		<a href="mailto:kaitlynmfolsom@gmail.com" class="email">kaitlynmfolsom@gmail.com</a>
+		<p><a href="mailto:kaitlynmfolsom@gmail.com" class="email">kaitlynmfolsom@gmail.com</a></p>
+		<p><a href="assets/docs/kaitlynfolsom_resume.pdf" class="email">View my Resume</a></p>
 	</section>
 
 	<footer class="d-flex footer-content">
@@ -194,10 +214,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/script/jquery.waypoints.min.js"></script>
-	<script src="assets/script/materialize.min.js"></script>
 	<script src="assets/script/wow.min.js"></script>
-	<script src="assets/script/masonry.min.js"></script>
 	<script src="assets/script/slick.min.js"></script>
+	<script src="assets/script/jquery.mCustomScrollbar.js"></script>
 	<script src="assets/script/script.js"></script>
 
 	<script>

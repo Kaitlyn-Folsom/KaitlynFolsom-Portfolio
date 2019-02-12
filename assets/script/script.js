@@ -112,6 +112,8 @@ $(document).ready(function(){
 		// options
 		itemSelector: '.grid-item',
 		stagger:30,
+		resize:false,
+		percentPosition:true,
 	  });
 
 	// ===================

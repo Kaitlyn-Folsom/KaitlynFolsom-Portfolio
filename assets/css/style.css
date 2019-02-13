@@ -115,7 +115,7 @@ section h2 {
 }
 
 .overlay-dropdown.open {
-    opacity: .9;
+    opacity: .95;
     visibility: visible;
     height: 100%;
     z-index: 3;
@@ -395,20 +395,20 @@ section h2 {
 /* == SKILLS/EXPERIENCE ==*/
 /* ======================*/
 .experience-row {
-    height:100vh;
     padding:80px 0;
 }
 
-.experience-row #myChart {
-    padding:40px 80px 80px 80px;
+.experience-row .tab-items {
+    text-align:center;
 }
+
 
 
 /* ======================*/
 /* ======= PROJECTS =====*/
 /* ======================*/
 .projects-row {
-    height:100vh;
+    background-color:#fcfcfc;
     position: relative;
 }
 
@@ -493,14 +493,12 @@ section h2 {
 
 .project-content .project-slider .description {
     height:135px;
-    overflow:scroll;
+    
 }
 
 .project-content .project-slider .slide {
     margin: 0 250px 0 350px;
-    -webkit-box-shadow: 10px 10px 17px 5px rgba(0,0,0,0.4);
-    -moz-box-shadow: 10px 10px 17px 5px rgba(0,0,0,0.4);
-    box-shadow: 10px 50px 17px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color:#fff;
     padding:30px;
     outline:none;

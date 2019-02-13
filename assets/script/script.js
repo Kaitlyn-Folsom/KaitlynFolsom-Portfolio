@@ -116,52 +116,6 @@ $(document).ready(function(){
 		percentPosition:true,
 	  });
 
-	var yLabels = {
-		2 : "Dabbled a bit", 
-		4 : 'Beginner', 
-		6 : 'Comfortable, but still learning',  
-		8 : 'Very Comfortable',
-		10 : 'Master of all code'
-	}
-
-	var ctx = document.getElementById('myChart').getContext('2d');
-	var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
-
-    // The data for our dataset
-    data: {
-        labels: ["HTML/CSS", "Javacript/JQuery", "React", "April", "May"],
-        datasets: [{
-            label: "Front End Skills",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 2, 4, 8, 2],
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-		legend: {
-            display: false
-        },
-		scales: {
-			yAxes: [{
-				ticks: {
-					callback: function(value, index, values) {
-						// for a value (tick) equals to 8
-						return yLabels[value];
-						// 'junior-dev' will be returned instead and displayed on your chart
-					}
-				}
-			}]
-		},
-		title: {
-            display: true,
-            text: 'Front End Skills'
-        }
-	}
-});
 
 	// ===================
 	// == NAVIGATION =====

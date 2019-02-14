@@ -398,8 +398,48 @@ section h2 {
     padding:80px 0;
 }
 
-.experience-row .tab-items {
+.experience-row .nav-pills {
     text-align:center;
+    padding:20px 0;
+}
+
+.experience-row .nav-pills li {
+    width:25%;
+}
+
+.nav-pills li.active {
+    border-bottom:3px solid #947b5c;
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.tab-pane,
+.tab-content .active {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tab-content .skill {
+    width: 25%;
+    padding: 15px;
+    float:left;
+}
+
+.tab-content .skill .skill-icon {
+    height:80px;
+    display:block;
+    width:80px;
+    border:3px solid #0a172b;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.tab-content .skill p {
+    text-align: center;
 }
 
 
@@ -519,13 +559,17 @@ section h2 {
     overflow:hidden;
 }
 
-.project-content .project-slider .slide .project-info img{
+.project-content .project-slider .slide .project-info span{
     float:left;
     padding:0 10px;
 }
 
-.project-content .project-slider .slide .project-info img:first-child{
+.project-content .project-slider .slide .project-info span:first-child{
     padding-left:0;
+}
+
+.project-content .project-slider .slide .project-info .fab{
+    font-size:3em;
 }
 
 .project-content .project-slider .slide h3 {

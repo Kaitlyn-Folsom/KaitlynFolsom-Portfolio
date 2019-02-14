@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- <link rel="stylesheet" href="assets/css/queries.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500|Playfair+Display+SC" rel="stylesheet">
@@ -93,39 +94,38 @@
 		</div>
 	</section>
 
-	<section class="experience-row" id="experience" style="background-color: #ddd;">
+	<section class="experience-row cd-section" id="experience">
 		<div class="container">
 			<h2>
 				<span class="title-sub">My</span>
 				<span class="title-1">Experience</span>
 			</h2>
-			
-			<div class="row tab-items">
-				<div class="col-lg-3">
-					<p>Front-End</p>
-				</div>
-				<div class="col-md-3">
-					Back-End
-				</div>
-				<div class="col-md-3">
-					Design
-				</div>
-				<div class="col-md-3">
-					Other
-				</div>
-			</div>
-
-			<ul class="nav nav-pills">
-				<li class="active"><a data-toggle="pill" href="#home">Front-End</a></li>
-				<li><p><a data-toggle="pill" href="#menu1">Back-End</a></p></li>
-				<li><a data-toggle="pill" href="#menu2">Design</a></li>
-				<li><a data-toggle="pill" href="#menu3">Other</a></li>
+		
+			<ul class="nav nav-pills d-flex justify-content-around">
+				<li class="nav-item active"><h4><a data-toggle="pill" href="#home">Front-End</a></h4></li>
+				<li class="nav-item"><h4><a data-toggle="pill" href="#menu1">Back-End</a></h4></li>
+				<li class="nav-item"><h4><a data-toggle="pill" href="#menu2">Design</a></h4></li>
+				<li class="nav-item"><h4><a data-toggle="pill" href="#menu3">Other</a></h4></li>
 			</ul>
 
 			<div class="tab-content">
-				<div id="home" class="tab-pane fade in active">
-					<h3>HOME</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div id="home" class="tab-pane active">
+					<div class="skill">
+						<div class="skill-icon"></div>
+						<p>Skill 1</p>
+					</div>
+					<div class="skill">
+						<div class="skill-icon"></div>
+						<p>Skill 1</p>
+					</div>
+					<div class="skill">
+						<div class="skill-icon"></div>
+						<p>Skill 1</p>
+					</div>
+					<div class="skill">
+						<div class="skill-icon"></div>
+						<p>Skill 1</p>
+					</div>
 				</div>
 				<div id="menu1" class="tab-pane fade">
 					<h3>Menu 1</h3>
@@ -184,7 +184,7 @@
 						<p class="release-date">Created September 2017</p>
 						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">A web application that helps you discover highly rated, local restaurants based on the Broadway show you are attending in New York City. This site uses four API's to create an application for users to search for a broadway show (SeatGeek API) and a place to eat nearby (Yelp API). Additionally, you can get walking directions (Google Maps API) from the restaurant to the theatre and the current weather (Open Weather API).</p>
 						<p>Built with:</p>
-						<img src="https://via.placeholder.com/50x50">
+						<span class="fab fa-js"></span>
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
 						
 					</div>
@@ -198,9 +198,8 @@
 						<p class="release-date">Created November 2017</p>
 						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">A React-based web application designed to schedule medication reminders for others. Gives you, as the caretaker or family member, peace of mind while your patient or loved one maintains their independence. Allows you to remain at ease knowing that they are following their regimen.</p>
 						<p>Built with:</p>
-						<img src="https://via.placeholder.com/50x50">
-						<img src="https://via.placeholder.com/50x50">
-						<img src="https://via.placeholder.com/50x50">
+						<span class="fab fa-react"></span>
+						<span class="fab fa-node-js"></span>
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
 						
 					</div>
@@ -214,7 +213,7 @@
 						<p class="release-date">Released June 2018</p>
 						<p class="description mCustomScrollbar" data-mcs-theme="dark-thin">Knox Cuisine is a startup catering company based out of Summit, NJ. Operated by Chef Hamza Knox whos services include sit-down dinners, buffets, corporate luncheons, butler passes, custom menus, and a private chef.</p>
 						<p>Built with:</p>
-						<img src="https://via.placeholder.com/50x50">
+						<span class="fab fa-wordpress-simple"></span>
 						<a class="visit-link" href="https://mistrasgroup.com" target="_blank">Visit Site</a>
 						
 					</div>
